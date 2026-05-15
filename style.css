@@ -684,3 +684,113 @@ footer {
         padding: 14px 22px;
     }
 }
+/* TESTIMONY CARD */
+.testimony-preview-section {
+    padding: 80px 20px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.testimony-card {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 320px;
+    border-radius: 30px;
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    background:
+        linear-gradient(rgba(10,10,20,0.75), rgba(88,28,135,0.75)),
+        url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1200') center/cover no-repeat;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+    transition: all 0.4s ease;
+}
+
+.testimony-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 30px 80px rgba(88,28,135,0.25);
+}
+
+.testimony-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(88,28,135,0.55),
+        rgba(15,23,42,0.75)
+    );
+}
+
+.testimony-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    color: white;
+}
+
+.testimony-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.15);
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.testimony-content h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.testimony-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.testimony-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #f3e8ff;
+    transition: all 0.3s ease;
+}
+
+.testimony-card:hover .testimony-link {
+    transform: translateX(8px);
+}
+
+.testimony-link i {
+    transition: transform 0.3s ease;
+}
+
+.testimony-card:hover .testimony-link i {
+    transform: translateX(5px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .testimony-card {
+        padding: 35px 25px;
+        min-height: 260px;
+    }
+
+    .testimony-content h2 {
+        font-size: 2rem;
+    }
+
+    .testimony-content p {
+        font-size: 1rem;
+    }
+}

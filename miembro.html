@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Membresía | Fountain of Life</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8fafc;
+    color:#222;
+}
+
+/* HERO */
+.membership-hero{
+    position:relative;
+    height:500px;
+    background:
+    linear-gradient(rgba(88,28,135,0.75),rgba(15,23,42,0.8)),
+    url('YOUR-IMAGE-LINK-HERE') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    font-weight:800;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    margin-top:10px;
+}
+
+/* WELCOME */
+.welcome-section{
+    max-width:900px;
+    margin:70px auto;
+    text-align:center;
+    padding:0 20px;
+}
+
+.welcome-section h2{
+    font-size:2.2rem;
+    color:#581c87;
+    margin-bottom:20px;
+}
+
+.welcome-section p{
+    font-size:1.05rem;
+    line-height:1.8;
+    color:#555;
+}
+
+/* FORM */
+.form-section{
+    max-width:900px;
+    margin:0 auto 100px;
+    background:white;
+    padding:50px;
+    border-radius:24px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+.form-section h3{
+    color:#581c87;
+    margin-bottom:30px;
+    font-size:2rem;
+    text-align:center;
+}
+
+.form-group{
+    margin-bottom:22px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-bottom:2px solid #ddd;
+    font-size:1rem;
+    outline:none;
+}
+
+input:focus, select:focus, textarea:focus{
+    border-color:#7c3aed;
+}
+
+.radio-group{
+    display:flex;
+    gap:20px;
+    margin-top:10px;
+}
+
+.radio-group label{
+    font-weight:400;
+}
+
+button{
+    width:100%;
+    background:#7c3aed;
+    color:white;
+    border:none;
+    padding:18px;
+    font-size:1rem;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:700;
+    margin-top:20px;
+}
+
+button:hover{
+    background:#6d28d9;
+}
+
+.hidden{
+    display:none;
+}
+
+@media(max-width:768px){
+    .hero-content h1{
+        font-size:2.5rem;
+    }
+
+    .form-section{
+        padding:30px 20px;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="membership-hero">
+    <div class="hero-content">
+        <h1>Membresía</h1>
+        <p>Forma parte de nuestra familia de fe</p>
+    </div>
+</section>
+
+<!-- WELCOME -->
+<section class="welcome-section">
+    <h2>Bienvenido a Fountain of Life Fire Ministries Int'l</h2>
+    <p>
+        Estamos emocionados de que hayas decidido dar este paso.
+        Completa este formulario para formar parte oficialmente de nuestra
+        comunidad cristiana y crecer espiritualmente junto a nosotros.
+    </p>
+</section>
+
+<!-- FORM -->
+<section class="form-section">
+    <h3>Formulario de Membresía</h3>
+
+    <form>
+
+        <div class="form-group">
+            <label>Nombre *</label>
+            <input type="text" required>
+        </div>
+
+        <div class="form-group">
+            <label>Apellido *</label>
+            <input type="text" required>
+        </div>
+
+        <div class="form-group">
+            <label>Correo Electrónico *</label>
+            <input type="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Teléfono *</label>
+            <input type="tel" required>
+        </div>
+
+        <!-- COUNTRY -->
+        <div class="form-group">
+            <label>País *</label>
+            <select id="country" required>
+                <option value="">Seleccione país</option>
+                <option value="Guinea Ecuatorial">Guinea Ecuatorial</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="España">España</option>
+                <option value="México">México</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+            </select>
+        </div>
+
+        <!-- NORMAL ADDRESS -->
+        <div id="normalAddress">
+
+            <div class="form-group">
+                <label>Apartamento / Suite</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Ciudad *</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Estado / Provincia *</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Código Postal *</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+        <!-- EQUATORIAL GUINEA -->
+        <div id="equatorialAddress" class="hidden">
+
+            <div class="form-group">
+                <label>Ciudad *</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Barrio *</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label>¿Es miembro de otra iglesia?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="iglesia"> Sí</label>
+                <label><input type="radio" name="iglesia"> No</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Expectativas / Peticiones de oración</label>
+            <textarea rows="5"></textarea>
+        </div>
+
+        <button type="submit">Enviar Formulario</button>
+
+    </form>
+</section>
+
+<script>
+const countrySelect = document.getElementById("country");
+const normalAddress = document.getElementById("normalAddress");
+const equatorialAddress = document.getElementById("equatorialAddress");
+
+countrySelect.addEventListener("change", function () {
+    if(this.value === "Guinea Ecuatorial"){
+        normalAddress.classList.add("hidden");
+        equatorialAddress.classList.remove("hidden");
+    } else {
+        normalAddress.classList.remove("hidden");
+        equatorialAddress.classList.add("hidden");
+    }
+});
+</script>
+
+</body>
+</html>
