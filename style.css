@@ -563,3 +563,124 @@ footer {
     
     .service-card { height: 280px; }
 }
+
+/* WELCOME CARD */
+.welcome-card-section {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    background: #f8fafc;
+}
+
+.welcome-card {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 350px;
+    border-radius: 28px;
+    overflow: hidden;
+    background: 
+        linear-gradient(rgba(88, 28, 135, 0.78), rgba(15, 23, 42, 0.82)),
+        url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=1200') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.welcome-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 35px 80px rgba(0,0,0,0.35);
+}
+
+.welcome-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        rgba(124, 58, 237, 0.55),
+        rgba(30, 41, 59, 0.65)
+    );
+    backdrop-filter: blur(2px);
+}
+
+.welcome-content {
+    position: relative;
+    z-index: 2;
+    max-width: 550px;
+    color: white;
+}
+
+.welcome-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(10px);
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.welcome-content h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+    line-height: 1.1;
+}
+
+.welcome-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.welcome-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    color: #581c87;
+    padding: 16px 28px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.welcome-btn:hover {
+    transform: translateX(6px);
+    background: #f3e8ff;
+}
+
+.welcome-btn i {
+    transition: transform 0.3s ease;
+}
+
+.welcome-btn:hover i {
+    transform: translateX(4px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .welcome-card {
+        padding: 35px 25px;
+        min-height: 280px;
+        border-radius: 22px;
+    }
+
+    .welcome-content h2 {
+        font-size: 2rem;
+    }
+
+    .welcome-content p {
+        font-size: 1rem;
+    }
+
+    .welcome-btn {
+        padding: 14px 22px;
+    }
+}
