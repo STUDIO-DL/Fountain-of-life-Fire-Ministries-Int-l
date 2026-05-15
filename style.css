@@ -1,0 +1,565 @@
+/* ==========================================================================
+   VARIABLES DE DISEÑO (Paleta Profesional Azul y Blanco)
+   ========================================================================== */
+:root {
+    --primary-blue: #003366;       /* Azul profundo corporativo e institucional */
+    --accent-blue: #0066cc;        /* Azul eléctrico moderno para destaques */
+    --light-blue: #e6f0fa;         /* Fondo suave para iconos y elementos */
+    --pure-white: #ffffff;         /* Blanco puro de fondo */
+    --text-dark: #222222;          /* Gris oscuro para textos de lectura alta */
+    --text-muted: #666666;         /* Gris sutil para zonas secundarias */
+    --font-main: 'Poppins', sans-serif;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================================================
+   RESET GENERAL
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-dark);
+    background-color: var(--pure-white);
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   ENCABEZADO Y NAVEGACIÓN (ESTILO NATIVO + DUNAMIS BRANDING)
+   ========================================================================== */
+.navbar {
+    background-color: var(--pure-white);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 20px;
+}
+
+/* Identidad Visual Inspirada en Dunamis */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.church-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+.dunamis-text-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.brand-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #000000;
+    line-height: 1.0;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.brand-subtitle {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    letter-spacing: 1.5px;
+    margin-top: 4px;
+    line-height: 1.0;
+}
+
+/* Enlaces del Menú de Escritorio */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    color: var(--accent-blue);
+}
+
+/* Botón Destacado de Donación */
+.nav-donate {
+    background-color: var(--accent-blue);
+    color: var(--pure-white) !important;
+    padding: 8px 22px;
+    border-radius: 6px;
+}
+
+.nav-donate:hover {
+    background-color: var(--primary-blue);
+    transform: translateY(-2px);
+}
+
+/* Elementos de Control del Menú Móvil (Ocultos en Escritorio) */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    cursor: pointer;
+}
+
+.menu-close {
+    display: none;
+}
+
+/* ==========================================================================
+   HERO SLIDER (FLEXBOX STYLE 100% NATIVO)
+   ========================================================================== */
+.hero-slider {
+    margin-top: 84px; /* Evita que el navbar fijo cubra el slider */
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    width: 200%; /* Espacio total para 2 slides distribuidos horizontalmente */
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide {
+    width: 50%; /* Cada slide hereda exactamente el ancho de la pantalla */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--pure-white);
+    padding: 0 20px;
+    flex-shrink: 0;
+}
+
+.slide-content h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.slide-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Controles de Navegación del Slider */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 51, 102, 0.4);
+    color: var(--pure-white);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: var(--transition);
+    z-index: 10;
+}
+
+.slider-btn:hover {
+    background: var(--primary-blue);
+}
+
+.prev-btn { left: 20px; }
+.next-btn { right: 20px; }
+
+/* Puntos de Paginación del Slider */
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.dot.active {
+    background: var(--pure-white);
+    transform: scale(1.2);
+}
+
+/* Botones del Carrusel */
+.btn-primary, 
+.btn-outline {
+    padding: 12px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    display: inline-block;
+    margin: 5px;
+}
+
+.btn-primary {
+    background-color: var(--accent-blue);
+    color: var(--pure-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-blue);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 2px solid var(--pure-white);
+    color: var(--pure-white);
+}
+
+.btn-outline:hover {
+    background-color: var(--pure-white);
+    color: var(--primary-blue);
+}
+
+/* ==========================================================================
+   SECCIÓN SOBRE NOSOTROS (ESTILO COPIADO DE DUNAMIS)
+   ========================================================================== */
+.about-section {
+    padding: 80px 20px;
+    background-color: var(--pure-white);
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-subtitle {
+    color: var(--accent-blue);
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.about-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+/* Línea divisoria decorativa asimétrica */
+.double-divider {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 30px;
+}
+
+.double-divider .line-short {
+    width: 25px;
+    height: 4px;
+    background-color: var(--accent-blue);
+    border-radius: 2px;
+}
+
+.double-divider .line-long {
+    width: 45px;
+    height: 4px;
+    background-color: var(--primary-blue);
+    border-radius: 2px;
+}
+
+.about-text {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.btn-read-more {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: var(--pure-white);
+    text-decoration: none;
+    padding: 12px 35px;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-top: 15px;
+    transition: var(--transition);
+}
+
+.btn-read-more:hover {
+    background-color: var(--accent-blue);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   SECCIÓN HORARIOS DE SERVICIO (5 TARJETAS INTERACTIVAS 3D)
+   ========================================================================== */
+.services-section {
+    max-width: 1200px;
+    margin: 40px auto 100px;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title span {
+    color: var(--accent-blue);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-top: 5px;
+    font-weight: 800;
+}
+
+.title-divider {
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-blue);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* Cuadrícula optimizada para albergar dinámicamente las 5 tarjetas */
+.services-grid {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas flotantes de la fila inferior de forma simétrica */
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Envoltura automática para pantallas medianas y móviles */
+}
+
+/* Estructura y Efecto Flip de las Tarjetas */
+.service-card {
+    background-color: transparent;
+    width: 100%;
+    max-width: 360px; /* Tamaño ideal balanceado para albergar grupos de 3 y 2 */
+    height: 300px;
+    perspective: 1000px; 
+    cursor: pointer;
+    outline: none;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    box-shadow: 0 10px 30px rgba(0, 51, 102, 0.06);
+    border-radius: 12px;
+}
+
+/* Estados de Activación del Giro (Hover en PC / Focus y Active en Móvil) */
+.service-card:hover .card-inner,
+.service-card:focus .card-inner,
+.service-card:active .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, 
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 12px;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cara Frontal: Blanca con Icono y Texto Azul */
+.card-front {
+    background-color: var(--pure-white);
+    border: 1px solid rgba(0, 51, 102, 0.08);
+    color: var(--primary-blue);
+}
+
+.card-front .icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: var(--light-blue);
+    color: var(--accent-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.card-front h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* Cara Trasera: Fondo Gradiente Azul, Texto Blanco */
+.card-back {
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+    color: var(--pure-white);
+    transform: rotateY(180deg);
+}
+
+.card-back h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.card-back .timezone {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.time-details p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 6px 20px;
+    border-radius: 30px;
+}
+
+/* ==========================================================================
+   PIE DE PÁGINA
+   ========================================================================== */
+footer {
+    background-color: var(--primary-blue);
+    color: var(--pure-white);
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (RESPONSIVIDAD MÓVIL)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* Menú Desplegable Lateral */
+    .menu-toggle { 
+        display: block; 
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%; /* Inicialmente escondido fuera de la pantalla */
+        width: 75%;  /* Ocupa el 75% del ancho del dispositivo móvil */
+        height: 100vh;
+        background-color: var(--pure-white);
+        padding: 80px 30px;
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+        gap: 25px;
+        text-align: left;
+        transition: right 0.4s ease; /* Desplazamiento fluido */
+        z-index: 2000;
+    }
+    
+    .nav-links.active {
+        right: 0; /* Entra a la pantalla */
+    }
+    
+    /* Botón X de Cierre de Menú */
+    .menu-close {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-size: 2rem;
+        color: var(--primary-blue);
+        cursor: pointer;
+        transition: var(--transition);
+    }
+    
+    .menu-close:hover {
+        color: var(--accent-blue);
+        transform: rotate(90deg);
+    }
+    
+    .nav-links a {
+        font-size: 1.2rem;
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    
+    .nav-donate {
+        margin-left: 0;
+        text-align: center;
+        background-color: var(--accent-blue);
+        border-bottom: none !important;
+    }
+    
+    /* Escalado Tipográfico y Elementos en Pantallas Pequeñas */
+    .church-logo { height: 48px; }
+    .brand-title { font-size: 1.1rem; }
+    .brand-subtitle { font-size: 0.65rem; letter-spacing: 1px; }
+    
+    .hero-slider { height: 60vh; }
+    .slide-content h1 { font-size: 2rem; }
+    .slide-content p { font-size: 1rem; }
+    
+    .about-title, 
+    .section-title h2 { font-size: 2.1rem; }
+    
+    .service-card { height: 280px; }
+}
