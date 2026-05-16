@@ -41,6 +41,26 @@
       padding:120px 20px;
       text-align:center;
       color:white;
+
+      /* ADDED */
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ADDED IMAGE LAYER */
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:url("imgSucursal.png") center/cover no-repeat;
+      opacity:0.25;
+      z-index:0;
+    }
+
+    /* ensure text stays above image */
+    .hero > *{
+      position: relative;
+      z-index: 1;
     }
 
     .hero h1{
@@ -196,59 +216,60 @@
       }
 
     }
+
     .page-navbar {
-    width: 100%;
-    background: white;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
+      width: 100%;
+      background: white;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
 
-.page-nav-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 18px 30px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.page-nav-links {
-    display: flex;
-    gap: 30px;
-}
-
-.page-nav-links a {
-    text-decoration: none;
-    color: #222;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.page-nav-links a:hover {
-    color: #7c3aed;
-}
-
-.menu-toggle {
-    display: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #581c87;
-}
-
-.menu-close {
-    display: none;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-
-    .menu-toggle {
-        display: block;
+    .page-nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 30px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
     }
 
     .page-nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .page-nav-links a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .page-nav-links a:hover {
+      color: #7c3aed;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #581c87;
+    }
+
+    .menu-close {
+      display: none;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .page-nav-links {
         position: fixed;
         top: 0;
         right: -100%;
@@ -259,19 +280,19 @@
         padding: 80px 30px;
         transition: right 0.4s ease;
         z-index: 1000;
-    }
+      }
 
-    .page-nav-links.active {
+      .page-nav-links.active {
         right: 0;
-    }
+      }
 
-    .page-nav-links a {
+      .page-nav-links a {
         color: white;
         margin: 18px 0;
         font-size: 1.1rem;
-    }
+      }
 
-    .menu-close {
+      .menu-close {
         display: block;
         position: absolute;
         top: 25px;
@@ -279,12 +300,13 @@
         font-size: 1.8rem;
         cursor: pointer;
         color: white;
+      }
     }
-}
 
   </style>
 
 </head>
+
 <script>
 const mobileMenu = document.getElementById("mobileMenu");
 const navLinks = document.getElementById("navLinks");
@@ -298,7 +320,9 @@ menuClose.addEventListener("click", () => {
     navLinks.classList.remove("active");
 });
 </script>
+
 <body>
+
   <header class="page-navbar">
     <div class="page-nav-container">
 
@@ -322,7 +346,7 @@ menuClose.addEventListener("click", () => {
         </div>
 
     </div>
-</header>
+  </header>
 
   <!-- HERO -->
 
@@ -358,164 +382,80 @@ menuClose.addEventListener("click", () => {
     <div class="branches">
 
       <!-- MALABO -->
-
       <div class="branch-card">
 
-        <div class="flag">
-          🇬🇶
-        </div>
+        <div class="flag">🇬🇶</div>
 
-        <h3>
-          Malabo
-        </h3>
+        <h3>Malabo</h3>
 
         <div class="info">
-
-          <div class="info-icon">
-            📍
-          </div>
-
-          <div class="info-text">
-            Malabo, Guinea Ecuatorial
-          </div>
-
+          <div class="info-icon">📍</div>
+          <div class="info-text">Malabo, Guinea Ecuatorial</div>
         </div>
 
         <div class="info">
-
-          <div class="info-icon">
-            📞
-          </div>
-
-          <div class="info-text">
-            +240 222 000 111
-          </div>
-
+          <div class="info-icon">📞</div>
+          <div class="info-text">+240 222 000 111</div>
         </div>
 
         <div class="info">
-
-          <div class="info-icon">
-            🏛️
-          </div>
-
-          <div class="info-text">
-            Avenida Hassan II, cerca del centro de la ciudad.
-          </div>
-
+          <div class="info-icon">🏛️</div>
+          <div class="info-text">Avenida Hassan II, cerca del centro de la ciudad.</div>
         </div>
 
-        <a href="#" class="location-btn">
-          Ver ubicación
-        </a>
+        <a href="#" class="location-btn">Ver ubicación</a>
 
       </div>
 
       <!-- REBOLA -->
-
       <div class="branch-card">
 
-        <div class="flag">
-          🇬🇶
-        </div>
+        <div class="flag">🇬🇶</div>
 
-        <h3>
-          Rebola
-        </h3>
+        <h3>Rebola</h3>
 
         <div class="info">
-
-          <div class="info-icon">
-            📍
-          </div>
-
-          <div class="info-text">
-            Rebola, Guinea Ecuatorial
-          </div>
-
+          <div class="info-icon">📍</div>
+          <div class="info-text">Rebola, Guinea Ecuatorial</div>
         </div>
 
         <div class="info">
-
-          <div class="info-icon">
-            📞
-          </div>
-
-          <div class="info-text">
-            +240 555 123 456
-          </div>
-
+          <div class="info-icon">📞</div>
+          <div class="info-text">+240 555 123 456</div>
         </div>
 
         <div class="info">
-
-          <div class="info-icon">
-            🏛️
-          </div>
-
-          <div class="info-text">
-            Carretera principal de Rebola, junto al mercado.
-          </div>
-
+          <div class="info-icon">🏛️</div>
+          <div class="info-text">Carretera principal de Rebola, junto al mercado.</div>
         </div>
 
-        <a href="#" class="location-btn">
-          Ver ubicación
-        </a>
+        <a href="#" class="location-btn">Ver ubicación</a>
 
       </div>
 
       <!-- OWERRI -->
-
       <div class="branch-card">
 
-        <div class="flag">
-          🇳🇬
-        </div>
+        <div class="flag">🇳🇬</div>
 
-        <h3>
-          Owerri
-        </h3>
+        <h3>Owerri</h3>
 
         <div class="info">
-
-          <div class="info-icon">
-            📍
-          </div>
-
-          <div class="info-text">
-            Owerri, Nigeria
-          </div>
-
+          <div class="info-icon">📍</div>
+          <div class="info-text">Owerri, Nigeria</div>
         </div>
 
         <div class="info">
-
-          <div class="info-icon">
-            📞
-          </div>
-
-          <div class="info-text">
-            +234 800 123 7890
-          </div>
-
+          <div class="info-icon">📞</div>
+          <div class="info-text">+234 800 123 7890</div>
         </div>
 
         <div class="info">
-
-          <div class="info-icon">
-            🏛️
-          </div>
-
-          <div class="info-text">
-            World Bank Road, Owerri Municipal.
-          </div>
-
+          <div class="info-icon">🏛️</div>
+          <div class="info-text">World Bank Road, Owerri Municipal.</div>
         </div>
 
-        <a href="#" class="location-btn">
-          Ver ubicación
-        </a>
+        <a href="#" class="location-btn">Ver ubicación</a>
 
       </div>
 
@@ -523,14 +463,8 @@ menuClose.addEventListener("click", () => {
 
   </section>
 
-  <!-- FOOTER -->
-
   <footer>
-
-    <p>
-      © 2026 Fuente de Vida • Todos los derechos reservados
-    </p>
-
+    <p>© 2026 Fuente de Vida • Todos los derechos reservados</p>
   </footer>
 
 </body>
