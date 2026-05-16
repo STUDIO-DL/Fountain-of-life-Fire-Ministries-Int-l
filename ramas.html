@@ -285,7 +285,19 @@
   </style>
 
 </head>
+<script>
+const mobileMenu = document.getElementById("mobileMenu");
+const navLinks = document.getElementById("navLinks");
+const menuClose = document.getElementById("menuClose");
 
+mobileMenu.addEventListener("click", () => {
+    navLinks.classList.add("active");
+});
+
+menuClose.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+});
+</script>
 <body>
   <header class="page-navbar">
     <div class="page-nav-container">
@@ -295,12 +307,14 @@
                 <i class="fa-solid fa-xmark"></i>
             </div>
 
-            <a href="index.html">Inicio</a>
-            <a href="conocenos.html">Conócenos</a>
-            <a href="miembro.html">Unete</a>
-            <a href="ramas.html">Sucursales</a>
-            <a href="testimonio.html">Testimonios</a>
-            <a href="contacto.html">Contacto</a>
+           <a href="#" class="active">Inicio</a>
+                <a href="#">Conocenos</a>
+                <a href="index.html#servicios" >Servicios</a>
+                <a href="ramas.html">Sucursales</a>
+                <a href="#">Visitanos</a>
+                <a href="redes_sociales1.html">Redes sociales</a>
+                <a href="testimonio.html">Testimonios</a>
+                <a href="#">Contacto</a>
         </nav>
 
         <div class="menu-toggle" id="mobileMenu">
