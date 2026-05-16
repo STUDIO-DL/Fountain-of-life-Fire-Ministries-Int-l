@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Localizar una Sucursal | Fuente de Vida</title>
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:#f5f9ff;
+      color:#0f172a;
+    }
+
+    /* HERO */
+
+    .hero{
+      background:linear-gradient(
+        135deg,
+        #0f4cbd,
+        #2563eb
+      );
+
+      padding:120px 20px;
+      text-align:center;
+      color:white;
+    }
+
+    .hero h1{
+      font-size:60px;
+      font-weight:800;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:22px;
+      max-width:800px;
+      margin:auto;
+      opacity:0.95;
+      line-height:1.7;
+    }
+
+    /* CONTAINER */
+
+    .container{
+      width:100%;
+      max-width:1200px;
+      margin:auto;
+      padding:90px 25px;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:70px;
+    }
+
+    .section-title h2{
+      font-size:42px;
+      font-weight:800;
+      margin-bottom:15px;
+      color:#0f172a;
+    }
+
+    .section-title p{
+      font-size:18px;
+      color:#64748b;
+    }
+
+    /* CARDS */
+
+    .branches{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+      gap:35px;
+    }
+
+    .branch-card{
+      background:white;
+      border-radius:28px;
+      padding:40px 35px;
+      border:1px solid #dbeafe;
+      box-shadow:0 10px 30px rgba(37,99,235,0.08);
+      transition:0.3s;
+    }
+
+    .branch-card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 18px 40px rgba(37,99,235,0.15);
+    }
+
+    /* FLAG */
+
+    .flag{
+      font-size:55px;
+      margin-bottom:25px;
+    }
+
+    /* TITLE */
+
+    .branch-card h3{
+      font-size:32px;
+      margin-bottom:18px;
+      color:#0f172a;
+      font-weight:700;
+    }
+
+    /* INFO */
+
+    .info{
+      margin-bottom:18px;
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+    }
+
+    .info-icon{
+      font-size:20px;
+      color:#2563eb;
+      margin-top:2px;
+    }
+
+    .info-text{
+      color:#475569;
+      line-height:1.7;
+      font-size:17px;
+    }
+
+    /* BUTTON */
+
+    .location-btn{
+      display:inline-block;
+      margin-top:20px;
+      background:#2563eb;
+      color:white;
+      text-decoration:none;
+      padding:14px 24px;
+      border-radius:14px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .location-btn:hover{
+      background:#1d4ed8;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:35px 20px;
+      margin-top:80px;
+    }
+
+    footer p{
+      opacity:0.8;
+      font-size:15px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      .hero{
+        padding:90px 20px;
+      }
+
+      .hero h1{
+        font-size:42px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      .section-title h2{
+        font-size:34px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <h1>
+      Localizar una Sucursal
+    </h1>
+
+    <p>
+      Encuentra una sucursal de Fuente de Vida cerca de ti
+      y acompáñanos en adoración y crecimiento espiritual.
+    </p>
+
+  </section>
+
+  <!-- CONTENT -->
+
+  <section class="container">
+
+    <div class="section-title">
+
+      <h2>
+        Sucursales de Fuente de Vida
+      </h2>
+
+      <p>
+        Visítanos en cualquiera de nuestras sedes disponibles.
+      </p>
+
+    </div>
+
+    <div class="branches">
+
+      <!-- MALABO -->
+
+      <div class="branch-card">
+
+        <div class="flag">
+          🇬🇶
+        </div>
+
+        <h3>
+          Malabo
+        </h3>
+
+        <div class="info">
+
+          <div class="info-icon">
+            📍
+          </div>
+
+          <div class="info-text">
+            Malabo, Guinea Ecuatorial
+          </div>
+
+        </div>
+
+        <div class="info">
+
+          <div class="info-icon">
+            📞
+          </div>
+
+          <div class="info-text">
+            +240 222 000 111
+          </div>
+
+        </div>
+
+        <div class="info">
+
+          <div class="info-icon">
+            🏛️
+          </div>
+
+          <div class="info-text">
+            Avenida Hassan II, cerca del centro de la ciudad.
+          </div>
+
+        </div>
+
+        <a href="#" class="location-btn">
+          Ver ubicación
+        </a>
+
+      </div>
+
+      <!-- REBOLA -->
+
+      <div class="branch-card">
+
+        <div class="flag">
+          🇬🇶
+        </div>
+
+        <h3>
+          Rebola
+        </h3>
+
+        <div class="info">
+
+          <div class="info-icon">
+            📍
+          </div>
+
+          <div class="info-text">
+            Rebola, Guinea Ecuatorial
+          </div>
+
+        </div>
+
+        <div class="info">
+
+          <div class="info-icon">
+            📞
+          </div>
+
+          <div class="info-text">
+            +240 555 123 456
+          </div>
+
+        </div>
+
+        <div class="info">
+
+          <div class="info-icon">
+            🏛️
+          </div>
+
+          <div class="info-text">
+            Carretera principal de Rebola, junto al mercado.
+          </div>
+
+        </div>
+
+        <a href="#" class="location-btn">
+          Ver ubicación
+        </a>
+
+      </div>
+
+      <!-- OWERRI -->
+
+      <div class="branch-card">
+
+        <div class="flag">
+          🇳🇬
+        </div>
+
+        <h3>
+          Owerri
+        </h3>
+
+        <div class="info">
+
+          <div class="info-icon">
+            📍
+          </div>
+
+          <div class="info-text">
+            Owerri, Nigeria
+          </div>
+
+        </div>
+
+        <div class="info">
+
+          <div class="info-icon">
+            📞
+          </div>
+
+          <div class="info-text">
+            +234 800 123 7890
+          </div>
+
+        </div>
+
+        <div class="info">
+
+          <div class="info-icon">
+            🏛️
+          </div>
+
+          <div class="info-text">
+            World Bank Road, Owerri Municipal.
+          </div>
+
+        </div>
+
+        <a href="#" class="location-btn">
+          Ver ubicación
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 Fuente de Vida • Todos los derechos reservados
+    </p>
+
+  </footer>
+
+</body>
+</html>
