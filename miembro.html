@@ -129,7 +129,56 @@ button{
 button:hover{
     background:#6d28d9;
 }
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
 
+.menu-close {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: #581c87;
+        display: flex;
+        flex-direction: column;
+        padding: 80px 30px;
+        transition: right 0.4s ease;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        color: white;
+        margin: 18px 0;
+        font-size: 1.1rem;
+    }
+
+    .menu-close {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: white;
+    }
+}
 .hidden{
     display:none;
 }
@@ -143,10 +192,129 @@ button:hover{
         padding:30px 20px;
     }
 }
+.page-navbar {
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.page-nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.page-nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.page-nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.page-nav-links a:hover {
+    color: #7c3aed;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #581c87;
+}
+
+.menu-close {
+    display: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .page-nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: #581c87;
+        flex-direction: column;
+        padding: 80px 30px;
+        transition: right 0.4s ease;
+        z-index: 1000;
+    }
+
+    .page-nav-links.active {
+        right: 0;
+    }
+
+    .page-nav-links a {
+        color: white;
+        margin: 18px 0;
+        font-size: 1.1rem;
+    }
+
+    .menu-close {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: white;
+    }
+}
 </style>
 </head>
-<body>
+<script>
+const mobileMenu = document.getElementById("mobileMenu");
+const navLinks = document.getElementById("navLinks");
+const menuClose = document.getElementById("menuClose");
 
+mobileMenu.addEventListener("click", () => {
+    navLinks.classList.add("active");
+});
+
+menuClose.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+});
+</script>
+<body>
+<header class="page-navbar">
+    <div class="page-nav-container">
+
+        <nav class="page-nav-links" id="navLinks">
+            <div class="menu-close" id="menuClose">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <a href="index.html">Inicio</a>
+            <a href="conocenos.html">Conócenos</a>
+            <a href="miembro.html">Membresía</a>
+            <a href="ramas.html">Sucursales</a>
+            <a href="testimonio.html">Testimonios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <div class="menu-toggle" id="mobileMenu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </div>
+</header>
 <!-- HERO -->
 <section class="membership-hero">
     <div class="hero-content">
