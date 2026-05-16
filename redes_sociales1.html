@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redes Sociales - Fuente de Vida</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Estilo basado en los principios de diseño: Azul y Blanco */
         :root {
@@ -19,12 +20,12 @@
             color: #333;
         }
 
-        /* --- NUEVA CABECERA ESTILO DUNAMIS --- */
+        /* --- CABECERA ESTILO DUNAMIS --- */
         .hero-banner {
             position: relative;
             width: 100%;
-            height: 320px; /* Altura panorámica similar a la referencia */
-            background-image: linear-gradient(rgba(0, 74, 173, 0.85), rgba(0, 74, 173, 0.85)), url('imagen_adoracion_ministerio.png');
+            height: 320px; 
+            background-image: linear-gradient(rgba(0, 74, 173, 0.85), rgba(0, 74, 173, 0.85)), url('/home/zharik/Documentos/proyecto_FV/FUENTE DE VIDA/WhatsApp Image 2026-05-15 at 19.26.51.jpeg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -33,7 +34,7 @@
             align-items: center;
             color: var(--blanco);
             text-align: center;
-            margin-bottom: 60px; /* Espacio para que el logo flotante no pise el contenido */
+            margin-bottom: 60px; 
         }
 
         .hero-breadcrumbs {
@@ -52,14 +53,14 @@
         /* Contenedor del Logo Flotante Intersecado */
         .floating-logo-container {
             position: absolute;
-            bottom: -40px; /* Lo empuja hacia abajo justo a la mitad del borde */
+            bottom: -40px; 
             left: 50%;
             transform: translateX(-50%);
             width: 90px;
             height: 90px;
             background-color: var(--azul-principal);
-            border-radius: 50% 50% 50% 0; /* Simula la forma de gota/llama apuntando hacia abajo */
-            transform: translateX(-50%) rotate(-45deg); /* Rota para darle la orientación vertical */
+            border-radius: 50% 50% 50% 0; 
+            transform: translateX(-50%) rotate(-45deg); 
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
             display: flex;
             justify-content: center;
@@ -68,15 +69,12 @@
             border: 4px solid var(--blanco);
         }
 
-            .floating-logo-container img {
-            /* CAMBIO: Ajustado al 100% de ancho y alto con cover para rellenar todo el espacio */
+        .floating-logo-container img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            /* Deshace la rotación del contenedor padre para que el logo se vea derecho */
             transform: rotate(45deg); 
         }
-
         /* ------------------------------------- */
 
         .social-section {
@@ -116,17 +114,44 @@
             border: 2px solid var(--azul-principal);
             border-radius: 15px;
             padding: 30px;
-            transition: transform 0.3s ease, background-color 0.3s ease;
+            transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
             cursor: pointer;
             text-decoration: none;
             color: var(--azul-principal);
             font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Estilo para los iconos por encima del texto */
+        .social-card i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-card h3 {
+            margin: 5px 0;
+            font-size: 1.4rem;
+        }
+
+        .social-card p {
+            margin: 0;
+            font-size: 0.9rem;
+            font-weight: normal;
+            opacity: 0.8;
         }
 
         .social-card:hover {
             background-color: var(--azul-principal);
             color: var(--blanco);
             transform: translateY(-10px);
+        }
+
+        .social-card:hover i {
+            transform: scale(1.1); /* Efecto de aumento sutil en el logo al pasar el cursor */
         }
 
         /* Sección de Facebook Live */
@@ -160,7 +185,7 @@
     <h1 class="hero-title">Conéctate Con Nosotros</h1>
     
     <div class="floating-logo-container">
-        <img src="logo.png">
+        <img src="/home/zharik/Documentos/proyecto_FV/FUENTE DE VIDA/WhatsApp Image 2026-05-15 at 19.26.51.jpeg" alt="Logo">
     </div>
 </header>
 
@@ -176,25 +201,28 @@
 
         <div class="social-grid">
             <a href="#" class="social-card">
+                <i class="fab fa-facebook-f"></i>
                 <h3>Facebook</h3>
                 <p>Servicios en vivo</p>
             </a>
             <a href="#" class="social-card">
+                <i class="fab fa-youtube"></i>
                 <h3>YouTube</h3>
                 <p>Prédicas y Alabanzas</p>
             </a>
             <a href="#" class="social-card">
+                <i class="fab fa-instagram"></i>
                 <h3>Instagram</h3>
                 <p>Momentos y Fotos</p>
             </a>
             <a href="#" class="social-card">
+                <i class="fab fa-tiktok"></i>
                 <h3>TikTok</h3>
                 <p>Mensajes Cortos</p>
             </a>
         </div>
 
         <div class="activities-container">
-           
             <p><small>Horarios oficiales y días de actividades del ministerio.</small></p>
         </div>
 
