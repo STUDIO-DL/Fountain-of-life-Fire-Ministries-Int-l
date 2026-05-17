@@ -1,529 +1,511 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Enviar Testimonio</title>
+<title>Enviar Testimonio</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+  rel="stylesheet"
+/>
 
-  <style>
+<style>
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
+/* ================= ORIGINAL CSS (UNCHANGED) ================= */
 
-    body{
-      font-family:'Inter',sans-serif;
-      background:#f7f9fc;
-      color:#111827;
-      min-height:100vh;
-    }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    .container{
-      width:100%;
-      max-width:1100px;
-      margin:auto;
-      padding:70px 25px;
-    }
+body{
+  font-family:'Inter',sans-serif;
+  background:#f7f9fc;
+  color:#111827;
+  min-height:100vh;
+}
 
-    /* TITULO */
+.container{
+  width:100%;
+  max-width:1100px;
+  margin:auto;
+  padding:70px 25px;
+}
 
-    .title-area{
-      text-align:center;
-      margin-bottom:70px;
-    }
+/* TITULO */
 
-    .subtitle{
-      color:#2563eb;
-      font-size:18px;
-      font-weight:700;
-      margin-bottom:15px;
-      letter-spacing:1px;
-    }
+.title-area{
+  text-align:center;
+  margin-bottom:70px;
+}
 
-    .title{
-      font-size:56px;
-      font-weight:800;
-      color:#0f172a;
-      margin-bottom:20px;
-    }
+.subtitle{
+  color:#2563eb;
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:15px;
+  letter-spacing:1px;
+}
 
-    .line{
-      width:90px;
-      height:5px;
-      background:#2563eb;
-      border-radius:20px;
-      margin:auto;
-    }
+.title{
+  font-size:56px;
+  font-weight:800;
+  color:#0f172a;
+  margin-bottom:20px;
+}
 
-    /* FORMULARIO */
+.line{
+  width:90px;
+  height:5px;
+  background:#2563eb;
+  border-radius:20px;
+  margin:auto;
+}
 
-    .form-container{
-      background:white;
-      padding:50px;
-      border-radius:24px;
-      box-shadow:0 10px 35px rgba(0,0,0,0.06);
-    }
+/* FORMULARIO */
 
-    .form-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:30px;
-    }
+.form-container{
+  background:white;
+  padding:50px;
+  border-radius:24px;
+  box-shadow:0 10px 35px rgba(0,0,0,0.06);
+}
 
-    .form-group{
-      margin-bottom:35px;
-    }
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+}
 
-    .full-width{
-      grid-column:1 / -1;
-    }
+.form-group{
+  margin-bottom:35px;
+}
 
-    label{
-      display:block;
-      margin-bottom:12px;
-      font-size:18px;
-      font-weight:600;
-      color:#1e293b;
-    }
+.full-width{
+  grid-column:1 / -1;
+}
 
-    input,
-    select,
-    textarea{
-      width:100%;
-      padding:18px 20px;
-      border:2px solid #dbe4f0;
-      border-radius:14px;
-      font-size:17px;
-      font-family:'Inter',sans-serif;
-      background:#fff;
-      transition:0.3s;
-      outline:none;
-    }
+label{
+  display:block;
+  margin-bottom:12px;
+  font-size:18px;
+  font-weight:600;
+  color:#1e293b;
+}
 
-    input:focus,
-    select:focus,
-    textarea:focus{
-      border-color:#2563eb;
-      box-shadow:0 0 0 5px rgba(37,99,235,0.10);
-    }
+input,
+select,
+textarea{
+  width:100%;
+  padding:18px 20px;
+  border:2px solid #dbe4f0;
+  border-radius:14px;
+  font-size:17px;
+  font-family:'Inter',sans-serif;
+  background:#fff;
+  transition:0.3s;
+  outline:none;
+}
 
-    textarea{
-      min-height:180px;
-      resize:none;
-    }
+input:focus,
+select:focus,
+textarea:focus{
+  border-color:#2563eb;
+  box-shadow:0 0 0 5px rgba(37,99,235,0.10);
+}
 
-    /* FILE */
+textarea{
+  min-height:180px;
+  resize:none;
+}
 
-    .file-box{
-      border:2px dashed #bfdbfe;
-      background:#f8fbff;
-      padding:35px;
-      border-radius:18px;
-      text-align:center;
-    }
+/* FILE */
 
-    .file-btn{
-      display:inline-block;
-      background:#2563eb;
-      color:white;
-      padding:15px 28px;
-      border-radius:12px;
-      cursor:pointer;
-      font-weight:600;
-      transition:0.3s;
-    }
+.file-box{
+  border:2px dashed #bfdbfe;
+  background:#f8fbff;
+  padding:35px;
+  border-radius:18px;
+  text-align:center;
+}
 
-    .file-btn:hover{
-      background:#1d4ed8;
-    }
+.file-btn{
+  display:inline-block;
+  background:#2563eb;
+  color:white;
+  padding:15px 28px;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s;
+}
 
-    .file-text{
-      margin-top:15px;
-      color:#64748b;
-      font-size:15px;
-    }
+.file-btn:hover{
+  background:#1d4ed8;
+}
 
-    .small-text{
-      margin-top:14px;
-      color:#94a3b8;
-      font-size:14px;
-    }
+.file-text{
+  margin-top:15px;
+  color:#64748b;
+  font-size:15px;
+}
 
-    /* BOTON */
+.small-text{
+  margin-top:14px;
+  color:#94a3b8;
+  font-size:14px;
+}
 
-    .button-area{
-      text-align:center;
-      margin-top:50px;
-    }
+/* BOTON */
 
-    .submit-btn{
-      background:#2563eb;
-      color:white;
-      border:none;
-      padding:18px 50px;
-      font-size:20px;
-      font-weight:700;
-      border-radius:14px;
-      cursor:pointer;
-      transition:0.3s;
-      box-shadow:0 10px 20px rgba(37,99,235,0.20);
-    }
+.button-area{
+  text-align:center;
+  margin-top:50px;
+}
 
-    .submit-btn:hover{
-      background:#1d4ed8;
-      transform:translateY(-2px);
-    }
+.submit-btn{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:18px 50px;
+  font-size:20px;
+  font-weight:700;
+  border-radius:14px;
+  cursor:pointer;
+  transition:0.3s;
+  box-shadow:0 10px 20px rgba(37,99,235,0.20);
+}
 
-    /* RESPONSIVE */
+.submit-btn:hover{
+  background:#1d4ed8;
+  transform:translateY(-2px);
+}
 
-    @media(max-width:768px){
+/* RESPONSIVE */
 
-      .title{
-        font-size:38px;
-      }
+@media(max-width:768px){
 
-      .form-container{
-        padding:30px;
-      }
+  .title{
+    font-size:38px;
+  }
 
-      .form-grid{
-        grid-template-columns:1fr;
-      }
+  .form-container{
+    padding:30px;
+  }
 
-      .full-width{
-        grid-column:auto;
-      }
+  .form-grid{
+    grid-template-columns:1fr;
+  }
 
-    }
-    .page-navbar {
-    width: 100%;
-    background: white;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    position: sticky;
-    top: 0;
-    z-index: 999;
+  .full-width{
+    grid-column:auto;
+  }
+
+}
+
+/* NAVBAR (UNCHANGED) */
+
+.page-navbar {
+  width: 100%;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .page-nav-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 18px 30px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .page-nav-links {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .page-nav-links a {
-    text-decoration: none;
-    color: #222;
-    font-weight: 600;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .page-nav-links a:hover {
-    color: #7c3aed;
+  color: #7c3aed;
 }
 
 .menu-toggle {
-    display: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #581c87;
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #581c87;
 }
 
 .menu-close {
-    display: none;
+  display: none;
 }
 
-/* MOBILE */
+/* MOBILE NAV */
 @media (max-width: 768px) {
 
-    .menu-toggle {
-        display: block;
-    }
+  .menu-toggle {
+    display: block;
+  }
 
-    .page-nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 280px;
-        height: 100vh;
-        background: #581c87;
-        flex-direction: column;
-        padding: 80px 30px;
-        transition: right 0.4s ease;
-        z-index: 1000;
-    }
+  .page-nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #581c87;
+    flex-direction: column;
+    padding: 80px 30px;
+    transition: right 0.4s ease;
+    z-index: 1000;
+  }
 
-    .page-nav-links.active {
-        right: 0;
-    }
+  .page-nav-links.active {
+    right: 0;
+  }
 
-    .page-nav-links a {
-        color: white;
-        margin: 18px 0;
-        font-size: 1.1rem;
-    }
+  .page-nav-links a {
+    color: white;
+    margin: 18px 0;
+    font-size: 1.1rem;
+  }
 
-    .menu-close {
-        display: block;
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        font-size: 1.8rem;
-        cursor: pointer;
-        color: white;
-    }
+  .menu-close {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+  }
 }
 
-  </style>
+/* ================= FOOTER (ADDED EXACT STYLE YOU WANTED) ================= */
 
+footer{
+  background:#0f172a;
+  color:white;
+  text-align:center;
+  padding:35px 20px;
+  margin-top:80px;
+}
+
+footer p{
+  opacity:0.8;
+  font-size:15px;
+}
+
+.footer-socials{
+  margin-top:18px;
+  display:flex;
+  justify-content:center;
+  gap:18px;
+}
+
+.footer-socials a{
+  font-size:18px;
+  transition:all 0.3s ease;
+  opacity:0.95;
+  filter:brightness(1.15);
+}
+
+/* Facebook */
+.footer-socials a:nth-child(1){
+  color:#1877F2;
+  text-shadow:0 0 8px rgba(24,119,242,0.45);
+}
+
+/* YouTube */
+.footer-socials a:nth-child(2){
+  color:#FF0000;
+  text-shadow:0 0 8px rgba(255,0,0,0.45);
+}
+
+/* Instagram */
+.footer-socials a:nth-child(3){
+  color:#E4405F;
+  text-shadow:0 0 8px rgba(228,64,95,0.45);
+}
+
+/* TikTok */
+.footer-socials a:nth-child(4){
+  color:#00F2EA;
+  text-shadow:0 0 8px rgba(0,242,234,0.45);
+}
+
+.footer-socials a:hover{
+  transform:translateY(-3px);
+  filter:brightness(1.35);
+}
+
+</style>
 </head>
 
 <body>
+
 <header class="page-navbar">
-    <div class="page-nav-container">
-
-        <nav class="page-nav-links" id="navLinks">
-            <div class="menu-close" id="menuClose">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-
-            <a href="#" class="active">Inicio</a>
-                <a href="#">Conocenos</a>
-                <a href="index.html#servicios" >Servicios</a>
-                <a href="ramas.html">Sucursales</a>
-                <a href="#">Visitanos</a>
-                <a href="redes_sociales1.html">Redes sociales</a>
-                <a href="testimonio.html">Testimonios</a>
-                <a href="#">Contacto</a>
-        </nav>
-
-        <div class="menu-toggle" id="mobileMenu">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-
-    </div>
-</header>
-  <div class="container">
-
-    <!-- TITULO -->
-
-    <div class="title-area">
-
-      <p class="subtitle">
-        COMPLETE EL SIGUIENTE FORMULARIO
-      </p>
-
-      <h1 class="title">
-        Envíe Su Testimonio
-      </h1>
-
-      <div class="line"></div>
-
-    </div>
-
-    <!-- FORMULARIO -->
-
-    <div class="form-container">
-
-      <form>
-
-        <div class="form-grid">
-
-          <!-- NOMBRE -->
-
-          <div class="form-group">
-
-            <label>Nombre</label>
-
-            <input
-              type="text"
-              placeholder="Ingrese su nombre"
-            >
-
-          </div>
-
-          <!-- APELLIDOS -->
-
-          <div class="form-group">
-
-            <label>Apellidos</label>
-
-            <input
-              type="text"
-              placeholder="Ingrese sus apellidos"
-            >
-
-          </div>
-
-          <!-- GENERO -->
-
-          <div class="form-group full-width">
-
-            <label>Género</label>
-
-            <select>
-
-              <option>Seleccione</option>
-              <option>Mujer</option>
-              <option>Hombre</option>
-
-            </select>
-
-          </div>
-
-          <!-- CIUDAD -->
-
-          <div class="form-group full-width">
-
-            <label>Ciudad | País</label>
-
-            <input
-              type="text"
-              placeholder="Ejemplo: Madrid, España"
-            >
-
-          </div>
-
-          <!-- EMAIL -->
-
-          <div class="form-group full-width">
-
-            <label>Correo Electrónico</label>
-
-            <input
-              type="email"
-              placeholder="correo@ejemplo.com"
-            >
-
-          </div>
-
-          <!-- FECHA -->
-
-          <div class="form-group full-width">
-
-            <label>Fecha para el Testimonio</label>
-
-            <input
-              type="date"
-            >
-
-          </div>
-
-          <!-- TESTIMONIO -->
-
-          <div class="form-group full-width">
-
-            <label>Su Testimonio</label>
-
-            <textarea
-              placeholder="Escriba aquí su testimonio..."
-            ></textarea>
-
-          </div>
-
-          <!-- FILE -->
-
-          <div class="form-group full-width">
-
-            <label>
-              Subir fotos de usted y el testimonio
-            </label>
-
-            <div class="file-box">
-
-              <input
-                type="file"
-                id="fileInput"
-                multiple
-                hidden
-              >
-
-              <label
-                for="fileInput"
-                class="file-btn"
-              >
-                Seleccionar Archivos
-              </label>
-
-              <p
-                id="fileText"
-                class="file-text"
-              >
-                Ningún archivo seleccionado
-              </p>
-
-              <p class="small-text">
-                Máximo 5 archivos • PDF • JPG • PNG • Video • 10MB por archivo
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <!-- BOTON -->
-
-        <div class="button-area">
-
-          <button
-            type="submit"
-            class="submit-btn"
-          >
-            Enviar Testimonio
-          </button>
-
-        </div>
-
-      </form>
-
+  <div class="page-nav-container">
+
+    <nav class="page-nav-links" id="navLinks">
+      <div class="menu-close" id="menuClose">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <a href="#">Inicio</a>
+      <a href="#">Conocenos</a>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="ramas.html">Sucursales</a>
+      <a href="#">Visitanos</a>
+      <a href="redes_sociales1.html">Redes sociales</a>
+      <a href="testimonio.html">Testimonios</a>
+      <a href="#">Contacto</a>
+
+    </nav>
+
+    <div class="menu-toggle" id="mobileMenu">
+      <i class="fa-solid fa-bars"></i>
     </div>
 
   </div>
+</header>
 
-  <script>
+<!-- EVERYTHING BELOW IS YOUR ORIGINAL CONTENT (UNCHANGED) -->
 
-    const input = document.getElementById("fileInput");
-    const text = document.getElementById("fileText");
+<div class="container">
 
-    input.addEventListener("change", () => {
+  <div class="title-area">
+    <p class="subtitle">COMPLETE EL SIGUIENTE FORMULARIO</p>
+    <h1 class="title">Envíe Su Testimonio</h1>
+    <div class="line"></div>
+  </div>
 
-      if(input.files.length > 0){
+  <div class="form-container">
 
-        const names = Array.from(input.files)
-          .map(file => file.name)
-          .join(", ");
+    <form>
 
-        text.textContent = names;
+      <div class="form-grid">
 
-      } else {
+        <div class="form-group">
+          <label>Nombre</label>
+          <input type="text" placeholder="Ingrese su nombre">
+        </div>
 
-        text.textContent = "Ningún archivo seleccionado";
+        <div class="form-group">
+          <label>Apellidos</label>
+          <input type="text" placeholder="Ingrese sus apellidos">
+        </div>
 
-      }
+        <div class="form-group full-width">
+          <label>Género</label>
+          <select>
+            <option>Seleccione</option>
+            <option>Mujer</option>
+            <option>Hombre</option>
+          </select>
+        </div>
 
-    });
+        <div class="form-group full-width">
+          <label>Ciudad | País</label>
+          <input type="text" placeholder="Ejemplo: Madrid, España">
+        </div>
 
-  </script>
+        <div class="form-group full-width">
+          <label>Correo Electrónico</label>
+          <input type="email" placeholder="correo@ejemplo.com">
+        </div>
+
+        <div class="form-group full-width">
+          <label>Fecha para el Testimonio</label>
+          <input type="date">
+        </div>
+
+        <div class="form-group full-width">
+          <label>Su Testimonio</label>
+          <textarea placeholder="Escriba aquí su testimonio..."></textarea>
+        </div>
+
+        <div class="form-group full-width">
+          <label>Subir fotos de usted y el testimonio</label>
+
+          <div class="file-box">
+
+            <input type="file" id="fileInput" multiple hidden>
+
+            <label for="fileInput" class="file-btn">
+              Seleccionar Archivos
+            </label>
+
+            <p id="fileText" class="file-text">
+              Ningún archivo seleccionado
+            </p>
+
+            <p class="small-text">
+              Máximo 5 archivos • PDF • JPG • PNG • Video • 10MB por archivo
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="button-area">
+        <button type="submit" class="submit-btn">
+          Enviar Testimonio
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Fountain of Life Fire Ministries Int'l.</p>
+
+  <div class="footer-socials">
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+  </div>
+</footer>
+
+<script>
+const input = document.getElementById("fileInput");
+const text = document.getElementById("fileText");
+
+input.addEventListener("change", () => {
+  if(input.files.length > 0){
+    const names = Array.from(input.files)
+      .map(file => file.name)
+      .join(", ");
+
+    text.textContent = names;
+  } else {
+    text.textContent = "Ningún archivo seleccionado";
+  }
+});
+</script>
 
 </body>
 </html>

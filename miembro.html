@@ -4,7 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Membresía | Fountain of Life</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 *{
@@ -19,28 +22,42 @@ body{
     color:#222;
 }
 
-/* HERO */
+/* HERO (clean + smaller + image support) */
 .membership-hero{
     position:relative;
-    height:500px;
-    background:
-    linear-gradient(rgba(88,28,135,0.75),rgba(15,23,42,0.8)),
-    url('YOUR-IMAGE-LINK-HERE') center/cover no-repeat;
+    height:320px;
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
     color:white;
+    overflow:hidden;
+
+    background:
+      linear-gradient(rgba(15,23,42,0.75),rgba(88,28,135,0.65)),
+      url('imgSucursal.png') center/cover no-repeat;
+}
+
+.membership-hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.25);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
 }
 
 .hero-content h1{
-    font-size:4rem;
+    font-size:3rem;
     font-weight:800;
 }
 
 .hero-content p{
-    font-size:1.2rem;
-    margin-top:10px;
+    font-size:1.1rem;
+    margin-top:8px;
 }
 
 /* WELCOME */
@@ -63,7 +80,7 @@ body{
     color:#555;
 }
 
-/* FORM */
+/* FORM (UNCHANGED VISUALLY) */
 .form-section{
     max-width:900px;
     margin:0 auto 100px;
@@ -129,69 +146,42 @@ button{
 button:hover{
     background:#6d28d9;
 }
-.menu-toggle {
-    display: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-}
 
-.menu-close {
-    display: none;
-}
-
-@media (max-width: 768px) {
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 280px;
-        height: 100vh;
-        background: #581c87;
-        display: flex;
-        flex-direction: column;
-        padding: 80px 30px;
-        transition: right 0.4s ease;
-        z-index: 1000;
-    }
-
-    .nav-links.active {
-        right: 0;
-    }
-
-    .nav-links a {
-        color: white;
-        margin: 18px 0;
-        font-size: 1.1rem;
-    }
-
-    .menu-close {
-        display: block;
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        font-size: 1.8rem;
-        cursor: pointer;
-        color: white;
-    }
-}
 .hidden{
     display:none;
 }
 
-@media(max-width:768px){
-    .hero-content h1{
-        font-size:2.5rem;
-    }
-
-    .form-section{
-        padding:30px 20px;
-    }
+/* FOOTER */
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    margin-top:80px;
 }
+
+.footer-socials{
+    margin-top:18px;
+    display:flex;
+    justify-content:center;
+    gap:18px;
+}
+
+.footer-socials a{
+    font-size:18px;
+    transition:0.3s;
+}
+
+.footer-socials a:nth-child(1){ color:#1877F2; }
+.footer-socials a:nth-child(2){ color:#E4405F; }
+.footer-socials a:nth-child(3){ color:#FF0000; }
+.footer-socials a:nth-child(4){ color:#00F2EA; }
+
+.footer-socials a:hover{
+    transform:translateY(-3px);
+}
+
+/* NAVBAR (RESTORED MENU) */
 .page-navbar {
     width: 100%;
     background: white;
@@ -277,22 +267,13 @@ button:hover{
         color: white;
     }
 }
+
 </style>
 </head>
-<script>
-const mobileMenu = document.getElementById("mobileMenu");
-const navLinks = document.getElementById("navLinks");
-const menuClose = document.getElementById("menuClose");
 
-mobileMenu.addEventListener("click", () => {
-    navLinks.classList.add("active");
-});
-
-menuClose.addEventListener("click", () => {
-    navLinks.classList.remove("active");
-});
-</script>
 <body>
+
+<!-- MENU (RESTORED) -->
 <header class="page-navbar">
     <div class="page-nav-container">
 
@@ -301,14 +282,14 @@ menuClose.addEventListener("click", () => {
                 <i class="fa-solid fa-xmark"></i>
             </div>
 
-            <a href="#" class="active">Inicio</a>
-                <a href="#">Conocenos</a>
-                <a href="index.html#servicios" >Servicios</a>
-                <a href="ramas.html">Sucursales</a>
-                <a href="#">Visitanos</a>
-                <a href="redes_sociales1.html">Redes sociales</a>
-                <a href="testimonio.html">Testimonios</a>
-                <a href="#">Contacto</a>
+            <a href="#">Inicio</a>
+            <a href="#">Conocenos</a>
+            <a href="index.html#servicios">Servicios</a>
+            <a href="ramas.html">Sucursales</a>
+            <a href="#">Visitanos</a>
+            <a href="redes_sociales1.html">Redes sociales</a>
+            <a href="testimonio.html">Testimonios</a>
+            <a href="#">Contacto</a>
         </nav>
 
         <div class="menu-toggle" id="mobileMenu">
@@ -317,6 +298,7 @@ menuClose.addEventListener("click", () => {
 
     </div>
 </header>
+
 <!-- HERO -->
 <section class="membership-hero">
     <div class="hero-content">
@@ -335,7 +317,7 @@ menuClose.addEventListener("click", () => {
     </p>
 </section>
 
-<!-- FORM -->
+<!-- FORM (UNCHANGED) -->
 <section class="form-section">
     <h3>Formulario de Membresía</h3>
 
@@ -361,7 +343,6 @@ menuClose.addEventListener("click", () => {
             <input type="tel" required>
         </div>
 
-        <!-- COUNTRY -->
         <div class="form-group">
             <label>País *</label>
             <select id="country" required>
@@ -374,9 +355,7 @@ menuClose.addEventListener("click", () => {
             </select>
         </div>
 
-        <!-- NORMAL ADDRESS -->
         <div id="normalAddress">
-
             <div class="form-group">
                 <label>Apartamento / Suite</label>
                 <input type="text">
@@ -396,12 +375,9 @@ menuClose.addEventListener("click", () => {
                 <label>Código Postal *</label>
                 <input type="text">
             </div>
-
         </div>
 
-        <!-- EQUATORIAL GUINEA -->
         <div id="equatorialAddress" class="hidden">
-
             <div class="form-group">
                 <label>Ciudad *</label>
                 <input type="text">
@@ -411,7 +387,6 @@ menuClose.addEventListener("click", () => {
                 <label>Barrio *</label>
                 <input type="text">
             </div>
-
         </div>
 
         <div class="form-group">
@@ -432,6 +407,18 @@ menuClose.addEventListener("click", () => {
     </form>
 </section>
 
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Fountain of Life Fire Ministries Int'l.</p>
+
+    <div class="footer-socials">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+</footer>
+
 <script>
 const countrySelect = document.getElementById("country");
 const normalAddress = document.getElementById("normalAddress");
@@ -445,6 +432,19 @@ countrySelect.addEventListener("change", function () {
         normalAddress.classList.remove("hidden");
         equatorialAddress.classList.add("hidden");
     }
+});
+
+/* MOBILE MENU */
+const mobileMenu = document.getElementById("mobileMenu");
+const navLinks = document.getElementById("navLinks");
+const menuClose = document.getElementById("menuClose");
+
+mobileMenu.addEventListener("click", () => {
+    navLinks.classList.add("active");
+});
+
+menuClose.addEventListener("click", () => {
+    navLinks.classList.remove("active");
 });
 </script>
 

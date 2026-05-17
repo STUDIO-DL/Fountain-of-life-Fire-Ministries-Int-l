@@ -15,6 +15,9 @@
     rel="stylesheet"
   >
 
+  <!-- FONT AWESOME (ADDED so icons work) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
 
     *{
@@ -42,12 +45,10 @@
       text-align:center;
       color:white;
 
-      /* ADDED */
       position: relative;
       overflow: hidden;
     }
 
-    /* ADDED IMAGE LAYER */
     .hero::before{
       content:"";
       position:absolute;
@@ -57,7 +58,6 @@
       z-index:0;
     }
 
-    /* ensure text stays above image */
     .hero > *{
       position: relative;
       z-index: 1;
@@ -103,8 +103,6 @@
       color:#64748b;
     }
 
-    /* CARDS */
-
     .branches{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
@@ -125,14 +123,10 @@
       box-shadow:0 18px 40px rgba(37,99,235,0.15);
     }
 
-    /* FLAG */
-
     .flag{
       font-size:55px;
       margin-bottom:25px;
     }
-
-    /* TITLE */
 
     .branch-card h3{
       font-size:32px;
@@ -140,8 +134,6 @@
       color:#0f172a;
       font-weight:700;
     }
-
-    /* INFO */
 
     .info{
       margin-bottom:18px;
@@ -162,8 +154,6 @@
       font-size:17px;
     }
 
-    /* BUTTON */
-
     .location-btn{
       display:inline-block;
       margin-top:20px;
@@ -181,7 +171,6 @@
     }
 
     /* FOOTER */
-
     footer{
       background:#0f172a;
       color:white;
@@ -195,27 +184,50 @@
       font-size:15px;
     }
 
-    /* RESPONSIVE */
-
-    @media(max-width:768px){
-
-      .hero{
-        padding:90px 20px;
-      }
-
-      .hero h1{
-        font-size:42px;
-      }
-
-      .hero p{
-        font-size:18px;
-      }
-
-      .section-title h2{
-        font-size:34px;
-      }
-
+    .footer-socials{
+      margin-top:18px;
+      display:flex;
+      justify-content:center;
+      gap:18px;
     }
+
+    .footer-socials a{
+      font-size:18px;
+      transition:all 0.3s ease;
+      opacity:0.95;
+      filter:brightness(1.15);
+    }
+
+    /* Facebook */
+    .footer-socials a:nth-child(1){
+      color:#1877F2;
+      text-shadow:0 0 8px rgba(24,119,242,0.45);
+    }
+
+    /* YouTube */
+    .footer-socials a:nth-child(2){
+      color:#FF0000;
+      text-shadow:0 0 8px rgba(255,0,0,0.45);
+    }
+
+    /* Instagram */
+    .footer-socials a:nth-child(3){
+      color:#E4405F;
+      text-shadow:0 0 8px rgba(228,64,95,0.45);
+    }
+
+    /* TikTok */
+    .footer-socials a:nth-child(4){
+      color:#00F2EA;
+      text-shadow:0 0 8px rgba(0,242,234,0.45);
+    }
+
+    .footer-socials a:hover{
+      transform:translateY(-3px);
+      filter:brightness(1.35);
+    }
+
+    /* NAV + MOBILE (UNCHANGED) */
 
     .page-navbar {
       width: 100%;
@@ -262,7 +274,6 @@
       display: none;
     }
 
-    /* MOBILE */
     @media (max-width: 768px) {
 
       .menu-toggle {
@@ -332,13 +343,13 @@ menuClose.addEventListener("click", () => {
             </div>
 
            <a href="#" class="active">Inicio</a>
-                <a href="#">Conocenos</a>
-                <a href="index.html#servicios" >Servicios</a>
-                <a href="ramas.html">Sucursales</a>
-                <a href="#">Visitanos</a>
-                <a href="redes_sociales1.html">Redes sociales</a>
-                <a href="testimonio.html">Testimonios</a>
-                <a href="#">Contacto</a>
+           <a href="#">Conocenos</a>
+           <a href="index.html#servicios">Servicios</a>
+           <a href="ramas.html">Sucursales</a>
+           <a href="#">Visitanos</a>
+           <a href="redes_sociales1.html">Redes sociales</a>
+           <a href="testimonio.html">Testimonios</a>
+           <a href="#">Contacto</a>
         </nav>
 
         <div class="menu-toggle" id="mobileMenu">
@@ -349,12 +360,9 @@ menuClose.addEventListener("click", () => {
   </header>
 
   <!-- HERO -->
-
   <section class="hero">
 
-    <h1>
-      Localizar una Sucursal
-    </h1>
+    <h1>Localiza una Sucursal</h1>
 
     <p>
       Encuentra una sucursal de Fuente de Vida cerca de ti
@@ -364,107 +372,60 @@ menuClose.addEventListener("click", () => {
   </section>
 
   <!-- CONTENT -->
-
   <section class="container">
 
     <div class="section-title">
-
-      <h2>
-        Sucursales de Fuente de Vida
-      </h2>
-
-      <p>
-        Visítanos en cualquiera de nuestras sucursales disponibles.
-      </p>
-
+      <h2>Sucursales de Fuente de Vida</h2>
+      <p>Visítanos en cualquiera de nuestras sucursales disponibles.</p>
     </div>
 
     <div class="branches">
 
-      <!-- MALABO -->
       <div class="branch-card">
-
         <div class="flag">🇬🇶</div>
-
         <h3>Malabo</h3>
 
-        <div class="info">
-          <div class="info-icon">📍</div>
-          <div class="info-text">Malabo, Guinea Ecuatorial</div>
-        </div>
-
-        <div class="info">
-          <div class="info-icon">📞</div>
-          <div class="info-text">+240 222 000 111</div>
-        </div>
-
-        <div class="info">
-          <div class="info-icon">🏛️</div>
-          <div class="info-text">Avenida Hassan II, cerca del centro de la ciudad.</div>
-        </div>
+        <div class="info"><div class="info-icon">📍</div><div class="info-text">Malabo, Guinea Ecuatorial</div></div>
+        <div class="info"><div class="info-icon">📞</div><div class="info-text">+240 222 000 111</div></div>
+        <div class="info"><div class="info-icon">🏛️</div><div class="info-text">Avenida Hassan II, cerca del centro de la ciudad.</div></div>
 
         <a href="#" class="location-btn">Ver ubicación</a>
-
       </div>
 
-      <!-- REBOLA -->
       <div class="branch-card">
-
         <div class="flag">🇬🇶</div>
-
         <h3>Rebola</h3>
 
-        <div class="info">
-          <div class="info-icon">📍</div>
-          <div class="info-text">Rebola, Guinea Ecuatorial</div>
-        </div>
-
-        <div class="info">
-          <div class="info-icon">📞</div>
-          <div class="info-text">+240 555 123 456</div>
-        </div>
-
-        <div class="info">
-          <div class="info-icon">🏛️</div>
-          <div class="info-text">Carretera principal de Rebola, junto al mercado.</div>
-        </div>
+        <div class="info"><div class="info-icon">📍</div><div class="info-text">Rebola, Guinea Ecuatorial</div></div>
+        <div class="info"><div class="info-icon">📞</div><div class="info-text">+240 555 123 456</div></div>
+        <div class="info"><div class="info-icon">🏛️</div><div class="info-text">Carretera principal de Rebola, junto al mercado.</div></div>
 
         <a href="#" class="location-btn">Ver ubicación</a>
-
       </div>
 
-      <!-- OWERRI -->
       <div class="branch-card">
-
         <div class="flag">🇳🇬</div>
-
         <h3>Owerri</h3>
 
-        <div class="info">
-          <div class="info-icon">📍</div>
-          <div class="info-text">Owerri, Nigeria</div>
-        </div>
-
-        <div class="info">
-          <div class="info-icon">📞</div>
-          <div class="info-text">+234 800 123 7890</div>
-        </div>
-
-        <div class="info">
-          <div class="info-icon">🏛️</div>
-          <div class="info-text">World Bank Road, Owerri Municipal.</div>
-        </div>
+        <div class="info"><div class="info-icon">📍</div><div class="info-text">Owerri, Nigeria</div></div>
+        <div class="info"><div class="info-icon">📞</div><div class="info-text">+234 800 123 7890</div></div>
+        <div class="info"><div class="info-icon">🏛️</div><div class="info-text">World Bank Road, Owerri Municipal.</div></div>
 
         <a href="#" class="location-btn">Ver ubicación</a>
-
       </div>
 
     </div>
-
   </section>
 
   <footer>
-    <p>© 2026 Fuente de Vida • Todos los derechos reservados</p>
+    <p>&copy; 2026 Fountain of Life Fire Ministries Int'l.</p>
+
+    <div class="footer-socials">
+        <a href="https://www.facebook.com/share/1H2aLqqfDd/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/fountain_life_fire_ministry?igsh=OTNyYWFqbzQ0ZXpk"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com/@fountainoflifefireministry?si=3IeNEo1HseiU3pUQ"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@fuente.de.vida54?_r=1&_t=ZN-96PYNLeWlNe"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
   </footer>
 
 </body>
