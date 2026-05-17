@@ -74,3 +74,33 @@ function resetAutoSlide() {
 }
 
 startAutoSlide();
+const images = ["photo1.jpg", "photo2.jpg", "photo3.jpg"];
+let current = 0;
+
+const mainImg = document.querySelector(".main-slide img");
+const miniCards = document.querySelectorAll(".mini-card img");
+
+function updateSlider(){
+    mainImg.src = images[current];
+
+    document.querySelectorAll(".mini-card").forEach(card=>{
+        card.classList.remove("active");
+    });
+
+    document.querySelectorAll(".mini-card")[current].classList.add("active");
+}
+
+document.getElementById("nextBtn").onclick = () => {
+    current = (current + 1) % images.length;
+    updateSlider();
+};
+
+document.getElementById("prevBtn").onclick = () => {
+    current = (current - 1 + images.length) % images.length;
+    updateSlider();
+};
+
+setInterval(()=>{
+    current = (current + 1) % images.length;
+    updateSlider();
+}, 4000);
