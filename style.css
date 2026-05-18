@@ -25,6 +25,7 @@
 html {
     scroll-behavior: smooth;
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -101,7 +102,6 @@ footer p {
 }
 
 .hero,
-.about-hero,
 .membership-hero,
 .hero-banner {
     min-height: calc(100vh - 104px);
@@ -109,6 +109,15 @@ footer p {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.about-hero {
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: calc(var(--nav-height) + 28px) 20px 42px;
 }
 
 /* ==========================================================================
@@ -248,14 +257,18 @@ footer p {
         padding: 8px 10px !important;
         gap: 6px !important;
         box-shadow: -6px 6px 20px rgba(0,0,0,0.06) !important;
-        transition: right 0.24s ease !important;
+        transition: right 0.24s ease, visibility 0.24s ease !important;
         overflow-y: auto !important;
         z-index: 2000 !important;
         border-radius: 8px;
+        visibility: hidden !important;
+        pointer-events: none !important;
     }
 
     .page-nav-links.active {
         right: 8px !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
     }
 
     .page-nav-links a {
@@ -524,21 +537,21 @@ footer p {
 
 .section-title {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .section-title span {
     color: var(--accent-blue);
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 2px;
+    font-size: 0.82rem;
+    letter-spacing: 0.18em;
 }
 
 .section-title h2 {
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 2.2vw, 2.1rem);
     color: var(--primary-blue);
-    margin-top: 5px;
+    margin-top: 8px;
     font-weight: 800;
 }
 
