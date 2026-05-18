@@ -527,6 +527,165 @@ footer p {
 }
 
 /* ==========================================================================
+   SECCIÓN VISIÓN (TEXTO Y IMAGEN CIRCULAR - DISEÑO MODERNO)
+   ========================================================================== */
+.vision-section {
+    width: 100%;
+    background: linear-gradient(135deg, rgba(3,37,76,0.06), rgba(0,102,204,0.03));
+    padding: 80px 20px;
+    margin: 60px 0;
+}
+
+.vision-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.vision-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.vision-text p {
+    font-size: clamp(1rem, 1.8vw, 1.1rem);
+    line-height: 1.9;
+    color: #334155;
+    margin: 0;
+    font-weight: 500;
+}
+
+.btn-read-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    width: fit-content;
+    background: linear-gradient(135deg, var(--accent-blue), #0052a3);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 24px rgba(0, 102, 204, 0.25);
+    cursor: pointer;
+    border: none;
+}
+
+.btn-read-more:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 102, 204, 0.35);
+    background: linear-gradient(135deg, #0052a3, #003d7a);
+}
+
+.vision-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vision-circular-image {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 20px 60px rgba(3, 37, 76, 0.2);
+    border: 8px solid #ffffff;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.vision-circular-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 75px rgba(3, 37, 76, 0.3);
+}
+
+@media (max-width: 1024px) {
+    .vision-container {
+        gap: 40px;
+    }
+
+    .vision-circular-image {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .vision-section {
+        padding: 45px 16px;
+        margin: 30px 0;
+    }
+
+    .vision-container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .vision-text {
+        gap: 18px;
+    }
+
+    .vision-text p {
+        font-size: 0.95rem;
+        line-height: 1.75;
+    }
+
+    .btn-read-more {
+        padding: 12px 28px;
+        font-size: 0.95rem;
+        margin-top: 8px;
+    }
+
+    .vision-circular-image {
+        width: 280px;
+        height: 280px;
+        border-width: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .vision-section {
+        padding: 35px 12px;
+        margin: 20px 0;
+    }
+
+    .vision-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .vision-text {
+        gap: 14px;
+    }
+
+    .vision-text p {
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
+    .btn-read-more {
+        padding: 11px 24px;
+        font-size: 0.9rem;
+        margin-top: 6px;
+    }
+
+    .vision-circular-image {
+        width: 240px;
+        height: 240px;
+        border-width: 5px;
+    }
+
+    .vision-image {
+        padding: 0 12px;
+    }
+}
+
+/* ==========================================================================
    SECCIÓN HORARIOS DE SERVICIO (5 TARJETAS INTERACTIVAS 3D)
    ========================================================================== */
 .services-section {
