@@ -48,6 +48,10 @@
 
       position: relative;
       overflow: hidden;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
     }
 
     .hero::before{
@@ -65,17 +69,17 @@
     }
 
     .hero h1{
-      font-size:60px;
+      font-size: clamp(2rem, 5vw, 3.2rem);
       font-weight:800;
-      margin-bottom:20px;
+      margin-bottom:12px;
     }
 
     .hero p{
-      font-size:22px;
-      max-width:800px;
-      margin:auto;
+      font-size: clamp(1rem, 2.4vw, 1.25rem);
+      max-width:760px;
+      margin: 12px auto 0;
       opacity:0.95;
-      line-height:1.7;
+      line-height:1.6;
     }
 
     /* CONTAINER */
@@ -84,7 +88,7 @@
       width:100%;
       max-width:1200px;
       margin:auto;
-      padding:90px 25px;
+      padding: calc(var(--nav-height) + 40px) 20px 40px; /* account for fixed header */
     }
 
     .section-title{
@@ -106,65 +110,93 @@
 
     .branches{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
-      gap:35px;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:20px;
     }
 
     .branch-card{
       background:white;
-      border-radius:28px;
-      padding:40px 35px;
-      border:1px solid #dbeafe;
-      box-shadow:0 10px 30px rgba(37,99,235,0.08);
-      transition:0.3s;
+      border-radius:12px;
+      padding:12px;
+      border:1px solid rgba(219,234,254,0.6);
+      box-shadow:0 8px 20px rgba(37,99,235,0.06);
+      transition:transform 0.22s ease, box-shadow 0.22s ease;
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+
+    .branch-flag{
+      flex:0 0 64px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:64px;
+      height:64px;
+      border-radius:12px;
+      background: linear-gradient(180deg,#e6f0fa,#ffffff);
+      box-shadow: inset 0 -4px 12px rgba(0,0,0,0.03);
+      font-size:32px;
+    }
+
+    .branch-content{
+      flex:1 1 auto;
+      min-width:0;
+    }
+
+    .branch-actions{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex:0 0 auto;
     }
 
     .branch-card:hover{
-      transform:translateY(-8px);
-      box-shadow:0 18px 40px rgba(37,99,235,0.15);
+      transform:translateY(-6px);
+      box-shadow:0 18px 40px rgba(37,99,235,0.12);
     }
 
     .flag{
-      font-size:55px;
-      margin-bottom:25px;
+      display:none; /* legacy element hidden when using new structure */
     }
 
     .branch-card h3{
-      font-size:32px;
-      margin-bottom:18px;
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      margin:0 0 6px 0;
       color:#0f172a;
       font-weight:700;
     }
 
     .info{
-      margin-bottom:18px;
+      margin-bottom:12px;
       display:flex;
       align-items:flex-start;
-      gap:12px;
+      gap:10px;
     }
 
     .info-icon{
-      font-size:20px;
+      font-size:16px;
       color:#2563eb;
       margin-top:2px;
     }
 
     .info-text{
       color:#475569;
-      line-height:1.7;
-      font-size:17px;
+      line-height:1.5;
+      font-size: clamp(0.88rem, 1.9vw, 1rem);
     }
 
     .location-btn{
       display:inline-block;
-      margin-top:20px;
+      margin-top:8px;
       background:#2563eb;
       color:white;
       text-decoration:none;
-      padding:14px 24px;
-      border-radius:14px;
+      padding:10px 16px;
+      border-radius:10px;
       font-weight:600;
-      transition:0.3s;
+      font-size:0.95rem;
+      transition:transform 0.18s ease;
     }
 
     .location-btn:hover{
@@ -234,9 +266,12 @@
       width: 100%;
       background: white;
       box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      position: sticky;
+      position: fixed;
       top: 0;
-      z-index: 999;
+      left: 0;
+      right: 0;
+      height: 76px;
+      z-index: 9999;
     }
 
     .page-nav-container {
@@ -281,6 +316,19 @@
         display: block;
       }
 
+      .hero{
+        padding: calc(var(--nav-height) + 28px) 14px 28px;
+        text-align: center;
+      }
+
+      .hero h1{
+        font-size: clamp(1.4rem, 6.5vw, 1.9rem);
+      }
+
+      .hero p{
+        font-size: 0.95rem;
+      }
+
       .page-nav-links {
         position: fixed;
         top: 0;
@@ -318,6 +366,30 @@
         font-size: 1.8rem;
         cursor: pointer;
         color: #111827;
+      }
+
+      .branches{
+        grid-template-columns: 1fr;
+        gap:14px;
+      }
+
+      .branch-card{
+        padding:12px;
+        border-radius:10px;
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      .branch-flag{
+        width:56px;
+        height:56px;
+        margin:0 0 8px 0;
+        align-self:flex-start;
+      }
+
+      .branch-actions{
+        margin-top:8px;
+        justify-content:flex-start;
       }
     }
 
@@ -394,36 +466,45 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="branches">
 
       <div class="branch-card">
-        <div class="flag">🇬🇶</div>
-        <h3>Malabo</h3>
+        <div class="branch-flag">🇬🇶</div>
+        <div class="branch-content">
+          <h3>Malabo</h3>
 
-        <div class="info"><div class="info-icon">📍</div><div class="info-text">Malabo, Guinea Ecuatorial</div></div>
-        <div class="info"><div class="info-icon">📞</div><div class="info-text">+240 222 000 111</div></div>
-        <div class="info"><div class="info-icon">🏛️</div><div class="info-text">Avenida Hassan II, cerca del centro de la ciudad.</div></div>
-
-        <a href="#" class="location-btn">Ver ubicación</a>
+          <div class="info"><div class="info-icon">📍</div><div class="info-text">Malabo, Guinea Ecuatorial</div></div>
+          <div class="info"><div class="info-icon">📞</div><div class="info-text">+240 222 000 111</div></div>
+          <div class="info"><div class="info-icon">🏛️</div><div class="info-text">Avenida Hassan II, cerca del centro de la ciudad.</div></div>
+        </div>
+        <div class="branch-actions">
+          <a href="#" class="location-btn">Ver ubicación</a>
+        </div>
       </div>
 
       <div class="branch-card">
-        <div class="flag">🇬🇶</div>
-        <h3>Rebola</h3>
+        <div class="branch-flag">🇬🇶</div>
+        <div class="branch-content">
+          <h3>Rebola</h3>
 
-        <div class="info"><div class="info-icon">📍</div><div class="info-text">Rebola, Guinea Ecuatorial</div></div>
-        <div class="info"><div class="info-icon">📞</div><div class="info-text">+240 555 123 456</div></div>
-        <div class="info"><div class="info-icon">🏛️</div><div class="info-text">Carretera principal de Rebola, junto al mercado.</div></div>
-
-        <a href="#" class="location-btn">Ver ubicación</a>
+          <div class="info"><div class="info-icon">📍</div><div class="info-text">Rebola, Guinea Ecuatorial</div></div>
+          <div class="info"><div class="info-icon">📞</div><div class="info-text">+240 555 123 456</div></div>
+          <div class="info"><div class="info-icon">🏛️</div><div class="info-text">Carretera principal de Rebola, junto al mercado.</div></div>
+        </div>
+        <div class="branch-actions">
+          <a href="#" class="location-btn">Ver ubicación</a>
+        </div>
       </div>
 
       <div class="branch-card">
-        <div class="flag">🇳🇬</div>
-        <h3>Owerri</h3>
+        <div class="branch-flag">🇳🇬</div>
+        <div class="branch-content">
+          <h3>Owerri</h3>
 
-        <div class="info"><div class="info-icon">📍</div><div class="info-text">Owerri, Nigeria</div></div>
-        <div class="info"><div class="info-icon">📞</div><div class="info-text">+234 800 123 7890</div></div>
-        <div class="info"><div class="info-icon">🏛️</div><div class="info-text">World Bank Road, Owerri Municipal.</div></div>
-
-        <a href="#" class="location-btn">Ver ubicación</a>
+          <div class="info"><div class="info-icon">📍</div><div class="info-text">Owerri, Nigeria</div></div>
+          <div class="info"><div class="info-icon">📞</div><div class="info-text">+234 800 123 7890</div></div>
+          <div class="info"><div class="info-icon">🏛️</div><div class="info-text">World Bank Road, Owerri Municipal.</div></div>
+        </div>
+        <div class="branch-actions">
+          <a href="#" class="location-btn">Ver ubicación</a>
+        </div>
       </div>
 
     </div>
