@@ -21,11 +21,80 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    min-height: 100%;
+}
+
 body {
     font-family: var(--font-main);
     color: var(--text-dark);
     background-color: var(--pure-white);
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.container,
+.page-main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 20px;
+}
+
+footer {
+    width: 100%;
+    background: #0f172a;
+    color: #f8fafc;
+    text-align: center;
+    padding: 28px 20px;
+    margin-top: auto;
+}
+
+footer p {
+    opacity: 0.78;
+    font-size: 0.95rem;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.footer-socials a {
+    color: #f8fafc;
+    opacity: 0.92;
+    font-size: 1.1rem;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.footer-socials a:hover {
+    transform: translateY(-2px);
+    opacity: 1;
+}
+
+.hero-slider {
+    min-height: 80vh;
+}
+
+.hero,
+.about-hero,
+.membership-hero,
+.hero-banner {
+    min-height: calc(100vh - 104px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /* ==========================================================================
