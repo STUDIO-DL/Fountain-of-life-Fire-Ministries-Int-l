@@ -6,6 +6,7 @@
 <title>Redes Sociales - Fuente de Vida</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../style.css">
 
 <style>
 :root {
@@ -205,10 +206,14 @@ h2 {
         right: -100%;
         width: 280px;
         height: 100vh;
-        background: var(--azul-principal);
+        background: #ffffff;
         flex-direction: column;
-        padding: 80px 30px;
-        transition: right 0.4s ease;
+        align-items: flex-start;
+        padding: 90px 24px 24px;
+        transition: right 0.35s ease;
+        z-index: 1000;
+        box-shadow: -10px 0 35px rgba(0,0,0,0.12);
+        overflow-y: auto;
     }
 
     .page-nav-links.active {
@@ -216,17 +221,20 @@ h2 {
     }
 
     .page-nav-links a {
-        color: white;
-        margin: 18px 0;
+        color: #111827;
+        margin: 16px 0;
+        width: 100%;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(15,23,42,0.08);
     }
 
     .menu-close {
         display: block;
         position: absolute;
-        top: 25px;
-        right: 25px;
+        top: 24px;
+        right: 24px;
         font-size: 1.8rem;
-        color: white;
+        color: #111827;
         cursor: pointer;
     }
 }
@@ -243,14 +251,13 @@ h2 {
 <i class="fa-solid fa-xmark"></i>
 </div>
 
-<a href="#" class="active">Inicio</a>
-                <a href="#">Conocenos</a>
+<a href="index.html" class="active">Inicio</a>
+                <a href="conocenos.html">Conocenos</a>
                 <a href="index.html#servicios" >Servicios</a>
                 <a href="ramas.html">Sucursales</a>
-                <a href="#">Visitanos</a>
                 <a href="redes_sociales1.html">Redes sociales</a>
                 <a href="testimonio.html">Testimonios</a>
-                <a href="#">Contacto</a>
+                <a href="contacto.html">Contacto</a>
 </nav>
 
 <div class="menu-toggle" id="mobileMenu">

@@ -6,75 +6,86 @@
     <title>Fountain of Life Fire Ministries Int'l</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="logo-area">
-                <img src="logo.png" alt="FLFM Logo" class="church-logo">
-                <div class="logo-text-style">
-                    <h1 class="brand-title">FOUNTAIN OF LIFE</h1>
-                    <p class="brand-subtitle">FIRE MINISTRIES INT'L</p>
-                </div>
-            </div>
-            
-            <nav class="nav-links" id="navLinks">
-                <div class="menu-close" id="menuClose">
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-                <a href="#" class="active">Inicio</a>
-                <a href="#">Conocenos</a>
-                <a href="index.html#servicios" >Servicios</a>
-                <a href="ramas.html">Sucursales</a>
-                <a href="#">Visitanos</a>
-                <a href="redes_sociales1.html">Redes sociales</a>
-                <a href="testimonio.html">Testimonios</a>
-                <a href="#">Contacto</a>
-            </nav>
-            
-            <div class="menu-toggle" id="mobileMenu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-    </header>
+  <header class="page-navbar">
+    <div class="page-nav-container">
 
-   <section class="hero-slider">
-    <div class="gallery-wrapper">
+        <a href="index.html" class="nav-brand">
+            <img src="../images/logo.png" alt="Fountain of Life Logo">
+            <span>Fountain of life fire ministries(N.V.C)</span>
+        </a>
 
-        <div class="gallery-track">
+        <nav class="page-nav-links" id="navLinks">
+            <button class="menu-close" id="menuClose" aria-label="Cerrar menú">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <a href="index.html">Inicio</a>
+            <a href="conocenos.html">Conócenos</a>
+            <a href="index.html#servicios">Servicios</a>
+            <a href="ramas.html">Sucursales</a>
+            <a href="redes_sociales1.html">Redes Sociales</a>
+            <a href="testimonio.html">Testimonios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
 
-           <section class="hero-slider">
-    <div class="slider-box">
-
-        <div class="main-slide">
-            <img src="photo1.jpg" alt="Main Image">
-        </div>
-
-        <div class="side-cards">
-
-            <div class="mini-card active">
-                <img src="photo2.jpg" alt="">
-            </div>
-
-            <div class="mini-card">
-                <img src="photo3.jpg" alt="">
-            </div>
-
-            <div class="mini-card">
-                <img src="photo4.jpg" alt="">
-            </div>
-
-        </div>
-
-        <div class="slider-controls">
-            <button id="prevBtn">◀</button>
-            <button id="nextBtn">▶</button>
-        </div>
+        <button class="menu-toggle" id="mobileMenu" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
     </div>
-</section>
+</header>
+
+<section class="hero-slider">
+    <div class="hero-inner">
+        <div class="hero-copy">
+            <span class="hero-tag">Espíritu · Comunidad · Renovación</span>
+            <h1>Vive un encuentro real con Dios</h1>
+            <p>Descubre nuestros servicios, actividades y reuniones diseñadas para inspirar, sanar y renovar tu fe. Cada imagen refleja la fuerza y unidad de una familia espiritual moderna.</p>
+            <div class="hero-actions">
+                <a href="miembro.html" class="btn-primary">Únete ahora</a>
+                <a href="ramas.html" class="btn-secondary">Encuentra una rama</a>
+            </div>
+        </div>
+        <div class="hero-gallery">
+            <div class="gallery-scroll">
+                <article class="gallery-card">
+                    <img src="../images/photo1.jpg" alt="Servicio de adoración en vivo">
+                    <div class="card-overlay"></div>
+                    <div class="card-copy">
+                        <span>Servicio en Vivo</span>
+                        <h3>Adoración transformadora</h3>
+                    </div>
+                </article>
+                <article class="gallery-card">
+                    <img src="../images/photo2.jpg" alt="Estudio bíblico comunitario">
+                    <div class="card-overlay"></div>
+                    <div class="card-copy">
+                        <span>Encuentro</span>
+                        <h3>Estudio Bíblico</h3>
+                    </div>
+                </article>
+                <article class="gallery-card">
+                    <img src="../images/photo3.jpg" alt="Servicio de sanación">
+                    <div class="card-overlay"></div>
+                    <div class="card-copy">
+                        <span>Sanación</span>
+                        <h3>Poder y libertad</h3>
+                    </div>
+                </article>
+                <article class="gallery-card">
+                    <img src="../images/photo4.jpg" alt="Reunión juvenil vibrante">
+                    <div class="card-overlay"></div>
+                    <div class="card-copy">
+                        <span>Juventud</span>
+                        <h3>Conexión y vida</h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
 </section>
 
     <section class="services-section" id="servicios">
@@ -255,6 +266,6 @@
     </div>
 </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
