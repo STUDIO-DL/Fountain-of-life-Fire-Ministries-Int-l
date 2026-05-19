@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" translate="no">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -276,28 +276,40 @@ footer p{
 </style>
 </head>
 
-<body>
+<body data-page="testimonio">
 
 <header class="page-navbar">
   <div class="page-nav-container">
 
     <a href="../index.html" class="nav-brand">
       <img src="../images/logo.png" alt="Fountain of Life Logo">
-      <span>Fountain of life fire ministries(N.V.C)</span>
+      <span data-i18n-key="common.brand">Fuente de Vida Ministerio de Fuego</span>
     </a>
+
+    <div class="lang-switcher">
+      <button id="langToggle" class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+        <span class="lang-flag">🇪🇸</span>
+        <span class="lang-label">ES</span>
+      </button>
+      <div id="langMenu" class="lang-menu" role="menu">
+        <button class="lang-option" type="button" data-lang="en">🇬🇧 English</button>
+        <button class="lang-option" type="button" data-lang="es">🇪🇸 Español</button>
+        <button class="lang-option" type="button" data-lang="fr">🇫🇷 Français</button>
+      </div>
+    </div>
 
     <nav class="page-nav-links" id="navLinks">
       <button class="menu-close" id="menuClose" aria-label="Cerrar menú">
         <i class="fa-solid fa-xmark"></i>
       </button>
 
-      <a href="../index.html">Inicio</a>
-      <a href="conocenos.html">Conocenos</a>
-      <a href="../index.html#servicios">Servicios</a>
-      <a href="ramas.html">Sucursales</a>
-      <a href="redes_sociales1.html">Redes sociales</a>
-      <a href="testimonio.html" class="active">Testimonios</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="../index.html" data-i18n-key="nav.home">Inicio</a>
+      <a href="conocenos.html" data-i18n-key="nav.about">Conocenos</a>
+      <a href="../index.html#servicios" data-i18n-key="nav.services">Servicios</a>
+      <a href="ramas.html" data-i18n-key="nav.branches">Sucursales</a>
+      <a href="redes_sociales1.html" data-i18n-key="nav.social">Redes sociales</a>
+      <a href="testimonio.html" class="active" data-i18n-key="nav.testimony">Testimonios</a>
+      <a href="contacto.html" data-i18n-key="nav.contact">Contacto</a>
 
     </nav>
 
@@ -313,8 +325,8 @@ footer p{
 <div class="container">
 
   <div class="title-area">
-    <p class="subtitle">COMPLETE EL SIGUIENTE FORMULARIO</p>
-    <h1 class="title">Envíe Su Testimonio</h1>
+    <p class="subtitle" data-i18n-key="testimonio.pageSubtitle">COMPLETE EL SIGUIENTE FORMULARIO</p>
+    <h1 class="title" data-i18n-key="testimonio.pageTitle">Envíe Su Testimonio</h1>
     <div class="line"></div>
   </div>
 
@@ -325,60 +337,60 @@ footer p{
       <div class="form-grid">
 
         <div class="form-group">
-          <label>Nombre</label>
-          <input type="text" placeholder="Ingrese su nombre">
+          <label data-i18n-key="testimonio.labelName">Nombre</label>
+          <input type="text" placeholder="Ingrese su nombre" data-i18n-key="testimonio.labelName" data-i18n-attr="placeholder">
         </div>
 
         <div class="form-group">
-          <label>Apellidos</label>
-          <input type="text" placeholder="Ingrese sus apellidos">
+          <label data-i18n-key="testimonio.labelSurname">Apellidos</label>
+          <input type="text" placeholder="Ingrese sus apellidos" data-i18n-key="testimonio.labelSurname" data-i18n-attr="placeholder">
         </div>
 
         <div class="form-group full-width">
-          <label>Género</label>
+          <label data-i18n-key="testimonio.labelGender">Género</label>
           <select>
-            <option>Seleccione</option>
-            <option>Mujer</option>
-            <option>Hombre</option>
+            <option data-i18n-key="testimonio.optionSelectGender">Seleccione</option>
+            <option data-i18n-key="testimonio.optionFemale">Mujer</option>
+            <option data-i18n-key="testimonio.optionMale">Hombre</option>
           </select>
         </div>
 
         <div class="form-group full-width">
-          <label>Ciudad | País</label>
-          <input type="text" placeholder="Ejemplo: Madrid, España">
+          <label data-i18n-key="testimonio.labelCityCountry">Ciudad | País</label>
+          <input type="text" placeholder="Ejemplo: Madrid, España" data-i18n-key="testimonio.labelCityCountry" data-i18n-attr="placeholder">
         </div>
 
         <div class="form-group full-width">
-          <label>Correo Electrónico</label>
-          <input type="email" placeholder="correo@ejemplo.com">
+          <label data-i18n-key="testimonio.labelEmail">Correo Electrónico</label>
+          <input type="email" placeholder="correo@ejemplo.com" data-i18n-key="testimonio.labelEmail" data-i18n-attr="placeholder">
         </div>
 
         <div class="form-group full-width">
-          <label>Fecha para el Testimonio</label>
+          <label data-i18n-key="testimonio.labelDate">Fecha para el Testimonio</label>
           <input type="date">
         </div>
 
         <div class="form-group full-width">
-          <label>Su Testimonio</label>
-          <textarea placeholder="Escriba aquí su testimonio..."></textarea>
+          <label data-i18n-key="testimonio.labelTestimony">Su Testimonio</label>
+          <textarea placeholder="Escriba aquí su testimonio..." data-i18n-key="testimonio.textareaPlaceholder" data-i18n-attr="placeholder"></textarea>
         </div>
 
         <div class="form-group full-width">
-          <label>Subir fotos de usted y el testimonio</label>
+          <label data-i18n-key="testimonio.labelUpload">Subir fotos de usted y el testimonio</label>
 
           <div class="file-box">
 
             <input type="file" id="fileInput" multiple hidden>
 
-            <label for="fileInput" class="file-btn">
+            <label for="fileInput" class="file-btn" data-i18n-key="testimonio.buttonText">
               Seleccionar Archivos
             </label>
 
-            <p id="fileText" class="file-text">
+            <p id="fileText" class="file-text" data-i18n-key="testimonio.noFilesText">
               Ningún archivo seleccionado
             </p>
 
-            <p class="small-text">
+            <p class="small-text" data-i18n-key="testimonio.fileNote">
               Máximo 5 archivos • PDF • JPG • PNG • Video • 10MB por archivo
             </p>
 
@@ -389,7 +401,7 @@ footer p{
       </div>
 
       <div class="button-area">
-        <button type="submit" class="submit-btn">
+        <button type="submit" class="submit-btn" data-i18n-key="testimonio.buttonText">
           Enviar Testimonio
         </button>
       </div>
@@ -401,7 +413,7 @@ footer p{
 </div>
 
 <footer>
-  <p>&copy; 2026 Fountain of Life Fire Ministries Int'l.</p>
+  <p data-i18n-key="common.copyright">&copy; 2026 Fountain of Life Fire Ministries Int'l.</p>
 
   <div class="footer-socials">
     <a href="https://www.facebook.com/share/1H2aLqqfDd/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
@@ -428,6 +440,7 @@ input.addEventListener("change", () => {
 });
 </script>
 
+  <script src="../script.js" defer></script>
 </body>
 </html>
 

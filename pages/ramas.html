@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" translate="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,52 +35,31 @@
 
     /* HERO */
 
-    .hero{
-      background:linear-gradient(
-        135deg,
-        #0f4cbd,
-        #2563eb
-      );
-
-      padding:120px 20px;
-      text-align:center;
-      color:white;
-
-      position: relative;
-      overflow: hidden;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-    }
-
-    .hero::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:url("../images/imgSucursal.png") center/cover no-repeat;
-      opacity:0.25;
-      z-index:0;
-    }
-
-    .hero > *{
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero h1{
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight:800;
-      margin-bottom:12px;
-    }
-
-    .hero p{
-      font-size: clamp(1rem, 2.4vw, 1.25rem);
-      max-width:760px;
-      margin: 12px auto 0;
-      opacity:0.95;
-      line-height:1.6;
-    }
+    .about-hero {
+            background: linear-gradient(135deg, rgba(3,37,76,0.92), rgba(0,102,204,0.82));
+            color: #ffffff;
+            padding: 24px 18px 28px;
+            max-width: 920px;
+            margin: 0 auto;
+            border-radius: 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .about-hero h1 {
+            font-size: clamp(1.8rem, 4.4vw, 2.8rem);
+            margin-bottom: 12px;
+            line-height: 1.08;
+        }
+        .about-hero p {
+            max-width: 760px;
+            margin: 0 auto 0;
+            font-size: clamp(0.98rem, 1.8vw, 1.05rem);
+            color: rgba(255,255,255,0.92);
+            line-height: 1.6;
+        }
 
     /* CONTAINER */
 
@@ -269,17 +248,16 @@
     /* NAV + MOBILE styling is now handled by the shared style.css global header rules. */
 
     @media (max-width: 768px) {
-      .hero{
-        padding: calc(var(--nav-height) + 28px) 14px 28px;
-        text-align: center;
+      .about-hero {
+        padding: calc(var(--nav-height) + 22px) 12px 28px;
       }
 
-      .hero h1{
-        font-size: clamp(1.4rem, 6.5vw, 1.9rem);
+      .about-hero h1{
+        font-size: clamp(1.8rem, 4.4vw, 2.8rem);
       }
 
-      .hero p{
-        font-size: 0.95rem;
+      .about-hero p{
+        font-size: clamp(0.98rem, 1.8vw, 1.05rem);
       }
 
       .branches{
@@ -326,28 +304,40 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 </script>
-<body>
+<body data-page="ramas">
 
   <header class="page-navbar">
     <div class="page-nav-container">
 
         <a href="../index.html" class="nav-brand">
             <img src="../images/logo.png" alt="Fountain of Life Logo">
-            <span>Fountain of life fire ministries(N.V.C)</span>
+            <span data-i18n-key="common.brand">Fuente de Vida Ministerio de Fuego</span>
         </a>
+
+        <div class="lang-switcher">
+            <button id="langToggle" class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="lang-flag">🇪🇸</span>
+                <span class="lang-label">ES</span>
+            </button>
+            <div id="langMenu" class="lang-menu" role="menu">
+                <button class="lang-option" type="button" data-lang="en">🇬🇧 English</button>
+                <button class="lang-option" type="button" data-lang="es">🇪🇸 Español</button>
+                <button class="lang-option" type="button" data-lang="fr">🇫🇷 Français</button>
+            </div>
+        </div>
 
         <nav class="page-nav-links" id="navLinks">
             <button class="menu-close" id="menuClose" aria-label="Cerrar menú">
                 <i class="fa-solid fa-xmark"></i>
             </button>
 
-            <a href="../index.html">Inicio</a>
-            <a href="conocenos.html">Conocenos</a>
-            <a href="../index.html#servicios">Servicios</a>
-            <a href="ramas.html" class="active">Sucursales</a>
-            <a href="redes_sociales1.html">Redes sociales</a>
-            <a href="testimonio.html">Testimonios</a>
-            <a href="contacto.html">Contacto</a>
+            <a href="../index.html" data-i18n-key="nav.home">Inicio</a>
+            <a href="conocenos.html" data-i18n-key="nav.about">Conocenos</a>
+            <a href="../index.html#servicios" data-i18n-key="nav.services">Servicios</a>
+            <a href="ramas.html" class="active" data-i18n-key="nav.branches">Sucursales</a>
+            <a href="redes_sociales1.html" data-i18n-key="nav.social">Redes sociales</a>
+            <a href="testimonio.html" data-i18n-key="nav.testimony">Testimonios</a>
+            <a href="contacto.html" data-i18n-key="nav.contact">Contacto</a>
         </nav>
 
         <button class="menu-toggle" id="mobileMenu" aria-label="Abrir menú">
@@ -358,11 +348,11 @@ document.addEventListener("DOMContentLoaded", function () {
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="about-hero">
 
-    <h1>Localiza una Sucursal</h1>
+    <h1 data-i18n-key="ramas.heroTitle">Localiza una Sucursal</h1>
 
-    <p>
+    <p data-i18n-key="ramas.heroText">
       Encuentra una sucursal de Fuente de Vida cerca de ti
       y acompáñanos en adoración y crecimiento espiritual.
     </p>
@@ -373,8 +363,8 @@ document.addEventListener("DOMContentLoaded", function () {
   <section class="container">
 
     <div class="section-title">
-      <h2>Sucursales de Fuente de Vida</h2>
-      <p>Visítanos en cualquiera de nuestras sucursales disponibles.</p>
+      <h2 data-i18n-key="ramas.branchesTitle">Sucursales de Fuente de Vida</h2>
+      <p data-i18n-key="ramas.branchesText">Visítanos en cualquiera de nuestras sucursales disponibles.</p>
     </div>
 
     <div class="branches">
@@ -384,12 +374,12 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="branch-content">
           <h3>Malabo</h3>
 
-          <div class="info"><div class="info-icon">📍</div><div class="info-text">Malabo, Guinea Ecuatorial</div></div>
-          <div class="info"><div class="info-icon">📞</div><div class="info-text">+240 222 000 111</div></div>
-          <div class="info"><div class="info-icon">🏛️</div><div class="info-text">Avenida Hassan II, cerca del centro de la ciudad.</div></div>
+          <div class="info"><div class="info-icon">📍</div><div class="info-text" data-i18n-key="ramas.branch1.location">Malabo, Guinea Ecuatorial</div></div>
+          <div class="info"><div class="info-icon">📞</div><div class="info-text" data-i18n-key="ramas.branch1.phone">+240 222 000 111</div></div>
+          <div class="info"><div class="info-icon">🏛️</div><div class="info-text" data-i18n-key="ramas.branch1.address">Avenida Hassan II, cerca del centro de la ciudad.</div></div>
         </div>
         <div class="branch-actions">
-          <a href="#" class="location-btn">Ver ubicación</a>
+          <a href="#" class="location-btn" data-i18n-key="ramas.locationBtn">Ver ubicación</a>
         </div>
       </div>
 
@@ -398,12 +388,12 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="branch-content">
           <h3>Rebola</h3>
 
-          <div class="info"><div class="info-icon">📍</div><div class="info-text">Rebola, Guinea Ecuatorial</div></div>
-          <div class="info"><div class="info-icon">📞</div><div class="info-text">+240 555 123 456</div></div>
-          <div class="info"><div class="info-icon">🏛️</div><div class="info-text">Carretera principal de Rebola, junto al mercado.</div></div>
+          <div class="info"><div class="info-icon">📍</div><div class="info-text" data-i18n-key="ramas.branch2.location">Rebola, Guinea Ecuatorial</div></div>
+          <div class="info"><div class="info-icon">📞</div><div class="info-text" data-i18n-key="ramas.branch2.phone">+240 555 123 456</div></div>
+          <div class="info"><div class="info-icon">🏛️</div><div class="info-text" data-i18n-key="ramas.branch2.address">Carretera principal de Rebola, junto al mercado.</div></div>
         </div>
         <div class="branch-actions">
-          <a href="#" class="location-btn">Ver ubicación</a>
+          <a href="#" class="location-btn" data-i18n-key="ramas.locationBtn">Ver ubicación</a>
         </div>
       </div>
 
@@ -412,12 +402,12 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="branch-content">
           <h3>Owerri</h3>
 
-          <div class="info"><div class="info-icon">📍</div><div class="info-text">Owerri, Nigeria</div></div>
-          <div class="info"><div class="info-icon">📞</div><div class="info-text">+234 800 123 7890</div></div>
-          <div class="info"><div class="info-icon">🏛️</div><div class="info-text">World Bank Road, Owerri Municipal.</div></div>
+          <div class="info"><div class="info-icon">📍</div><div class="info-text" data-i18n-key="ramas.branch3.location">Owerri, Nigeria</div></div>
+          <div class="info"><div class="info-icon">📞</div><div class="info-text" data-i18n-key="ramas.branch3.phone">+234 800 123 7890</div></div>
+          <div class="info"><div class="info-icon">🏛️</div><div class="info-text" data-i18n-key="ramas.branch3.address">World Bank Road, Owerri Municipal.</div></div>
         </div>
         <div class="branch-actions">
-          <a href="#" class="location-btn">Ver ubicación</a>
+          <a href="#" class="location-btn" data-i18n-key="ramas.locationBtn">Ver ubicación</a>
         </div>
       </div>
 
@@ -425,8 +415,7 @@ document.addEventListener("DOMContentLoaded", function () {
   </section>
 
   <footer>
-    <p>&copy; 2026 Fountain of Life Fire Ministries Int'l.</p>
-
+    <p data-i18n-key="common.copyright">&copy; 2026 Fountain of Life Fire Ministries Int'l.</p>
     <div class="footer-socials">
         <a href="https://www.facebook.com/share/1H2aLqqfDd/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/fountain_life_fire_ministry?igsh=OTNyYWFqbzQ0ZXpk"><i class="fa-brands fa-instagram"></i></a>
@@ -435,6 +424,7 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
   </footer>
 
+  <script src="../script.js" defer></script>
 </body>
 </html>
 

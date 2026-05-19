@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
             color: #ffffff;
             padding: 24px 18px 28px;
             max-width: 920px;
-            margin: calc(var(--nav-height) + 16px) auto 0;
+            margin: 0 auto;
             border-radius: 24px;
             text-align: center;
             display: flex;
@@ -82,82 +82,95 @@
         }
     </style>
 </head>
-<body>
+<body data-page="conocenos">
     <header class="page-navbar">
         <div class="page-nav-container">
             <a href="../index.html" class="nav-brand">
                 <img src="../images/logo.png" alt="Fountain of Life Logo">
-                <span>Fountain of life fire ministries(N.V.C)</span>
+                <span data-i18n-key="common.brand">Fuente de Vida Ministerio de Fuego</span>
             </a>
+            <div class="lang-switcher">
+                <button id="langToggle" class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="lang-flag">🇪🇸</span>
+                    <span class="lang-label">ES</span>
+                </button>
+                <div id="langMenu" class="lang-menu" role="menu">
+                    <button class="lang-option" type="button" data-lang="en">🇬🇧 English</button>
+                    <button class="lang-option" type="button" data-lang="es">🇪🇸 Español</button>
+                    <button class="lang-option" type="button" data-lang="fr">🇫🇷 Français</button>
+                </div>
+            </div>
             <nav class="page-nav-links" id="navLinks">
                 <button class="menu-close" id="menuClose" aria-label="Cerrar menú"><i class="fa-solid fa-xmark"></i></button>
-                <a href="../index.html">Inicio</a>
-                <a href="conocenos.html" class="active">Conócenos</a>
-                <a href="../index.html#servicios">Servicios</a>
-                <a href="ramas.html">Sucursales</a>
-                <a href="redes_sociales1.html">Redes Sociales</a>
-                <a href="testimonio.html">Testimonios</a>
-                <a href="contacto.html">Contacto</a>
+                <a href="../index.html" data-i18n-key="nav.home">Inicio</a>
+                <a href="conocenos.html" class="active" data-i18n-key="nav.about">Conócenos</a>
+                <a href="../index.html#servicios" data-i18n-key="nav.services">Servicios</a>
+                <a href="ramas.html" data-i18n-key="nav.branches">Sucursales</a>
+                <a href="redes_sociales1.html" data-i18n-key="nav.social">Redes Sociales</a>
+                <a href="testimonio.html" data-i18n-key="nav.testimony">Testimonios</a>
+                <a href="contacto.html" data-i18n-key="nav.contact">Contacto</a>
             </nav>
             <button class="menu-toggle" id="mobileMenu" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
 
     <section class="about-hero">
-        <h1>Conócenos</h1>
-        <p>Somos una familia espiritual llamada a predicar salvación demostrando el poder de Dios. Aquí descubrirás quiénes somos, por qué existimos y cómo trabajamos para restaurar destinos en el nombre de Jesucristo.</p>
+        <h1 data-i18n-key="conocenos.heroTitle">Conócenos</h1>
+        <p data-i18n-key="conocenos.heroText">Somos una familia espiritual llamada a predicar salvación demostrando el poder de Dios. Aquí descubrirás quiénes somos, por qué existimos y cómo trabajamos para restaurar destinos en el nombre de Jesucristo.</p>
     </section>
 
     <main class="about-content">
         <section class="about-section">
-            <h2>1. Quiénes somos</h2>
-            <p>Somos <span class="highlight">Fuente de Vida, Ministerio de Fuego</span>, la iglesia de Cristo encomendada a predicar salvación demostrando el poder de Dios. No somos solo un lugar de reunión: somos una casa donde la Palabra se predica y el poder de Dios se manifiesta para transformar vidas reales.</p>
+            <h2 data-i18n-key="conocenos.section1Title">1. Quiénes somos</h2>
+            <p>
+                <span class="highlight" data-i18n-key="conocenos.section1Highlight">Fuente de Vida, Ministerio de Fuego</span>, 
+                <span data-i18n-key="conocenos.section1Text">la iglesia de Cristo encomendada a predicar salvación demostrando el poder de Dios. No somos solo un lugar de reunión: somos una casa donde la Palabra se predica y el poder de Dios se manifiesta para transformar vidas reales.</span>
+            </p>
         </section>
 
         <section class="about-section">
-            <h2>2. Por qué existimos / Nuestra misión</h2>
-            <p>Nuestra misión es <span class="highlight">revelar a Jesús y restaurar el destino de la gente</span>. Vimos que muchos conocen de Dios de lejos, pero no experimentan su poder para salir de la opresión, sanar sus familias y caminar en propósito. Por eso traemos la palabra de salvación enfocada en liberación, prosperidad y el establecimiento de matrimonios conforme al diseño de Dios.</p>
+            <h2 data-i18n-key="conocenos.section2Title">2. Por qué existimos / Nuestra misión</h2>
+            <p><span class="highlight" data-i18n-key="conocenos.section2Highlight">Nuestra misión es revelar a Jesús y restaurar el destino de la gente</span>. <span data-i18n-key="conocenos.section2Text">Vimos que muchos conocen de Dios de lejos, pero no experimentan su poder para salir de la opresión, sanar sus familias y caminar en propósito. Por eso traemos la palabra de salvación enfocada en liberación, prosperidad y el establecimiento de matrimonios conforme al diseño de Dios.</span></p>
         </section>
 
         <section class="about-section">
-            <h2>3. Qué nos distingue</h2>
-            <p>Esto es lo que nos mueve diferente a otros ministerios:</p>
+            <h2 data-i18n-key="conocenos.section3Title">3. Qué nos distingue</h2>
+            <p data-i18n-key="conocenos.section3Text">Esto es lo que nos mueve diferente a otros ministerios:</p>
             <ul>
-                <li><span class="highlight">Liberación</span>: Ministramos para romper ataduras espirituales que frenan tu avance.</li>
-                <li><span class="highlight">Prosperidad bíblica</span>: Enseñamos a caminar en provisión y propósito, no en escasez.</li>
-                <li><span class="highlight">Establecimiento de matrimonios</span>: Acompañamos a familias y parejas a restaurar su hogar según el plan de Dios.</li>
+                <li><span class="highlight" data-i18n-key="conocenos.section3Item1Highlight">Liberación</span>: <span data-i18n-key="conocenos.section3Item1Text">Ministramos para romper ataduras espirituales que frenan tu avance.</span></li>
+                <li><span class="highlight" data-i18n-key="conocenos.section3Item2Highlight">Prosperidad bíblica</span>: <span data-i18n-key="conocenos.section3Item2Text">Enseñamos a caminar en provisión y propósito, no en escasez.</span></li>
+                <li><span class="highlight" data-i18n-key="conocenos.section3Item3Highlight">Establecimiento de matrimonios</span>: <span data-i18n-key="conocenos.section3Item3Text">Acompañamos a familias y parejas a restaurar su hogar según el plan de Dios.</span></li>
             </ul>
-            <p>Todo bajo la dirección del llamado de nuestro padre espiritual.</p>
+            <p data-i18n-key="conocenos.section3Closing">Todo bajo la dirección del llamado de nuestro padre espiritual.</p>
         </section>
 
         <section class="about-section">
-            <h2>4. Liderazgo</h2>
-            <p>Estamos bajo la cobertura y dirección del padre espiritual <span class="highlight">Anthony Ifesinachi</span>. Puedes conocer más de su ministerio y palabra diaria en su cuenta oficial de Facebook: <em>Anthony Ifesinachi</em>. Creemos en la importancia de la cobertura espiritual y la paternidad en el ministerio.</p>
+            <h2 data-i18n-key="conocenos.section4Title">4. Liderazgo</h2>
+            <p><span data-i18n-key="conocenos.section4Text">Estamos bajo la cobertura y dirección del padre espiritual</span> <span class="highlight" data-i18n-key="conocenos.section4Highlight">Anthony Ifesinachi</span>. <span data-i18n-key="conocenos.section4TextRest">Puedes conocer más de su ministerio y palabra diaria en su cuenta oficial de Facebook: <em>Anthony Ifesinachi</em>. Creemos en la importancia de la cobertura espiritual y la paternidad en el ministerio.</span></p>
         </section>
 
         <section class="about-section">
-            <h2>5. Prueba de lo que creemos</h2>
-            <p>No predicamos solo teoría. Somos una iglesia donde se demuestra el poder de Dios para sanar, liberar y restaurar. Si buscas un lugar donde la fe sea práctica y visible, este es tu lugar.</p>
+            <h2 data-i18n-key="conocenos.section5Title">5. Prueba de lo que creemos</h2>
+            <p data-i18n-key="conocenos.section5Text">No predicamos solo teoría. Somos una iglesia donde se demuestra el poder de Dios para sanar, liberar y restaurar. Si buscas un lugar donde la fe sea práctica y visible, este es tu lugar.</p>
         </section>
 
         <section class="about-section">
-            <h2>6. Cómo trabajamos</h2>
+            <h2 data-i18n-key="conocenos.section6Title">6. Cómo trabajamos</h2>
             <ul>
-                <li><span class="highlight">Palabra sin adulterar</span>: Predicamos la Biblia completa, no medias verdades.</li>
-                <li><span class="highlight">Presencia de Dios primero</span>: Buscamos que cada reunión sea un encuentro real, no un show.</li>
-                <li><span class="highlight">Acompañamiento</span>: No te dejamos solo después del domingo. Te ayudamos a caminar el proceso.</li>
+                <li><span class="highlight" data-i18n-key="conocenos.section6Item1Highlight">Palabra sin adulterar</span>: <span data-i18n-key="conocenos.section6Item1Text">Predicamos la Biblia completa, no medias verdades.</span></li>
+                <li><span class="highlight" data-i18n-key="conocenos.section6Item2Highlight">Presencia de Dios primero</span>: <span data-i18n-key="conocenos.section6Item2Text">Buscamos que cada reunión sea un encuentro real, no un show.</span></li>
+                <li><span class="highlight" data-i18n-key="conocenos.section6Item3Highlight">Acompañamiento</span>: <span data-i18n-key="conocenos.section6Item3Text">No te dejamos solo después del domingo. Te ayudamos a caminar el proceso.</span></li>
             </ul>
         </section>
 
         <section class="about-section about-note">
-            <h2>7. Llamada a la acción</h2>
-            <p>Sí sientes que tu vida, tu familia o tu destino necesitan un cambio, ven a conocernos. <strong>Visítanos en nuestro próximo servicio</strong> o conéctate con la palabra de nuestro padre espiritual Anthony Ifesinachi en Facebook.</p>
+            <h2 data-i18n-key="conocenos.section7Title">7. Llamada a la acción</h2>
+            <p><span data-i18n-key="conocenos.section7TextPart1">Sí sientes que tu vida, tu familia o tu destino necesitan un cambio, ven a conocernos.</span> <strong data-i18n-key="conocenos.section7Strong">Visítanos en nuestro próximo servicio</strong> <span data-i18n-key="conocenos.section7TextPart2">o conéctate con la palabra de nuestro padre espiritual Anthony Ifesinachi en Facebook.</span></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Fountain of Life Fire Ministries Int'l.</p>
-
+        <p data-i18n-key="common.copyright">&copy; 2026 Fountain of Life Fire Ministries Int'l.</p>
         <div class="footer-socials">
             <a href="https://www.facebook.com/share/1H2aLqqfDd/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/fountain_life_fire_ministry?igsh=OTNyYWFqbzQ0ZXpk"><i class="fa-brands fa-instagram"></i></a>

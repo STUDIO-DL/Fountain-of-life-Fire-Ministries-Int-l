@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +8,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="index">
 
   <header class="page-navbar">
     <div class="page-nav-container">
 
         <a href="index.html" class="nav-brand">
             <img src="images/logo.png" alt="Fountain of Life Logo">
-            <span>Fountain of life fire ministries(N.V.C)</span>
+            <span data-i18n-key="common.brand">Fountain of Life Fire Ministry Int\'l</span>
         </a>
+
+        <div class="lang-switcher">
+            <button id="langToggle" class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="lang-flag">🇪🇸</span>
+                <span class="lang-label">ES</span>
+            </button>
+            <div id="langMenu" class="lang-menu" role="menu">
+                <button class="lang-option" type="button" data-lang="en">🇬🇧 English</button>
+                <button class="lang-option" type="button" data-lang="es">🇪🇸 Español</button>
+                <button class="lang-option" type="button" data-lang="fr">🇫🇷 Français</button>
+            </div>
+        </div>
 
         <nav class="page-nav-links" id="navLinks">
             <button class="menu-close" id="menuClose" aria-label="Cerrar menú">
                 <i class="fa-solid fa-xmark"></i>
             </button>
-            <a href="index.html">Inicio</a>
-            <a href="pages/conocenos.html">Conócenos</a>
-            <a href="index.html#servicios">Servicios</a>
-            <a href="pages/ramas.html">Sucursales</a>
-            <a href="pages/redes_sociales1.html">Redes Sociales</a>
-            <a href="pages/testimonio.html">Testimonios</a>
-            <a href="pages/contacto.html">Contacto</a>
+            <a href="index.html" data-i18n-key="nav.home">Inicio</a>
+            <a href="pages/conocenos.html" data-i18n-key="nav.about">Conócenos</a>
+            <a href="index.html#servicios" data-i18n-key="nav.services">Servicios</a>
+            <a href="pages/ramas.html" data-i18n-key="nav.branches">Sucursales</a>
+            <a href="pages/redes_sociales1.html" data-i18n-key="nav.social">Redes Sociales</a>
+            <a href="pages/testimonio.html" data-i18n-key="nav.testimony">Testimonios</a>
+            <a href="pages/contacto.html" data-i18n-key="nav.contact">Contacto</a>
         </nav>
 
         <button class="menu-toggle" id="mobileMenu" aria-label="Abrir menú">
@@ -41,12 +53,12 @@
 <section class="hero-slider">
     <div class="hero-inner">
         <div class="hero-copy">
-            <span class="hero-tag">Espíritu · Comunidad · Renovación</span>
-            <h1>Vive un encuentro real con Dios</h1>
-            <p>Descubre nuestros servicios, actividades y reuniones diseñadas para inspirar, sanar y renovar tu fe. Cada imagen refleja la fuerza y unidad de una familia espiritual moderna.</p>
+            <span class="hero-tag" data-i18n-key="index.hero.tag">Espíritu · Comunidad · Renovación</span>
+            <h1 data-i18n-key="index.hero.title">Vive un encuentro real con Dios</h1>
+            <p data-i18n-key="index.hero.text">Descubre nuestros servicios, actividades y reuniones diseñadas para inspirar, sanar y renovar tu fe. Cada imagen refleja la fuerza y unidad de una familia espiritual moderna.</p>
             <div class="hero-actions">
-                <a href="pages/miembro.html" class="btn-primary">Únete ahora</a>
-                <a href="pages/ramas.html" class="btn-secondary">Encuentra una rama</a>
+                <a href="pages/miembro.html" class="btn-primary" data-i18n-key="index.hero.btnJoin">Únete ahora</a>
+                <a href="pages/ramas.html" class="btn-secondary" data-i18n-key="index.hero.btnBranches">Encuentra una rama</a>
             </div>
         </div>
         <div class="hero-gallery">
@@ -55,32 +67,32 @@
                     <img src="images/photo1.jpg" alt="Servicio de adoración en vivo">
                     <div class="card-overlay"></div>
                     <div class="card-copy">
-                        <span>Servicio en Vivo</span>
-                        <h3>Adoración transformadora</h3>
+                        <span data-i18n-key="index.gallery.card1.tag">Servicio en Vivo</span>
+                        <h3 data-i18n-key="index.gallery.card1.title">Adoración transformadora</h3>
                     </div>
                 </article>
                 <article class="gallery-card">
                     <img src="images/photo2.jpg" alt="Estudio bíblico comunitario">
                     <div class="card-overlay"></div>
                     <div class="card-copy">
-                        <span>Encuentro</span>
-                        <h3>Estudio Bíblico</h3>
+                        <span data-i18n-key="index.gallery.card2.tag">Encuentro</span>
+                        <h3 data-i18n-key="index.gallery.card2.title">Estudio Bíblico</h3>
                     </div>
                 </article>
                 <article class="gallery-card">
                     <img src="images/photo3.jpg" alt="Servicio de sanación">
                     <div class="card-overlay"></div>
                     <div class="card-copy">
-                        <span>Sanación</span>
-                        <h3>Poder y libertad</h3>
+                        <span data-i18n-key="index.gallery.card3.tag">Sanación</span>
+                        <h3 data-i18n-key="index.gallery.card3.title">Poder y libertad</h3>
                     </div>
                 </article>
                 <article class="gallery-card">
                     <img src="images/photo4.jpg" alt="Reunión juvenil vibrante">
                     <div class="card-overlay"></div>
                     <div class="card-copy">
-                        <span>Juventud</span>
-                        <h3>Conexión y vida</h3>
+                        <span data-i18n-key="index.gallery.card4.tag">Juventud</span>
+                        <h3 data-i18n-key="index.gallery.card4.title">Conexión y vida</h3>
                     </div>
                 </article>
             </div>
@@ -91,12 +103,12 @@
     <section class="vision-section">
         <div class="vision-container">
             <div class="vision-text">
-                <p>En Fountain of Life Fire Ministries Int'l creemos en el poder transformador de la presencia de Dios.<br><br>
+                <p data-i18n-key="index.vision.text">En Fountain of Life Fire Ministries Int'l creemos en el poder transformador de la presencia de Dios.<br><br>
                 Somos una casa de adoración, restauración y avivamiento espiritual.<br><br>
                 Aquí vidas son renovadas, corazones son encendidos y destinos son restaurados.<br><br>
                 Levantamos una generación llena de fe, propósito y pasión por Cristo.<br><br>
                 Este es un lugar donde la fuente de vida nunca deja de fluir.</p>
-                <a href="pages/conocenos.html" class="btn-read-more">Leer más</a>
+                <a href="pages/conocenos.html" class="btn-read-more" data-i18n-key="index.vision.btnReadMore">Leer más</a>
             </div>
             <div class="vision-image">
                 <img src="images/IMG-20240807-WA0040.jpg" alt="Pastor y esposa" class="vision-circular-image">
@@ -106,8 +118,8 @@
 
     <section class="services-section" id="servicios">
         <div class="section-title">
-            <span>Únete a nosotros en la adoración</span>
-            <h2>Horarios De Servicio</h2>
+            <span data-i18n-key="index.services.sectionSpan">Únete a nosotros en la adoración</span>
+            <h2 data-i18n-key="index.services.sectionTitle">Horarios De Servicio</h2>
             <div class="title-divider"></div>
         </div>
 
@@ -118,14 +130,14 @@
                         <div class="icon-box">
                             <i class="fa-solid fa-church"></i>
                         </div>
-                        <h3>Servicio de Adoración Dominical</h3>
+                        <h3 data-i18n-key="index.serviceCards.card1.title">Servicio de Adoración Dominical</h3>
                     </div>
                     <div class="card-back">
-                        <h3>Servicio de Adoración Dominical</h3>
-                        <p class="timezone">Zona Horaria: GMT+1</p>
+                        <h3 data-i18n-key="index.serviceCards.card1.title">Servicio de Adoración Dominical</h3>
+                        <p class="timezone" data-i18n-key="index.serviceCards.card1.timezone">Zona Horaria: GMT+1</p>
                         <div class="time-details">
-                            <p><strong>1er Servicio:</strong> 9:00 am</p>
-                            <p><strong>2do Servicio:</strong> 12:00 pm</p>
+                            <p><strong data-i18n-key="index.serviceCards.card1.detail1Label">1er Servicio:</strong> <span data-i18n-key="index.serviceCards.card1.detail1Value">9:00 am</span></p>
+                            <p><strong data-i18n-key="index.serviceCards.card1.detail2Label">2do Servicio:</strong> <span data-i18n-key="index.serviceCards.card1.detail2Value">12:00 pm</span></p>
                         </div>
                     </div>
                 </div>
@@ -137,13 +149,13 @@
                         <div class="icon-box">
                             <i class="fa-solid fa-book-open"></i>
                         </div>
-                        <h3>Estudio Bíblico</h3>
+                        <h3 data-i18n-key="index.serviceCards.card2.title">Estudio Bíblico</h3>
                     </div>
                     <div class="card-back">
-                        <h3>Estudio Bíblico</h3>
-                        <p class="timezone">Zona Horaria: GMT+1</p>
+                        <h3 data-i18n-key="index.serviceCards.card2.title">Estudio Bíblico</h3>
+                        <p class="timezone" data-i18n-key="index.serviceCards.card2.timezone">Zona Horaria: GMT+1</p>
                         <div class="time-details">
-                            <p><strong>Cada Lunes:</strong> 5:00 pm - 6:30 pm</p>
+                            <p><strong data-i18n-key="index.serviceCards.card2.detailLabel">Cada Lunes:</strong> <span data-i18n-key="index.serviceCards.card2.detailValue">5:00 pm - 6:30 pm</span></p>
                         </div>
                     </div>
                 </div>
@@ -155,13 +167,13 @@
                         <div class="icon-box">
                             <i class="fa-solid fa-heart-pulse"></i>
                         </div>
-                        <h3>Servicio de Sanación</h3>
+                        <h3 data-i18n-key="index.serviceCards.card3.title">Servicio de Sanación</h3>
                     </div>
                     <div class="card-back">
-                        <h3>Servicio de Sanación</h3>
-                        <p class="timezone">Zona Horaria: GMT+1</p>
+                        <h3 data-i18n-key="index.serviceCards.card3.title">Servicio de Sanación</h3>
+                        <p class="timezone" data-i18n-key="index.serviceCards.card3.timezone">Zona Horaria: GMT+1</p>
                         <div class="time-details">
-                            <p><strong>Cada Martes:</strong> 9:00 am</p>
+                            <p><strong data-i18n-key="index.serviceCards.card3.detailLabel">Cada Martes:</strong> <span data-i18n-key="index.serviceCards.card3.detailValue">9:00 am</span></p>
                         </div>
                     </div>
                 </div>
@@ -173,13 +185,13 @@
                         <div class="icon-box">
                             <i class="fa-solid fa-fire-flame-curved"></i>
                         </div>
-                        <h3>Servicio de Liberación</h3>
+                        <h3 data-i18n-key="index.serviceCards.card4.title">Servicio de Liberación</h3>
                     </div>
                     <div class="card-back">
-                        <h3>Servicio de Liberación</h3>
-                        <p class="timezone">Zona Horaria: GMT+1</p>
+                        <h3 data-i18n-key="index.serviceCards.card4.title">Servicio de Liberación</h3>
+                        <p class="timezone" data-i18n-key="index.serviceCards.card4.timezone">Zona Horaria: GMT+1</p>
                         <div class="time-details">
-                            <p><strong>Cada Jueves:</strong> 5:00 pm - 6:30 pm</p>
+                            <p><strong data-i18n-key="index.serviceCards.card4.detailLabel">Cada Jueves:</strong> <span data-i18n-key="index.serviceCards.card4.detailValue">5:00 pm - 6:30 pm</span></p>
                         </div>
                     </div>
                 </div>
@@ -191,13 +203,13 @@
                         <div class="icon-box">
                             <i class="fa-solid fa-users-line"></i>
                         </div>
-                        <h3>Reunión Juvenil</h3>
+                        <h3 data-i18n-key="index.serviceCards.card5.title">Reunión Juvenil</h3>
                     </div>
                     <div class="card-back">
-                        <h3>Reunión Juvenil</h3>
-                        <p class="timezone">Zona Horaria: GMT+1</p>
+                        <h3 data-i18n-key="index.serviceCards.card5.title">Reunión Juvenil</h3>
+                        <p class="timezone" data-i18n-key="index.serviceCards.card5.timezone">Zona Horaria: GMT+1</p>
                         <div class="time-details">
-                            <p><strong>Cada Sábado:</strong> 3:00 pm</p>
+                            <p><strong data-i18n-key="index.serviceCards.card5.detailLabel">Cada Sábado:</strong> <span data-i18n-key="index.serviceCards.card5.detailValue">3:00 pm</span></p>
                         </div>
                     </div>
                 </div>
@@ -209,14 +221,14 @@
         <div class="welcome-overlay"></div>
 
         <div class="welcome-content">
-            <span class="welcome-tag">BIENVENIDO</span>
-            <h2>¿Eres Nuevo Aquí?</h2>
-            <p>
+            <span class="welcome-tag" data-i18n-key="index.welcome.tag">BIENVENIDO</span>
+            <h2 data-i18n-key="index.welcome.title">¿Eres Nuevo Aquí?</h2>
+            <p data-i18n-key="index.welcome.text">
                 Nos encantaría conocerte, acompañarte y ayudarte a dar tus 
                 primeros pasos en esta familia de fe.
             </p>
 
-            <a href="pages/miembro.html" class="welcome-btn">
+            <a href="pages/miembro.html" class="welcome-btn" data-i18n-key="index.welcome.btn">
                 Soy nuevo aquí
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
@@ -228,19 +240,40 @@
         <div class="testimony-overlay"></div>
 
         <div class="testimony-content">
-            <span class="testimony-tag">
+            <span class="testimony-tag" data-i18n-key="index.testimonyCard.tag">
                 <i class="fa-solid fa-heart"></i> VIDAS TRANSFORMADAS
             </span>
 
-            <h2>Testimonios de Fe</h2>
+            <h2 data-i18n-key="index.testimonyCard.title">Testimonios de Fe</h2>
 
-            <p>
+            <p data-i18n-key="index.testimonyCard.text">
                 Descubre historias reales de sanación, restauración y milagros 
                 que Dios ha hecho en nuestra congregación.
             </p>
 
-            <div class="testimony-link">
+            <div class="testimony-link" data-i18n-key="index.testimonyCard.link">
                 Ver testimonios
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+    </a>
+
+    <a href="pages/proximos_programas.html" class="testimony-card">
+        <div class="testimony-overlay"></div>
+
+        <div class="testimony-content">
+            <span class="testimony-tag" data-i18n-key="index.upcomingCard.tag">
+                <i class="fa-solid fa-calendar-days"></i> PRÓXIMOS EVENTOS
+            </span>
+
+            <h2 data-i18n-key="index.upcomingCard.title">Próximos Programas</h2>
+
+            <p data-i18n-key="index.upcomingCard.text">
+                Conoce los próximos programas y actividades de nuestra comunidad para unirte y crecer en la fe.
+            </p>
+
+            <div class="testimony-link" data-i18n-key="index.upcomingCard.link">
+                Ver eventos
                 <i class="fa-solid fa-arrow-right"></i>
             </div>
         </div>
@@ -252,19 +285,19 @@
         <div class="branch-overlay"></div>
 
         <div class="branch-content">
-            <span class="branch-tag">
+            <span class="branch-tag" data-i18n-key="index.branchCard.tag">
                 <i class="fa-solid fa-location-dot"></i>
                 CERCA DE TI
             </span>
 
-            <h2>Encuentra Una Rama</h2>
+            <h2 data-i18n-key="index.branchCard.title">Encuentra Una Rama</h2>
 
-            <p>
+            <p data-i18n-key="index.branchCard.text">
                 Localiza la sucursal más cercana y únete presencialmente a
                 nuestros servicios, reuniones y actividades espirituales.
             </p>
 
-            <div class="branch-link">
+            <div class="branch-link" data-i18n-key="index.branchCard.link">
                 Buscar sucursal
                 <i class="fa-solid fa-arrow-right"></i>
             </div>
@@ -272,7 +305,7 @@
     </a>
 </section>
     <footer>
-    <p>&copy; 2026 Fountain of Life Fire Ministries Int'l.</p>
+<p data-i18n-key="common.copyright">&copy; 2026 Fountain of Life Fire Ministries Int'l.</p>
 
     <div class="footer-socials">
         <a href="https://www.facebook.com/share/1H2aLqqfDd/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>

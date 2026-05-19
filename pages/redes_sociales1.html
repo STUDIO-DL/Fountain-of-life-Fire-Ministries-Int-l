@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" translate="no">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -152,28 +152,40 @@ h2 {
 </style>
 </head>
 
-<body>
+<body data-page="redes_sociales1">
 
 <header class="page-navbar">
   <div class="page-nav-container">
 
     <a href="../index.html" class="nav-brand">
       <img src="../images/logo.png" alt="Fountain of Life Logo">
-      <span>Fountain of life fire ministries(N.V.C)</span>
+      <span data-i18n-key="common.brand">Fuente de Vida Ministerio de Fuego</span>
     </a>
+
+    <div class="lang-switcher">
+      <button id="langToggle" class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+        <span class="lang-flag">🇪🇸</span>
+        <span class="lang-label">ES</span>
+      </button>
+      <div id="langMenu" class="lang-menu" role="menu">
+        <button class="lang-option" type="button" data-lang="en">🇬🇧 English</button>
+        <button class="lang-option" type="button" data-lang="es">🇪🇸 Español</button>
+        <button class="lang-option" type="button" data-lang="fr">🇫🇷 Français</button>
+      </div>
+    </div>
 
     <nav class="page-nav-links" id="navLinks">
       <button class="menu-close" id="menuClose" aria-label="Cerrar menú">
         <i class="fa-solid fa-xmark"></i>
       </button>
 
-      <a href="../index.html">Inicio</a>
-      <a href="conocenos.html">Conocenos</a>
-      <a href="../index.html#servicios">Servicios</a>
-      <a href="ramas.html">Sucursales</a>
-      <a href="redes_sociales1.html" class="active">Redes sociales</a>
-      <a href="testimonio.html">Testimonios</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="../index.html" data-i18n-key="nav.home">Inicio</a>
+      <a href="conocenos.html" data-i18n-key="nav.about">Conocenos</a>
+      <a href="../index.html#servicios" data-i18n-key="nav.services">Servicios</a>
+      <a href="ramas.html" data-i18n-key="nav.branches">Sucursales</a>
+      <a href="redes_sociales1.html" class="active" data-i18n-key="nav.social">Redes sociales</a>
+      <a href="testimonio.html" data-i18n-key="nav.testimony">Testimonios</a>
+      <a href="contacto.html" data-i18n-key="nav.contact">Contacto</a>
     </nav>
 
     <button class="menu-toggle" id="mobileMenu" aria-label="Abrir menú">
@@ -184,8 +196,8 @@ h2 {
 </header>
 
 <header class="hero-banner">
-<div class="hero-breadcrumbs">Home · Redes Sociales</div>
-<h1 class="hero-title">Conéctate Con Nosotros</h1>
+<div class="hero-breadcrumbs" data-i18n-key="redes_sociales1.heroBreadcrumbs">Home · Redes Sociales</div>
+<h1 class="hero-title" data-i18n-key="redes_sociales1.heroTitle">Conéctate Con Nosotros</h1>
 
 <div class="floating-logo-container">
 <img src="../images/logo.png" alt="Fountain of Life Logo">
@@ -195,10 +207,10 @@ h2 {
 <section class="social-section">
 <div class="container">
 
-<h2>Nuestras Plataformas Digitales</h2>
-<p class="subtitle">Sigue nuestras actividades y recibe la palabra de Dios en todo el mundo.</p>
+<h2 data-i18n-key="redes_sociales1.sectionTitle">Nuestras Plataformas Digitales</h2>
+<p class="subtitle" data-i18n-key="redes_sociales1.sectionSubtitle">Sigue nuestras actividades y recibe la palabra de Dios en todo el mundo.</p>
 
-<div class="live-notice">
+<div class="live-notice" data-i18n-key="redes_sociales1.liveNotice">
 <p><strong>• EN DIRECTO:</strong> Transmitimos nuestros servicios de fe cada semana a través de <strong>Facebook Live</strong>.</p>
 </div>
 
@@ -206,32 +218,32 @@ h2 {
 
 <a href="https://www.facebook.com/share/1H2aLqqfDd/?mibextid=wwXIfr" class="social-card">
 <i class="fa-brands fa-facebook"></i>
-<h3>Facebook</h3>
-<p>Servicios en vivo</p>
+<h3 data-i18n-key="redes_sociales1.facebookTitle">Facebook</h3>
+<p data-i18n-key="redes_sociales1.facebookText">Servicios en vivo</p>
 </a>
 
 <a href="https://youtube.com/@fountainoflifefireministry?si=3IeNEo1HseiU3pUQ" class="social-card">
 <i class="fa-brands fa-youtube"></i>
-<h3>YouTube</h3>
-<p>Prédicas y Alabanzas</p>
+<h3 data-i18n-key="redes_sociales1.youtubeTitle">YouTube</h3>
+<p data-i18n-key="redes_sociales1.youtubeText">Prédicas y Alabanzas</p>
 </a>
 
 <a href="https://www.instagram.com/fountain_life_fire_ministry?igsh=OTNyYWFqbzQ0ZXpk" class="social-card">
 <i class="fa-brands fa-instagram"></i>
-<h3>Instagram</h3>
-<p>Momentos y Fotos</p>
+<h3 data-i18n-key="redes_sociales1.instagramTitle">Instagram</h3>
+<p data-i18n-key="redes_sociales1.instagramText">Momentos y Fotos</p>
 </a>
 
 <a href="https://www.tiktok.com/@fuente.de.vida54?_r=1&_t=ZN-96PYNLeWlNe" class="social-card">
 <i class="fa-brands fa-tiktok"></i>
-<h3>TikTok</h3>
-<p>Mensajes Cortos</p>
+<h3 data-i18n-key="redes_sociales1.tiktokTitle">TikTok</h3>
+<p data-i18n-key="redes_sociales1.tiktokText">Mensajes Cortos</p>
 </a>
 
 </div>
 
 <div class="activities-container">
-<p><small>Horarios oficiales y días de actividades del ministerio.</small></p>
+<p><small data-i18n-key="redes_sociales1.activitiesText">Horarios oficiales y días de actividades del ministerio.</small></p>
 </div>
 
 </div>
@@ -251,6 +263,7 @@ navLinks.classList.remove("active");
 });
 </script>
 
+  <script src="../script.js" defer></script>
 </body>
 </html>
 
