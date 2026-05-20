@@ -597,8 +597,8 @@ footer p {
 .vision-section {
     width: 100%;
     background: linear-gradient(135deg, rgba(3,37,76,0.06), rgba(0,102,204,0.03));
-    padding: 80px 20px;
-    margin: 60px 0;
+    padding: 50px 20px;
+    margin: 40px 0;
 }
 
 .vision-container {
@@ -755,7 +755,7 @@ footer p {
    ========================================================================== */
 .services-section {
     max-width: 1200px;
-    margin: 40px auto 100px;
+    margin: 40px auto 60px;
     padding: 0 20px;
 }
 
@@ -950,7 +950,7 @@ footer {
 
 /* WELCOME CARD */
 .welcome-card-section {
-    padding: 80px 20px;
+    padding: 50px 20px;
     display: flex;
     justify-content: center;
     background: #f8fafc;
@@ -1070,7 +1070,7 @@ footer {
 }
 /* TESTIMONY CARD */
 .testimony-preview-section {
-    padding: 80px 20px;
+    padding: 50px 20px;
     background: #ffffff;
     display: flex;
     flex-direction: column;
@@ -1183,7 +1183,7 @@ footer {
 
 /* BRANCH CARD */
 .branch-section {
-    padding: 80px 20px;
+    padding: 50px 20px;
     background: #f8fafc;
     display: flex;
     justify-content: center;

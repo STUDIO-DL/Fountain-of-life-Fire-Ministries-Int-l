@@ -25,8 +25,8 @@ const translations = {
             langSpanish: 'Español',
             langFrench: 'Français',
             chooseLanguage: 'Language',
-            brand: 'Fountain of Life Fire Ministry Int\'l',
-            copyright: '© 2026 Fountain of Life Fire Ministries Int\'l.'
+            brand: "Fountain of Life Fire Ministries Int'l (N.L.C)",
+            copyright: '© 2026 Fountain of Life Fire Ministries Int\'l (N.L.C)'
         },
         nav: {
             home: 'Home',
@@ -208,7 +208,7 @@ const translations = {
             labelDate: 'Date for the Testimony *',
             labelTestimony: 'Your Testimony *',
             textareaPlaceholder: 'Write your testimony here...',
-            labelUpload: 'Upload photos of yourself and the testimony',
+            labelUpload: 'Upload files related to the testimony',
             buttonText: 'Submit Testimony',
             noFilesText: 'No file selected',
             fileNote: 'Up to 5 files • PDF • JPG • PNG • Video • 10MB per file'
@@ -229,8 +229,8 @@ const translations = {
             langSpanish: 'Español',
             langFrench: 'Français',
             chooseLanguage: 'Idioma',
-            brand: 'Fuente de Vida Ministerio de Fuego Int\'l',
-            copyright: '© 2026 Fountain of Life Fire Ministries Int\'l.'
+            brand: 'Fuente de vida ministerio de fuego int\'l',
+            copyright: '© 2026 Fountain of Life Fire Ministries Int\'l (N.L.C)'
         },
         nav: {
             home: 'Inicio',
@@ -433,8 +433,8 @@ const translations = {
             langSpanish: 'Español',
             langFrench: 'Français',
             chooseLanguage: 'Langue',
-            brand: 'Source de Vie Ministère du Feu Int\'l',
-            copyright: '© 2026 Fountain of Life Fire Ministries Int\'l.'
+            brand: 'Fontaine de Vie Ministère du Feu Int\'l (N.V.C)',
+            copyright: '© 2026 Fountain of Life Fire Ministries Int\'l (N.V.C)'
         },
         nav: {
             home: 'Accueil',
@@ -495,7 +495,7 @@ const translations = {
             branchCard: {
                 tag: 'PRÈS DE VOUS',
                 title: 'Trouvez une succursale',
-                text: 'Trouvez une succursale de Fuente de Vida près de chez vous et rejoignez-nous en adoration et en croissance spirituelle.',
+                text: 'Trouvez une succursale de Source de Vie près de chez vous et rejoignez-nous en adoration et croissance spirituelle.',
                 link: 'Rechercher une succursale'
             }
         },
@@ -503,8 +503,8 @@ const translations = {
             heroTitle: 'À propos de nous',
             heroText: 'Nous sommes une famille spirituelle appelée à prêcher le salut en démontrant la puissance de Dieu. Ici, vous découvrirez qui nous sommes, pourquoi nous existons et comment nous travaillons pour restaurer des destinées au nom de Jésus-Christ.',
             section1Title: '1. Qui nous sommes',
-            section1Text: 'Nous sommes Fuente de Vida, Ministerio de Fuego, l’église du Christ chargée de prêcher le salut en démontrant la puissance de Dieu. Nous ne sommes pas seulement un lieu de réunion : nous sommes une maison où la Parole est prêchée et la puissance de Dieu se manifeste pour transformer des vies réelles.',
-            section1Highlight: 'Fuente de Vida, Ministerio de Fuego',
+            section1Text: 'Nous sommes Source de Vie, Ministère du Feu, l\'église du Christ chargée de prêcher le salut en démontrant la puissance de Dieu. Nous ne sommes pas seulement un lieu de réunion : nous sommes une maison où la Parole est prêchée et la puissance de Dieu se manifeste pour transformer des vies réelles.',
+            section1Highlight: 'Source de Vie, Ministère du Feu',
             section2Title: '2. Pourquoi nous existons / Notre mission',
             section2Text: 'Notre mission est de révéler Jésus et de restaurer la destinée des gens. Nous avons vu que beaucoup connaissent Dieu de loin, mais n’expérimentent pas Sa puissance pour sortir de l’oppression, guérir leurs familles et marcher dans le but. C’est pourquoi nous apportons la parole de salut axée sur la délivrance, la prospérité et l’établissement des mariages selon le dessein de Dieu.',
             section2Highlight: 'Notre mission est de révéler Jésus et de restaurer la destinée des gens',
@@ -566,8 +566,8 @@ const translations = {
         },
         ramas: {
             heroTitle: 'Trouvez une succursale',
-            heroText: 'Trouvez une succursale de Fuente de Vida près de chez vous et rejoignez-nous en adoration et croissance spirituelle.',
-            branchesTitle: 'Succursales Fuente de Vida',
+            heroText: 'Trouvez une succursale de Source de Vie près de chez vous et rejoignez-nous en adoration et croissance spirituelle.',
+            branchesTitle: 'Succursales Source de Vie',
             branchesText: 'Visitez-nous dans n’importe laquelle de nos succursales disponibles.',
             branch1: {
                 location: 'Malabo, Guinée équatoriale',
