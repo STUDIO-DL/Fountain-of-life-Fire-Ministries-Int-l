@@ -14,6 +14,7 @@
   href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
   rel="stylesheet"
 />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="../style.css">
 
 <style>
@@ -376,7 +377,7 @@ footer p{
         </div>
 
         <div class="form-group full-width">
-          <label>Archivos vinculados al testimonio</label>
+          <label data-i18n-key="testimonio.labelUpload">Archivos vinculados al testimonio</label>
 
           <div class="file-box">
 
@@ -435,7 +436,13 @@ input.addEventListener("change", () => {
 
     text.textContent = names;
   } else {
-    text.textContent = "Ningún archivo seleccionado";
+    const lang = localStorage.getItem('siteLanguage') || 'es';
+    if (typeof getTranslation === 'function') {
+      const t = getTranslation(lang, 'testimonio', 'noFilesText');
+      text.textContent = t || 'Ningún archivo seleccionado';
+    } else {
+      text.textContent = 'Ningún archivo seleccionado';
+    }
   }
 });
 </script>

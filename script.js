@@ -208,7 +208,7 @@ const translations = {
             labelDate: 'Date for the Testimony *',
             labelTestimony: 'Your Testimony *',
             textareaPlaceholder: 'Write your testimony here...',
-            labelUpload: 'Upload files related to the testimony',
+            labelUpload: ' Files related to the testimony',
             buttonText: 'Submit Testimony',
             noFilesText: 'No file selected',
             fileNote: 'Up to 5 files • PDF • JPG • PNG • Video • 10MB per file'
@@ -412,7 +412,7 @@ const translations = {
             labelDate: 'Fecha para el Testimonio *',
             labelTestimony: 'Su Testimonio *',
             textareaPlaceholder: 'Escriba aquí su testimonio...',
-            labelUpload: 'Subir fotos de usted y el testimonio',
+            labelUpload: 'Archivos relacionados con el testimonio',
             buttonText: 'Enviar Testimonio',
             noFilesText: 'Ningún archivo seleccionado',
             fileNote: 'Máximo 5 archivos • PDF • JPG • PNG • Video • 10MB por archivo'
@@ -616,7 +616,7 @@ const translations = {
             labelDate: 'Date du témoignage *',
             labelTestimony: 'Votre témoignage *',
             textareaPlaceholder: 'Écrivez votre témoignage ici...',
-            labelUpload: 'Téléchargez des photos de vous et du témoignage',
+            labelUpload: 'Fichiers liés au témoignage',
             buttonText: 'Envoyer le témoignage',
             noFilesText: 'Aucun fichier sélectionné',
             fileNote: 'Jusqu’à 5 fichiers • PDF • JPG • PNG • Vidéo • 10 Mo par fichier'
@@ -713,23 +713,45 @@ function setupMenuToggle() {
     const mobileMenu = document.getElementById('mobileMenu');
     const menuClose = document.getElementById('menuClose');
     const navLinks = document.getElementById('navLinks');
+    const langMenu = document.getElementById('langMenu');
+    const langToggle = document.getElementById('langToggle');
 
     if (!mobileMenu || !menuClose || !navLinks) {
         return;
     }
 
-    mobileMenu.addEventListener('click', () => {
+    function openMenu() {
         navLinks.classList.add('active');
+        mobileMenu.setAttribute('aria-expanded', 'true');
+        menuClose.setAttribute('aria-hidden', 'false');
+        if (langMenu) {
+            langMenu.classList.remove('active');
+            if (langToggle) langToggle.setAttribute('aria-expanded', 'false');
+        }
+    }
+
+    function closeMenu() {
+        navLinks.classList.remove('active');
+        mobileMenu.setAttribute('aria-expanded', 'false');
+        menuClose.setAttribute('aria-hidden', 'true');
+    }
+
+    mobileMenu.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
     });
 
-    menuClose.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-    });
+    menuClose.addEventListener('click', closeMenu);
 
     navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-        });
+        link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeMenu();
     });
 }
 
