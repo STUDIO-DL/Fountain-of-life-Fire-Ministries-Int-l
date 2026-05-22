@@ -101,7 +101,7 @@ const translations = {
             section2Text: 'Our mission is to reveal Jesus and restore people’s destinies. We saw that many know God from afar, but do not experience His power to overcome oppression, heal their families, and walk in purpose. That is why we bring the word of salvation focused on deliverance, prosperity, and the establishment of marriages according to God’s design.',
             section2Highlight: 'Our mission is to reveal Jesus and restore people’s destinies',
             section3Title: '3. What sets us apart',
-            section3Text: 'This is what moves us differently from other ministries:',
+            section3Text: 'In line with the divine calling of our spiritual father, we work in:',
             section3Item1Highlight: 'Deliverance',
             section3Item1Text: 'We minister to break spiritual chains that hold back your progress.',
             section3Item2Highlight: 'Biblical prosperity',
@@ -163,18 +163,18 @@ const translations = {
             branchesText: 'Visit us at any of our available branches.',
             branch1: {
                 location: 'Malabo, Equatorial Guinea',
-                phone: '+240 222 000 111',
+                phone: '+222 588 652|| 222 245 201',
                 address: 'Avenida Hassan II, near the city center.'
             },
             branch2: {
                 location: 'Rebola, Equatorial Guinea',
-                phone: '+240 555 123 456',
+                phone: '222 588 652|| 222 245 201',
                 address: 'Main road in Rebola, next to the market.'
             },
             branch3: {
                 location: 'Owerri, Nigeria',
                 phone: '+234 800 123 7890',
-                address: 'World Bank Road, Owerri Municipal.'
+                address: 'NO. 6 NEKEDE OLD ROAD, OWERRI.'
             },
             locationBtn: 'View location'
         },
@@ -305,7 +305,7 @@ const translations = {
             section2Text: 'Nuestra misión es revelar a Jesús y restaurar el destino de la gente. Vimos que muchos conocen de Dios de lejos, pero no experimentan su poder para salir de la opresión, sanar sus familias y caminar en propósito. Por eso traemos la palabra de salvación enfocada en liberación, prosperidad y el establecimiento de matrimonios conforme al diseño de Dios.',
             section2Highlight: 'Nuestra misión es revelar a Jesús y restaurar el destino de la gente',
             section3Title: '3. Qué nos distingue',
-            section3Text: 'Esto es lo que nos mueve diferente a otros ministerios:',
+            section3Text: 'En línea con el llamado divino de nuestro padre espiritual, obramos en:',
             section3Item1Highlight: 'Liberación',
             section3Item1Text: 'Ministramos para romper ataduras espirituales que frenan tu avance.',
             section3Item2Highlight: 'Prosperidad bíblica',
@@ -327,8 +327,8 @@ const translations = {
             section6Item2Text: 'Buscamos que cada reunión sea un encuentro real, no un show.',
             section6Item3Highlight: 'Acompañamiento',
             section6Item3Text: 'No te dejamos solo después del domingo. Te ayudamos a caminar el proceso.',
-            section7Title: '7. Llamada a la acción',
-            section7TextPart1: 'Sí sientes que tu vida, tu familia o tu destino necesitan un cambio, ven a conocernos.',
+            section7Title: '7. Llamado a la acción',
+            section7TextPart1: 'Si sientes que tu vida, tu familia o tu destino necesitan un cambio, ven a conocernos.',
             section7Strong: 'Visítanos en nuestro próximo servicio',
             section7TextPart2: 'o conéctate con la palabra de nuestro padre espiritual Anthony Ifesinachi en Facebook.'
         },
@@ -367,18 +367,18 @@ const translations = {
             branchesText: 'Visítanos en cualquiera de nuestras sucursales disponibles.',
             branch1: {
                 location: 'Malabo, Guinea Ecuatorial',
-                phone: '+240 222 000 111',
+                phone: '222 588 652|| 222 245 201',
                 address: 'Avenida Hassan II, cerca del centro de la ciudad.'
             },
             branch2: {
                 location: 'Rebola, Guinea Ecuatorial',
-                phone: '+240 555 123 456',
+                phone: '222 588 652|| 222 245 201',
                 address: 'Carretera principal de Rebola, junto al mercado.'
             },
             branch3: {
                 location: 'Owerri, Nigeria',
-                phone: '+234 800 123 7890',
-                address: 'World Bank Road, Owerri Municipal.'
+                phone: '222 588 652|| 222 245 201',
+                address: 'NO. 6 NEKEDE OLD ROAD, OWERRI, NIGERIA.'
             },
             locationBtn: 'Ver ubicación'
         },
@@ -531,7 +531,7 @@ const translations = {
             section6Item2Text: 'Nous cherchons à ce que chaque réunion soit une rencontre réelle, pas un spectacle.',
             section6Item3Highlight: 'Accompagnement',
             section6Item3Text: 'Nous ne vous laissons pas seul après le dimanche. Nous vous aidons à marcher le processus.',
-            section7Title: '7. Appel à l’action',
+            
             section7TextPart1: 'Si vous sentez que votre vie, votre famille ou votre destinée ont besoin d’un changement, venez nous rencontrer.',
             section7Strong: 'Visitez-nous lors de notre prochain service',
             section7TextPart2: 'ou connectez-vous à la parole de notre père spirituel Rev. Anthony Ifesinachi O. sur Facebook.'
@@ -571,18 +571,18 @@ const translations = {
             branchesText: 'Visitez-nous dans n’importe laquelle de nos succursales disponibles.',
             branch1: {
                 location: 'Malabo, Guinée équatoriale',
-                phone: '+240 222 000 111',
+                phone: '222 588 652|| 222 245 201',
                 address: 'Avenida Hassan II, près du centre-ville.'
             },
             branch2: {
                 location: 'Rebola, Guinée équatoriale',
-                phone: '+240 555 123 456',
+                phone: '222 588 652|| 222 245 201',
                 address: 'Route principale de Rebola, à côté du marché.'
             },
             branch3: {
                 location: 'Owerri, Nigeria',
-                phone: '+234 800 123 7890',
-                address: 'World Bank Road, Owerri Municipal.'
+                phone: '222 588 652|| 222 245 201',
+                address: 'NO. 6 NEKEDE OLD ROAD, OWERRI, NIGERIA.'
             },
             locationBtn: 'Voir l’emplacement'
         },
