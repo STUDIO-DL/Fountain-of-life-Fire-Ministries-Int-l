@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contáctanos</title>
 
-    <!-- FUENTE -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  
+    
     <style>
 
         *{
@@ -17,27 +16,32 @@
         }
 
         body{
-            font-family: 'Poppins', sans-serif;
-            background: #f5f7fb;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fb;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+}
 
         /* CONTENEDOR */
-        .contact-container{
-            width: 100%;
-            max-width: 1100px;
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      .contact-container{
+    width: calc(100% - 40px);
+    max-width: 1100px;
 
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
+    margin: 40px auto;
+
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
         /* LADO IZQUIERDO */
         .contact-info{
@@ -159,6 +163,69 @@
 
         }
 
+
+        /*footer*/
+
+       footer{
+    width: 100%;
+
+    background:#0f172a;
+    color:white;
+
+    text-align:center;
+
+    padding:35px 20px;
+    margin-top:auto;
+}
+footer p{
+  opacity:0.8;
+  font-size:15px;
+}
+
+.footer-socials{
+  margin-top:18px;
+  display:flex;
+  justify-content:center;
+  gap:18px;
+}
+
+.footer-socials a{
+  font-size:18px;
+  transition:all 0.3s ease;
+  opacity:0.95;
+  filter:brightness(1.15);
+}
+
+/* Facebook */
+.footer-socials a:nth-child(1){
+  color:#1877F2;
+  text-shadow:0 0 8px rgba(24,119,242,0.45);
+}
+
+/* YouTube */
+.footer-socials a:nth-child(2){
+  color:#FF0000;
+  text-shadow:0 0 8px rgba(255,0,0,0.45);
+}
+
+/* Instagram */
+.footer-socials a:nth-child(3){
+  color:#E4405F;
+  text-shadow:0 0 8px rgba(228,64,95,0.45);
+}
+
+/* TikTok */
+.footer-socials a:nth-child(4){
+  color:#00F2EA;
+  text-shadow:0 0 8px rgba(0,242,234,0.45);
+}
+
+.footer-socials a:hover{
+  transform:translateY(-3px);
+  filter:brightness(1.35);
+}
+
+
     </style>
 </head>
 
@@ -183,12 +250,13 @@
 
             <div class="info-box">
                 <h4>Correo</h4>
-                <span>info@iglesia.com</span>
+                <span>fountainlifefireministries@gmail.com</span>
             </div>
 
             <div class="info-box">
                 <h4>Teléfono</h4>
-                <span>+240 222 000 000</span>
+                <span>+240 222 588 652</span>
+                <span>+240 222 245 201</span>
             </div>
 
         </div>
@@ -243,6 +311,17 @@
         </div>
 
     </div>
+
+<footer>
+<p data-i18n-key="common.copyright">&copy; 2026 Fountain of Life Fire Ministries Int'l (N.L.C)</p>
+
+  <div class="footer-socials">
+    <a href="https://www.facebook.com/share/1H2aLqqfDd/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/fountain_life_fire_ministry?igsh=OTNyYWFqbzQ0ZXpk"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://youtube.com/@fountainoflifefireministry?si=3IeNEo1HseiU3pUQ"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://www.tiktok.com/@fuente.de.vida54?_r=1&_t=ZN-96PYNLeWlNe"><i class="fa-brands fa-tiktok"></i></a>
+  </div>
+</footer>
 
 </body>
 </html>
