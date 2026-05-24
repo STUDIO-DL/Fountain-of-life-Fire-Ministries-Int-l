@@ -333,82 +333,158 @@ footer p{
 
   <div class="form-container">
 
-    <form>
+    <form action="https://formspree.io/f/xaqkdoqz" method="POST" enctype="multipart/form-data">
 
-      <div class="form-grid">
+  <div class="form-grid">
 
-        <div class="form-group">
-          <label data-i18n-key="testimonio.labelName">Nombre</label>
-          <input type="text" placeholder="Ingrese su nombre" data-i18n-key="testimonio.labelName" data-i18n-attr="placeholder">
-        </div>
+    <div class="form-group">
+      <label data-i18n-key="testimonio.labelName">Nombre</label>
+      <input 
+        type="text" 
+        name="Nombre"
+        placeholder="Ingrese su nombre"
+        data-i18n-key="testimonio.labelName" 
+        data-i18n-attr="placeholder"
+        required
+      >
+    </div>
 
-        <div class="form-group">
-          <label data-i18n-key="testimonio.labelSurname">Apellidos</label>
-          <input type="text" placeholder="Ingrese sus apellidos" data-i18n-key="testimonio.labelSurname" data-i18n-attr="placeholder">
-        </div>
+    <div class="form-group">
+      <label data-i18n-key="testimonio.labelSurname">Apellidos</label>
+      <input 
+        type="text" 
+        name="Apellidos"
+        placeholder="Ingrese sus apellidos"
+        data-i18n-key="testimonio.labelSurname" 
+        data-i18n-attr="placeholder"
+        required
+      >
+    </div>
 
-        <div class="form-group full-width">
-          <label data-i18n-key="testimonio.labelGender">Género</label>
-          <select>
-            <option data-i18n-key="testimonio.optionSelectGender">Seleccione</option>
-            <option data-i18n-key="testimonio.optionFemale">Mujer</option>
-            <option data-i18n-key="testimonio.optionMale">Hombre</option>
-          </select>
-        </div>
+    <div class="form-group full-width">
+      <label data-i18n-key="testimonio.labelGender">Género</label>
+      <select name="Genero" required>
+        <option value="" data-i18n-key="testimonio.optionSelectGender">
+          Seleccione
+        </option>
+        <option value="Mujer" data-i18n-key="testimonio.optionFemale">
+          Mujer
+        </option>
+        <option value="Hombre" data-i18n-key="testimonio.optionMale">
+          Hombre
+        </option>
+      </select>
+    </div>
 
-        <div class="form-group full-width">
-          <label data-i18n-key="testimonio.labelCityCountry">Ciudad | País</label>
-          <input type="text" placeholder="Ejemplo: Madrid, España" data-i18n-key="testimonio.labelCityCountry" data-i18n-attr="placeholder">
-        </div>
+    <div class="form-group full-width">
+      <label data-i18n-key="testimonio.labelCityCountry">Ciudad | País</label>
+      <input 
+        type="text" 
+        name="Ciudad_Pais"
+        placeholder="Ejemplo: Madrid, España"
+        data-i18n-key="testimonio.labelCityCountry" 
+        data-i18n-attr="placeholder"
+        required
+      >
+    </div>
 
-        <div class="form-group full-width">
-          <label data-i18n-key="testimonio.labelEmail">Correo Electrónico</label>
-          <input type="email" placeholder="correo@ejemplo.com" data-i18n-key="testimonio.labelEmail" data-i18n-attr="placeholder">
-        </div>
+    <div class="form-group full-width">
+      <label data-i18n-key="testimonio.labelEmail">Correo Electrónico</label>
+      <input 
+        type="email" 
+        name="Email"
+        placeholder="correo@ejemplo.com"
+        data-i18n-key="testimonio.labelEmail" 
+        data-i18n-attr="placeholder"
+        required
+      >
+    </div>
 
-        <div class="form-group full-width">
-          <label data-i18n-key="testimonio.labelDate">Fecha para el Testimonio</label>
-          <input type="date">
-        </div>
+    <div class="form-group full-width">
+      <label data-i18n-key="testimonio.labelDate">Fecha para el Testimonio</label>
+      <input type="date" name="Fecha_Testimonio" required>
+    </div>
 
-        <div class="form-group full-width">
-          <label data-i18n-key="testimonio.labelTestimony">Su Testimonio</label>
-          <textarea placeholder="Escriba aquí su testimonio..." data-i18n-key="testimonio.textareaPlaceholder" data-i18n-attr="placeholder"></textarea>
-        </div>
+    <div class="form-group full-width">
+      <label data-i18n-key="testimonio.labelTestimony">Su Testimonio</label>
+      <textarea 
+        name="Testimonio"
+        placeholder="Escriba aquí su testimonio..."
+        data-i18n-key="testimonio.textareaPlaceholder" 
+        data-i18n-attr="placeholder"
+        required
+      ></textarea>
+    </div>
 
-        <div class="form-group full-width">
-          <label data-i18n-key="testimonio.labelUpload">Archivos vinculados al testimonio</label>
+    <div class="form-group full-width">
+      <label data-i18n-key="testimonio.labelUpload">
+        Archivos vinculados al testimonio
+      </label>
 
-          <div class="file-box">
+      <div class="file-box">
 
-            <input type="file" id="fileInput" multiple hidden>
+        <input 
+          type="file" 
+          id="fileInput" 
+          name="Archivos"
+          multiple
+          hidden
+        >
 
-            <label for="fileInput" class="file-btn" data-i18n-key="testimonio.buttonText">
-              Seleccionar Archivos
-            </label>
+        <label 
+          for="fileInput" 
+          class="file-btn"
+          data-i18n-key="testimonio.buttonText"
+        >
+          Seleccionar Archivos
+        </label>
 
-            <p id="fileText" class="file-text" data-i18n-key="testimonio.noFilesText">
-              Ningún archivo seleccionado
-            </p>
+        <p 
+          id="fileText" 
+          class="file-text"
+          data-i18n-key="testimonio.noFilesText"
+        >
+          Ningún archivo seleccionado
+        </p>
 
-            <p class="small-text" data-i18n-key="testimonio.fileNote">
-              Máximo 5 archivos • PDF • JPG • PNG • Video • 10MB por archivo
-            </p>
-
-          </div>
-
-        </div>
+        <p 
+          class="small-text"
+          data-i18n-key="testimonio.fileNote"
+        >
+          Máximo 5 archivos • PDF • JPG • PNG • Video • 10MB por archivo
+        </p>
 
       </div>
 
-      <div class="button-area">
-        <button type="submit" class="submit-btn" data-i18n-key="testimonio.buttonText">
-          Enviar Testimonio
-        </button>
-      </div>
+    </div>
 
-    </form>
+  </div>
 
+  <!-- SUBJECT -->
+  <input 
+    type="hidden" 
+    name="_subject" 
+    value="Nuevo Testimonio - Fountain of Life Fire Ministries"
+  >
+
+  <!-- REDIRECT AFTER SUBMIT -->
+  <input 
+    type="hidden" 
+    name="_next" 
+    value="thankyou.html"
+  >
+
+  <div class="button-area">
+    <button 
+      type="submit" 
+      class="submit-btn"
+      data-i18n-key="testimonio.buttonText"
+    >
+      Enviar Testimonio
+    </button>
+  </div>
+
+</form>
   </div>
 
 </div>

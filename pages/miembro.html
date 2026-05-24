@@ -251,90 +251,85 @@ footer{
 <section class="form-section">
     <h3 data-i18n-key="miembro.formTitle">Formulario de Membresía</h3>
 
-    <form>
+<div class="form-group">
+            <label data-i18n-key="miembro.labelCity">
+                Ciudad *
+            </label>
 
-        <div class="form-group">
-            <label data-i18n-key="miembro.labelName">Nombre *</label>
-            <input type="text" required placeholder="" data-i18n-key="miembro.labelName" data-i18n-attr="placeholder">
+            <input 
+                type="text" 
+                name="ciudad_guinea"
+                placeholder="" 
+                data-i18n-key="miembro.labelCity" 
+                data-i18n-attr="placeholder"
+            >
         </div>
 
         <div class="form-group">
-            <label data-i18n-key="miembro.labelSurname">Apellido *</label>
-            <input type="text" required placeholder="" data-i18n-key="miembro.labelSurname" data-i18n-attr="placeholder">
+            <label data-i18n-key="miembro.labelNeighborhood">
+                Barrio *
+            </label>
+
+            <input 
+                type="text" 
+                name="barrio"
+                placeholder="" 
+                data-i18n-key="miembro.labelNeighborhood" 
+                data-i18n-attr="placeholder"
+            >
         </div>
 
-        <div class="form-group">
-            <label data-i18n-key="miembro.labelEmail">Correo Electrónico *</label>
-            <input type="email" required placeholder="" data-i18n-key="miembro.labelEmail" data-i18n-attr="placeholder">
+    </div>
+
+    <div class="form-group">
+        <label data-i18n-key="miembro.labelMemberChurch">
+            ¿Es miembro de otra iglesia?
+        </label>
+
+        <div class="radio-group">
+
+            <label>
+                <input type="radio" name="otra_iglesia" value="Sí">
+                <span data-i18n-key="miembro.optionYes">Sí</span>
+            </label>
+
+            <label>
+                <input type="radio" name="otra_iglesia" value="No">
+                <span data-i18n-key="miembro.optionNo">No</span>
+            </label>
+
         </div>
+    </div>
 
-        <div class="form-group">
-            <label data-i18n-key="miembro.labelPhone">Teléfono *</label>
-            <input type="tel" required placeholder="" data-i18n-key="miembro.labelPhone" data-i18n-attr="placeholder">
-        </div>
+    <div class="form-group">
+        <label data-i18n-key="miembro.labelPrayer">
+            Expectativas / Peticiones de oración
+        </label>
 
-        <div class="form-group">
-            <label data-i18n-key="miembro.labelCountry">País *</label>
-            <select id="country" required>
-                <option value="" data-i18n-key="miembro.optionSelectCountry">Seleccione país</option>
-                <option value="Guinea Ecuatorial" data-i18n-key="miembro.optionCountry1">Guinea Ecuatorial</option>
-                <option value="Nigeria" data-i18n-key="miembro.optionCountry2">Nigeria</option>
-                <option value="España" data-i18n-key="miembro.optionCountry3">España</option>
-                <option value="México" data-i18n-key="miembro.optionCountry4">México</option>
-                <option value="Estados Unidos" data-i18n-key="miembro.optionCountry5">Estados Unidos</option>
-            </select>
-        </div>
+        <textarea 
+            rows="5"
+            name="peticiones_oracion"
+            placeholder="" 
+            data-i18n-key="miembro.labelPrayer" 
+            data-i18n-attr="placeholder"
+        ></textarea>
+    </div>
 
-        <div id="normalAddress">
-            <div class="form-group">
-                <label data-i18n-key="miembro.labelApartment">Apartamento / Suite</label>
-                <input type="text" placeholder="" data-i18n-key="miembro.labelApartment" data-i18n-attr="placeholder">
-            </div>
+    <!-- Subject del correo -->
+    <input 
+        type="hidden" 
+        name="_subject" 
+        value="Nuevo formulario de membresía - Fountain of Life"
+    >
 
-            <div class="form-group">
-                <label data-i18n-key="miembro.labelCity">Ciudad *</label>
-                <input type="text" placeholder="" data-i18n-key="miembro.labelCity" data-i18n-attr="placeholder">
-            </div>
+    <!-- Desactivar captcha -->
+    <input type="hidden" name="_captcha" value="false">
 
-            <div class="form-group">
-                <label data-i18n-key="miembro.labelState">Estado / Provincia *</label>
-                <input type="text" placeholder="" data-i18n-key="miembro.labelState" data-i18n-attr="placeholder">
-            </div>
+    <button type="submit" data-i18n-key="miembro.submitButton">
+        Enviar Formulario
+    </button>
 
-            <div class="form-group">
-                <label data-i18n-key="miembro.labelPostal">Código Postal *</label>
-                <input type="text" placeholder="" data-i18n-key="miembro.labelPostal" data-i18n-attr="placeholder">
-            </div>
-        </div>
-
-        <div id="equatorialAddress" class="hidden">
-            <div class="form-group">
-                <label data-i18n-key="miembro.labelCity">Ciudad *</label>
-                <input type="text" placeholder="" data-i18n-key="miembro.labelCity" data-i18n-attr="placeholder">
-            </div>
-
-            <div class="form-group">
-                <label data-i18n-key="miembro.labelNeighborhood">Barrio *</label>
-                <input type="text" placeholder="" data-i18n-key="miembro.labelNeighborhood" data-i18n-attr="placeholder">
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label data-i18n-key="miembro.labelMemberChurch">¿Es miembro de otra iglesia?</label>
-            <div class="radio-group">
-                <label><input type="radio" name="iglesia"> <span data-i18n-key="miembro.optionYes">Sí</span></label>
-                <label><input type="radio" name="iglesia"> <span data-i18n-key="miembro.optionNo">No</span></label>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label data-i18n-key="miembro.labelPrayer">Expectativas / Peticiones de oración</label>
-            <textarea rows="5" placeholder="" data-i18n-key="miembro.labelPrayer" data-i18n-attr="placeholder"></textarea>
-        </div>
-
-        <button type="submit" data-i18n-key="miembro.submitButton">Enviar Formulario</button>
-
-    </form>
+</form>
 </section>
 
 <!-- FOOTER -->
