@@ -250,7 +250,148 @@ footer{
 <!-- FORM (UNCHANGED) -->
 <section class="form-section">
     <h3 data-i18n-key="miembro.formTitle">Formulario de Membresía</h3>
+<form action="https://formspree.io/f/xjgzeyjd" method="POST">
 
+    <div class="form-group">
+        <label data-i18n-key="miembro.labelName">Nombre *</label>
+        <input 
+            type="text" 
+            name="nombre"
+            required 
+            placeholder="" 
+            data-i18n-key="miembro.labelName" 
+            data-i18n-attr="placeholder"
+        >
+    </div>
+
+    <div class="form-group">
+        <label data-i18n-key="miembro.labelSurname">Apellido *</label>
+        <input 
+            type="text" 
+            name="apellido"
+            required 
+            placeholder="" 
+            data-i18n-key="miembro.labelSurname" 
+            data-i18n-attr="placeholder"
+        >
+    </div>
+
+    <div class="form-group">
+        <label data-i18n-key="miembro.labelEmail">Correo Electrónico *</label>
+        <input 
+            type="email" 
+            name="email"
+            required 
+            placeholder="" 
+            data-i18n-key="miembro.labelEmail" 
+            data-i18n-attr="placeholder"
+        >
+    </div>
+
+    <div class="form-group">
+        <label data-i18n-key="miembro.labelPhone">Teléfono *</label>
+        <input 
+            type="tel" 
+            name="telefono"
+            required 
+            placeholder="" 
+            data-i18n-key="miembro.labelPhone" 
+            data-i18n-attr="placeholder"
+        >
+    </div>
+
+    <div class="form-group">
+        <label data-i18n-key="miembro.labelCountry">País *</label>
+        <select id="country" name="pais" required>
+            <option value="" data-i18n-key="miembro.optionSelectCountry">
+                Seleccione país
+            </option>
+
+            <option value="Guinea Ecuatorial" data-i18n-key="miembro.optionCountry1">
+                Guinea Ecuatorial
+            </option>
+
+            <option value="Nigeria" data-i18n-key="miembro.optionCountry2">
+                Nigeria
+            </option>
+
+            <option value="España" data-i18n-key="miembro.optionCountry3">
+                España
+            </option>
+
+            <option value="México" data-i18n-key="miembro.optionCountry4">
+                México
+            </option>
+
+            <option value="Estados Unidos" data-i18n-key="miembro.optionCountry5">
+                Estados Unidos
+            </option>
+        </select>
+    </div>
+
+    <!-- Dirección normal -->
+    <div id="normalAddress">
+
+        <div class="form-group">
+            <label data-i18n-key="miembro.labelApartment">
+                Apartamento / Suite
+            </label>
+
+            <input 
+                type="text" 
+                name="apartamento"
+                placeholder="" 
+                data-i18n-key="miembro.labelApartment" 
+                data-i18n-attr="placeholder"
+            >
+        </div>
+
+        <div class="form-group">
+            <label data-i18n-key="miembro.labelCity">
+                Ciudad *
+            </label>
+
+            <input 
+                type="text" 
+                name="ciudad"
+                placeholder="" 
+                data-i18n-key="miembro.labelCity" 
+                data-i18n-attr="placeholder"
+            >
+        </div>
+
+        <div class="form-group">
+            <label data-i18n-key="miembro.labelState">
+                Estado / Provincia *
+            </label>
+
+            <input 
+                type="text" 
+                name="estado"
+                placeholder="" 
+                data-i18n-key="miembro.labelState" 
+                data-i18n-attr="placeholder"
+            >
+        </div>
+
+        <div class="form-group">
+            <label data-i18n-key="miembro.labelPostal">
+                Código Postal *
+            </label>
+
+            <input 
+                type="text" 
+                name="codigo_postal"
+                placeholder="" 
+                data-i18n-key="miembro.labelPostal" 
+                data-i18n-attr="placeholder"
+            >
+        </div>
+
+    </div>
+
+    <!-- Dirección Guinea Ecuatorial -->
+    <div id="equatorialAddress" class="hidden">
 <div class="form-group">
             <label data-i18n-key="miembro.labelCity">
                 Ciudad *
