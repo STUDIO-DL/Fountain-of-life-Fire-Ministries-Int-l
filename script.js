@@ -25,6 +25,8 @@ const translations = {
             langSpanish: 'Español',
             langFrench: 'Français',
             chooseLanguage: 'Language',
+            openMenu: 'Open menu',
+            closeMenu: 'Close menu',
             brand: "Fountain of Life Fire Ministries Int'l (N.L.C)",
             copyright: '© 2026 Fountain of Life Fire Ministries Int\'l (N.L.C)'
         },
@@ -195,23 +197,34 @@ const translations = {
             activitiesText: 'Official ministry schedules and activity days.'
         },
         testimonio: {
+            metaTitle: "Submit Testimony | Fountain of Life Fire Ministries Int'l (N.L.C)",
             pageTitle: 'Submit Testimony',
             pageSubtitle: 'Share your experience and help others know the power of God.',
             labelName: 'Name *',
+            placeholderName: 'Enter your name',
             labelSurname: 'Surname *',
+            placeholderSurname: 'Enter your surname',
             labelGender: 'Gender *',
             optionSelectGender: 'Select',
             optionFemale: 'Female',
             optionMale: 'Male',
             labelCityCountry: 'City | Country *',
+            placeholderCityCountry: 'Example: Madrid, Spain',
             labelEmail: 'Email Address *',
+            placeholderEmail: 'email@example.com',
             labelDate: 'Date for the Testimony *',
             labelTestimony: 'Your Testimony *',
             textareaPlaceholder: 'Write your testimony here...',
-            labelUpload: ' Files related to the testimony',
+            labelUpload: 'Files related to the testimony',
             buttonText: 'Submit Testimony',
             noFilesText: 'No file selected',
-            fileNote: 'Up to 5 files • PDF • JPG • PNG • Video • 10MB per file'
+            fileNote: 'Up to 5 files • PDF • JPG • PNG • Video • 10MB per file',
+            noAttachments: 'No attached files',
+            fileLabel: 'File',
+            requiredError: '⚠️ Please complete all required fields.',
+            sendingStatus: 'Sending testimony',
+            successStatus: '✅ Testimony sent successfully! God bless you.',
+            errorStatus: '❌ Error sending. Please try again.'
         }
     },
     es: {
@@ -229,8 +242,10 @@ const translations = {
             langSpanish: 'Español',
             langFrench: 'Français',
             chooseLanguage: 'Idioma',
-            brand: 'Fuente de vida ministerio de fuego int\'l',
-            copyright: '© 2026 Fountain of Life Fire Ministries Int\'l (N.L.C)'
+            openMenu: 'Abrir menú',
+            closeMenu: 'Cerrar menú',
+            brand: 'Fuente de vida ministerio de fuego int\'l (N.V.C)',
+            copyright: '© 2026 Fountain of Life Fire Ministries Int\'l (N.V.C)'
         },
         nav: {
             home: 'Inicio',
@@ -399,23 +414,34 @@ const translations = {
             activitiesText: 'Horarios oficiales y días de actividades del ministerio.'
         },
         testimonio: {
+            metaTitle: "Enviar Testimonio | Fountain of Life Fire Ministries Int'l (N.L.C)",
             pageTitle: 'Enviar Testimonio',
             pageSubtitle: 'Comparte tu experiencia y ayuda a otros a conocer el poder de Dios.',
             labelName: 'Nombre *',
+            placeholderName: 'Ingrese su nombre',
             labelSurname: 'Apellidos *',
+            placeholderSurname: 'Ingrese sus apellidos',
             labelGender: 'Género *',
             optionSelectGender: 'Seleccione',
             optionFemale: 'Mujer',
             optionMale: 'Hombre',
             labelCityCountry: 'Ciudad | País *',
+            placeholderCityCountry: 'Ejemplo: Madrid, España',
             labelEmail: 'Correo Electrónico *',
+            placeholderEmail: 'correo@ejemplo.com',
             labelDate: 'Fecha para el Testimonio *',
             labelTestimony: 'Su Testimonio *',
             textareaPlaceholder: 'Escriba aquí su testimonio...',
             labelUpload: 'Archivos relacionados con el testimonio',
             buttonText: 'Enviar Testimonio',
             noFilesText: 'Ningún archivo seleccionado',
-            fileNote: 'Máximo 5 archivos • PDF • JPG • PNG • Video • 10MB por archivo'
+            fileNote: 'Máximo 5 archivos • PDF • JPG • PNG • Video • 10MB por archivo',
+            noAttachments: 'Sin archivos adjuntos',
+            fileLabel: 'Archivo',
+            requiredError: '⚠️ Por favor complete todos los campos requeridos.',
+            sendingStatus: 'Enviando testimonio',
+            successStatus: '✅ ¡Testimonio enviado con éxito! Que Dios le bendiga.',
+            errorStatus: '❌ Error al enviar. Por favor intente nuevamente.'
         }
     },
     fr: {
@@ -433,6 +459,8 @@ const translations = {
             langSpanish: 'Español',
             langFrench: 'Français',
             chooseLanguage: 'Langue',
+            openMenu: 'Ouvrir le menu',
+            closeMenu: 'Fermer le menu',
             brand: 'Fontaine de Vie Ministère du Feu Int\'l (N.V.C)',
             copyright: '© 2026 Fountain of Life Fire Ministries Int\'l (N.V.C)'
         },
@@ -603,23 +631,34 @@ const translations = {
             activitiesText: 'Horaires officiels et jours d’activités du ministère.'
         },
         testimonio: {
+            metaTitle: "Soumettre un témoignage | Fountain of Life Fire Ministries Int'l (N.L.C)",
             pageTitle: 'Soumettre un témoignage',
             pageSubtitle: 'Partagez votre expérience et aidez les autres à connaître la puissance de Dieu.',
             labelName: 'Nom *',
+            placeholderName: 'Entrez votre nom',
             labelSurname: 'Prénom *',
+            placeholderSurname: 'Entrez votre prénom',
             labelGender: 'Genre *',
             optionSelectGender: 'Sélectionnez',
             optionFemale: 'Femme',
             optionMale: 'Homme',
             labelCityCountry: 'Ville | Pays *',
+            placeholderCityCountry: 'Exemple : Madrid, Espagne',
             labelEmail: 'Adresse e-mail *',
+            placeholderEmail: 'email@exemple.com',
             labelDate: 'Date du témoignage *',
             labelTestimony: 'Votre témoignage *',
             textareaPlaceholder: 'Écrivez votre témoignage ici...',
             labelUpload: 'Fichiers liés au témoignage',
             buttonText: 'Envoyer le témoignage',
             noFilesText: 'Aucun fichier sélectionné',
-            fileNote: 'Jusqu’à 5 fichiers • PDF • JPG • PNG • Vidéo • 10 Mo par fichier'
+            fileNote: 'Jusqu’à 5 fichiers • PDF • JPG • PNG • Vidéo • 10 Mo par fichier',
+            noAttachments: 'Aucun fichier joint',
+            fileLabel: 'Fichier',
+            requiredError: '⚠️ Veuillez remplir tous les champs obligatoires.',
+            sendingStatus: 'Envoi du témoignage',
+            successStatus: '✅ Témoignage envoyé avec succès ! Que Dieu vous bénisse.',
+            errorStatus: '❌ Erreur lors de l’envoi. Veuillez réessayer.'
         }
     }
 };
@@ -628,6 +667,10 @@ function getTranslation(lang, page, key) {
     const languagePack = translations[lang] || translations.es;
     const pageMap = languagePack[page] || {};
     const common = languagePack.common || {};
+    if (key.startsWith('common.')) {
+        const commonKey = key.slice('common.'.length);
+        return commonKey.split('.').reduce((obj, part) => (obj ? obj[part] : null), common) || null;
+    }
     const pageKey = key.startsWith(`${page}.`) ? key.slice(page.length + 1) : key;
     const pageValue = pageKey.split('.').reduce((obj, part) => (obj ? obj[part] : null), pageMap);
     if (pageValue) {

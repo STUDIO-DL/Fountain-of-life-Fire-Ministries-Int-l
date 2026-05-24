@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contáctanos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 
   
     
@@ -32,7 +35,7 @@
     width: calc(100% - 40px);
     max-width: 1100px;
 
-    margin: 40px auto;
+    margin: calc(var(--nav-height) + 40px) auto 40px;
 
     background: white;
     border-radius: 15px;
@@ -229,7 +232,47 @@ footer p{
     </style>
 </head>
 
-<body>
+<body data-page="contacto">
+
+<header class="page-navbar">
+  <div class="page-nav-container">
+
+    <a href="index.html" class="nav-brand">
+      <img src="images/logo.png" alt="Fountain of Life Logo">
+      <span data-i18n-key="common.brand">Fuente de Vida Ministerio de Fuego</span>
+    </a>
+
+    <div class="lang-switcher">
+      <button id="langToggle" class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+        <span class="lang-flag">🇪🇸</span>
+        <span class="lang-label">ES</span>
+      </button>
+      <div id="langMenu" class="lang-menu" role="menu">
+        <button class="lang-option" type="button" data-lang="en">🇬🇧 English</button>
+        <button class="lang-option" type="button" data-lang="es">🇪🇸 Español</button>
+        <button class="lang-option" type="button" data-lang="fr">🇫🇷 Français</button>
+      </div>
+    </div>
+
+    <nav class="page-nav-links" id="navLinks">
+      <button class="menu-close" id="menuClose" aria-label="Cerrar menú">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <a href="index.html" data-i18n-key="nav.home">Inicio</a>
+      <a href="pages/conocenos.html" data-i18n-key="nav.about">Conocenos</a>
+      <a href="index.html#servicios" data-i18n-key="nav.services">Servicios</a>
+      <a href="pages/ramas.html" data-i18n-key="nav.branches">Sucursales</a>
+      <a href="pages/redes_sociales1.html" data-i18n-key="nav.social">Redes sociales</a>
+      <a href="testimonio.html" data-i18n-key="nav.testimony">Testimonios</a>
+      <a href="contacto.html" class="active" data-i18n-key="nav.contact">Contacto</a>
+    </nav>
+
+    <button class="menu-toggle" id="mobileMenu" aria-label="Abrir menú">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+  </div>
+</header>
 
     <div class="contact-container">
 
@@ -322,6 +365,8 @@ footer p{
     <a href="https://www.tiktok.com/@fuente.de.vida54?_r=1&_t=ZN-96PYNLeWlNe"><i class="fa-brands fa-tiktok"></i></a>
   </div>
 </footer>
+
+<script src="script.js" defer></script>
 
 </body>
 </html>

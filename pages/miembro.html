@@ -195,7 +195,8 @@ footer{
 
         <a href="../index.html" class="nav-brand">
             <img src="../images/logo.png" alt="Fountain of Life Logo">
-                <span data-i18n-key="common.brand">Fuente de Vida Ministerio de Fuego</span>
+            <span data-i18n-key="common.brand">Fuente de Vida Ministerio de Fuego</span>
+        </a>
         <div class="lang-switcher">
             <button id="langToggle" class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
                 <span class="lang-flag">🇪🇸</span>
@@ -218,8 +219,8 @@ footer{
             <a href="../index.html#servicios" data-i18n-key="nav.services">Servicios</a>
             <a href="ramas.html" data-i18n-key="nav.branches">Sucursales</a>
             <a href="redes_sociales1.html" data-i18n-key="nav.social">Redes sociales</a>
-            <a href="testimonio.html" data-i18n-key="nav.testimony">Testimonios</a>
-            <a href="contacto.html" data-i18n-key="nav.contact">Contacto</a>
+            <a href="../testimonio.html" data-i18n-key="nav.testimony">Testimonios</a>
+            <a href="../contacto.html" data-i18n-key="nav.contact">Contacto</a>
         </nav>
 
         <button class="menu-toggle" id="mobileMenu" aria-label="Abrir menú">
@@ -498,19 +499,6 @@ countrySelect.addEventListener("change", function () {
         normalAddress.classList.remove("hidden");
         equatorialAddress.classList.add("hidden");
     }
-});
-
-/* MOBILE MENU */
-const mobileMenu = document.getElementById("mobileMenu");
-const navLinks = document.getElementById("navLinks");
-const menuClose = document.getElementById("menuClose");
-
-mobileMenu.addEventListener("click", () => {
-    navLinks.classList.add("active");
-});
-
-menuClose.addEventListener("click", () => {
-    navLinks.classList.remove("active");
 });
 </script>
 

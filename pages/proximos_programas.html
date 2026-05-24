@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es" translate="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Próximos Programas | Fountain of Life Fire Ministries Int'l (N.L.C)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fb;
+      color: #0f172a;
+      min-height: 100vh;
+    }
+
+    .programs-placeholder {
+      width: calc(100% - 40px);
+      max-width: 980px;
+      margin: calc(var(--nav-height) + 48px) auto 64px;
+      padding: 54px 24px;
+      text-align: center;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .programs-placeholder h1 {
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      margin-bottom: 14px;
+      color: #0b1c3f;
+    }
+
+    .programs-placeholder p {
+      max-width: 620px;
+      margin: 0 auto;
+      color: #475569;
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body data-page="proximos_programas">
+
+<header class="page-navbar">
+  <div class="page-nav-container">
+
+    <a href="../index.html" class="nav-brand">
+      <img src="../images/logo.png" alt="Fountain of Life Logo">
+      <span data-i18n-key="common.brand">Fuente de Vida Ministerio de Fuego</span>
+    </a>
+
+    <div class="lang-switcher">
+      <button id="langToggle" class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+        <span class="lang-flag">🇪🇸</span>
+        <span class="lang-label">ES</span>
+      </button>
+      <div id="langMenu" class="lang-menu" role="menu">
+        <button class="lang-option" type="button" data-lang="en">🇬🇧 English</button>
+        <button class="lang-option" type="button" data-lang="es">🇪🇸 Español</button>
+        <button class="lang-option" type="button" data-lang="fr">🇫🇷 Français</button>
+      </div>
+    </div>
+
+    <nav class="page-nav-links" id="navLinks">
+      <button class="menu-close" id="menuClose" aria-label="Cerrar menú">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <a href="../index.html" data-i18n-key="nav.home">Inicio</a>
+      <a href="conocenos.html" data-i18n-key="nav.about">Conocenos</a>
+      <a href="../index.html#servicios" data-i18n-key="nav.services">Servicios</a>
+      <a href="ramas.html" data-i18n-key="nav.branches">Sucursales</a>
+      <a href="redes_sociales1.html" data-i18n-key="nav.social">Redes sociales</a>
+      <a href="../testimonio.html" data-i18n-key="nav.testimony">Testimonios</a>
+      <a href="../contacto.html" data-i18n-key="nav.contact">Contacto</a>
+    </nav>
+
+    <button class="menu-toggle" id="mobileMenu" aria-label="Abrir menú">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+  </div>
+</header>
+
+<main class="programs-placeholder">
+  <h1>Próximos Programas</h1>
+  <p>Muy pronto compartiremos aquí los próximos programas y actividades del ministerio.</p>
+</main>
+
+<script src="../script.js" defer></script>
+</body>
+</html>
