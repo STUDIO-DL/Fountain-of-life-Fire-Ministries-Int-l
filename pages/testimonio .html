@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es" translate="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Enviar Testimonio | Fountain of Life Fire Ministries Int'l (N.L.C)</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="../style.css">
+
+<!-- ═══════════════════════════════════════════════════════════
+     EmailJS  — sends the email directly from the browser
+     ═══════════════════════════════════════════════════════════ -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- ═══════════════════════════════════════════════════════════
+     Uploadcare  — free file hosting, gives download links
+     ═══════════════════════════════════════════════════════════ -->
+<script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+
+<style>
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#f7f9fc;
+  color:#111827;
+  min-height:100vh;
+}
+
+.container{
+  width:100%;
+  max-width:1100px;
+  margin:auto;
+  padding:70px 25px;
+}
+
+.title-area{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.subtitle{
+  color:#2563eb;
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:15px;
+  letter-spacing:1px;
+}
+
+.title{
+  font-size:56px;
+  font-weight:800;
+  color:#0f172a;
+  margin-bottom:20px;
+}
+
+.line{
+  width:90px;
+  height:5px;
+  background:#2563eb;
+  border-radius:20px;
+  margin:auto;
+}
+
+.form-container{
+  background:white;
+  padding:50px;
+  border-radius:24px;
+  box-shadow:0 10px 35px rgba(0,0,0,0.06);
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+}
+
+.form-group{ margin-bottom:35px; }
+.full-width{ grid-column:1 / -1; }
+
+label{
+  display:block;
+  margin-bottom:12px;
+  font-size:18px;
+  font-weight:600;
+  color:#1e293b;
+}
+
+input, select, textarea{
+  width:100%;
+  padding:18px 20px;
+  border:2px solid #dbe4f0;
+  border-radius:14px;
+  font-size:17px;
+  font-family:'Inter',sans-serif;
+  background:#fff;
+  transition:0.3s;
+  outline:none;
+}
+
+input:focus, select:focus, textarea:focus{
+  border-color:#2563eb;
+  box-shadow:0 0 0 5px rgba(37,99,235,0.10);
+}
+
+textarea{ min-height:180px; resize:none; }
+
+/* ── Uploadcare widget overrides ── */
+.uploadcare-widget-button{
+  background:#2563eb !important;
+  color:#fff !important;
+  border:none !important;
+  padding:14px 24px !important;
+  border-radius:12px !important;
+  font-size:16px !important;
+  font-family:'Inter',sans-serif !important;
+  font-weight:600 !important;
+  cursor:pointer !important;
+  transition:background 0.2s !important;
+}
+
+.uploadcare-widget-button:hover{
+  background:#1d4ed8 !important;
+}
+
+.uploadcare--widget__text{
+  font-family:'Inter',sans-serif !important;
+  font-size:14px !important;
+  color:#64748b !important;
+}
+
+/* File upload wrapper */
+.file-box{
+  border:2px dashed #bfdbfe;
+  background:#f8fbff;
+  padding:30px;
+  border-radius:18px;
+}
+
+.file-hint{
+  margin-top:14px;
+  color:#94a3b8;
+  font-size:14px;
+}
+
+/* Status banner */
+#statusBanner{
+  display:none;
+  padding:18px 24px;
+  border-radius:14px;
+  font-size:16px;
+  font-weight:600;
+  margin-top:28px;
+  text-align:center;
+  transition:all 0.3s ease;
+}
+
+#statusBanner.info{
+  display:block;
+  background:#eff6ff;
+  color:#1d4ed8;
+  border:2px solid #bfdbfe;
+}
+
+#statusBanner.success{
+  display:block;
+  background:#f0fdf4;
+  color:#15803d;
+  border:2px solid #bbf7d0;
+}
+
+#statusBanner.error{
+  display:block;
+  background:#fef2f2;
+  color:#b91c1c;
+  border:2px solid #fecaca;
+}
+
+/* Progress dots */
+.dots::after{
+  content:'';
+  animation: dots 1.4s infinite;
+}
+@keyframes dots {
+  0%   { content: ''; }
+  25%  { content: '.'; }
+  50%  { content: '..'; }
+  75%  { content: '...'; }
+  100% { content: ''; }
+}
+
+.button-area{
+  text-align:center;
+  margin-top:50px;
+}
+
+.submit-btn{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:18px 50px;
+  font-size:20px;
+  font-weight:700;
+  border-radius:14px;
+  cursor:pointer;
+  transition:0.3s;
+  box-shadow:0 10px 20px rgba(37,99,235,0.20);
+  min-width:240px;
+  position:relative;
+}
+
+.submit-btn:hover:not(:disabled){
+  background:#1d4ed8;
+  transform:translateY(-2px);
+}
+
+.submit-btn:disabled{
+  opacity:0.65;
+  cursor:not-allowed;
+  transform:none;
+}
+
+footer{
+  background:#0f172a;
+  color:white;
+  text-align:center;
+  padding:35px 20px;
+  margin-top:80px;
+}
+
+footer p{ opacity:0.8; font-size:15px; }
+
+.footer-socials{
+  margin-top:18px;
+  display:flex;
+  justify-content:center;
+  gap:18px;
+}
+
+.footer-socials a{
+  font-size:18px;
+  transition:all 0.3s ease;
+  opacity:0.95;
+}
+
+.footer-socials a:nth-child(1){ color:#1877F2; }
+.footer-socials a:nth-child(2){ color:#E4405F; }
+.footer-socials a:nth-child(3){ color:#FF0000; }
+.footer-socials a:nth-child(4){ color:#00F2EA; }
+
+.footer-socials a:hover{ transform:translateY(-3px); filter:brightness(1.3); }
+
+@media(max-width:768px){
+  .title{ font-size:38px; }
+  .form-container{ padding:30px; }
+  .form-grid{ grid-template-columns:1fr; }
+  .full-width{ grid-column:auto; }
+}
+</style>
+</head>
+
+<body data-page="testimonio">
+
+<header class="page-navbar">
+  <div class="page-nav-container">
+
+    <a href="../index.html" class="nav-brand">
+      <img src="../images/logo.png" alt="Fountain of Life Logo">
+      <span data-i18n-key="common.brand">Fuente de Vida Ministerio de Fuego</span>
+    </a>
+
+    <div class="lang-switcher">
+      <button id="langToggle" class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+        <span class="lang-flag">🇪🇸</span>
+        <span class="lang-label">ES</span>
+      </button>
+      <div id="langMenu" class="lang-menu" role="menu">
+        <button class="lang-option" type="button" data-lang="en">🇬🇧 English</button>
+        <button class="lang-option" type="button" data-lang="es">🇪🇸 Español</button>
+        <button class="lang-option" type="button" data-lang="fr">🇫🇷 Français</button>
+      </div>
+    </div>
+
+    <nav class="page-nav-links" id="navLinks">
+      <button class="menu-close" id="menuClose" aria-label="Cerrar menú">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <a href="../index.html"            data-i18n-key="nav.home">Inicio</a>
+      <a href="conocenos.html"           data-i18n-key="nav.about">Conocenos</a>
+      <a href="../index.html#servicios"  data-i18n-key="nav.services">Servicios</a>
+      <a href="ramas.html"               data-i18n-key="nav.branches">Sucursales</a>
+      <a href="redes_sociales1.html"     data-i18n-key="nav.social">Redes sociales</a>
+      <a href="testimonio.html" class="active" data-i18n-key="nav.testimony">Testimonios</a>
+      <a href="contacto.html"            data-i18n-key="nav.contact">Contacto</a>
+    </nav>
+
+    <button class="menu-toggle" id="mobileMenu" aria-label="Abrir menú">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+  </div>
+</header>
+
+<!-- ─────────────────────────────────── MAIN CONTENT ─── -->
+<div class="container">
+
+  <div class="title-area">
+    <p class="subtitle" data-i18n-key="testimonio.pageSubtitle">COMPLETE EL SIGUIENTE FORMULARIO</p>
+    <h1 class="title" data-i18n-key="testimonio.pageTitle">Envíe Su Testimonio</h1>
+    <div class="line"></div>
+  </div>
+
+  <div class="form-container">
+    <form id="testimonyForm">
+
+      <div class="form-grid">
+
+        <div class="form-group">
+          <label>Nombre</label>
+          <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label>Apellidos</label>
+          <input type="text" id="apellidos" placeholder="Ingrese sus apellidos" required>
+        </div>
+
+        <div class="form-group full-width">
+          <label>Género</label>
+          <select id="genero" required>
+            <option value="">Seleccione</option>
+            <option value="Mujer">Mujer</option>
+            <option value="Hombre">Hombre</option>
+          </select>
+        </div>
+
+        <div class="form-group full-width">
+          <label>Ciudad | País</label>
+          <input type="text" id="ciudadPais" placeholder="Ejemplo: Madrid, España" required>
+        </div>
+
+        <div class="form-group full-width">
+          <label>Correo Electrónico</label>
+          <input type="email" id="email" placeholder="correo@ejemplo.com" required>
+        </div>
+
+        <div class="form-group full-width">
+          <label>Fecha para el Testimonio</label>
+          <input type="date" id="fechaTestimonio" required>
+        </div>
+
+        <div class="form-group full-width">
+          <label>Su Testimonio</label>
+          <textarea id="testimonio" placeholder="Escriba aquí su testimonio..." required></textarea>
+        </div>
+
+        <!-- ── Uploadcare file widget ── -->
+        <div class="form-group full-width">
+          <label>Archivos vinculados al testimonio</label>
+          <div class="file-box">
+
+            <!--
+              data-public-key  = your Uploadcare public key (Step 2 below)
+              data-multiple    = allow multiple files
+              data-max-files   = limit to 5
+            -->
+            <input
+              type="hidden"
+              role="uploadcare-uploader"
+              id="fileWidget"
+              data-public-key="0b4faff8be154e2ee9ae"
+              data-multiple="true"
+              data-multiple-max="5"
+              data-preview-step="true"
+              data-clearable="true"
+            />
+
+            <p class="file-hint">
+              Máximo 5 archivos &bull; PDF &bull; JPG &bull; PNG &bull; Video &bull; 10 MB por archivo
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Status message -->
+      <div id="statusBanner"></div>
+
+      <div class="button-area">
+        <button type="submit" class="submit-btn" id="submitBtn">
+          Enviar Testimonio
+        </button>
+      </div>
+
+    </form>
+  </div>
+
+</div>
+<!-- ────────────────────────────────────────────────────── -->
+
+<footer>
+  <p>&copy; 2026 Fountain of Life Fire Ministries Int'l (N.L.C)</p>
+  <div class="footer-socials">
+    <a href="https://www.facebook.com/share/1H2aLqqfDd/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/fountain_life_fire_ministry?igsh=OTNyYWFqbzQ0ZXpk"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://youtube.com/@fountainoflifefireministry?si=3IeNEo1HseiU3pUQ"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://www.tiktok.com/@fuente.de.vida54?_r=1&_t=ZN-96PYNLeWlNe"><i class="fa-brands fa-tiktok"></i></a>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CONFIGURATION — fill in your 3 IDs here, nothing else needed
+     ═══════════════════════════════════════════════════════════ -->
+<script>
+// ─────────────────────────────────────────────────────────────
+// 🔧 YOUR KEYS — replace these 3 values (see SETUP below)
+// ─────────────────────────────────────────────────────────────
+const EMAILJS_PUBLIC_KEY  = "hocTpvxKkUqsjm5Sk";
+const EMAILJS_SERVICE_ID  = "service_07tr88b";
+const EMAILJS_TEMPLATE_ID = "template_i4y4m68";
+// (Uploadcare key goes in the data-public-key attribute above ↑)
+// ─────────────────────────────────────────────────────────────
+
+// ── Init EmailJS ──────────────────────────────────────────────
+emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+
+// ── DOM refs ──────────────────────────────────────────────────
+const form         = document.getElementById("testimonyForm");
+const submitBtn    = document.getElementById("submitBtn");
+const statusBanner = document.getElementById("statusBanner");
+
+// ── Status helper ─────────────────────────────────────────────
+function setStatus(msg, type) {
+  statusBanner.className = type;
+  statusBanner.innerHTML = msg;
+  statusBanner.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+// ── Get Uploadcare file info ───────────────────────────────────
+function getUploadcareFiles() {
+  return new Promise((resolve) => {
+    const widget = uploadcare.Widget("[role=uploadcare-uploader]");
+    if (!widget) { resolve([]); return; }
+
+    const fileGroup = widget.value();
+    if (!fileGroup) { resolve([]); return; }
+
+    // fileGroup can be a single file or a FileGroup
+    const promise = fileGroup.promise ? fileGroup.promise() : Promise.resolve(fileGroup);
+
+    promise.then(info => {
+      if (!info) { resolve([]); return; }
+
+      // Multiple files come as a group with .files()
+      if (info.files) {
+        const filePromises = info.files().map(f => f.promise());
+        Promise.all(filePromises).then(files => {
+          resolve(files.map(f => ({
+            name: f.name,
+            url:  f.cdnUrl,
+            size: f.size,
+            type: f.mimeType
+          })));
+        }).catch(() => resolve([]));
+      } else {
+        // Single file
+        resolve([{ name: info.name, url: info.cdnUrl, size: info.size, type: info.mimeType }]);
+      }
+    }).catch(() => resolve([]));
+  });
+}
+
+// ── Format file size ──────────────────────────────────────────
+function formatSize(bytes) {
+  if (!bytes) return "";
+  const kb = bytes / 1024;
+  return kb > 1024 ? `${(kb/1024).toFixed(1)} MB` : `${Math.round(kb)} KB`;
+}
+
+// ── Build file links HTML for the email template ──────────────
+function buildFileLinks(files) {
+  if (!files || files.length === 0) return "Sin archivos adjuntos";
+  return files.map((f, i) =>
+    `Archivo ${i+1}: ${f.name} (${formatSize(f.size)})\n${f.url}`
+  ).join("\n\n");
+}
+
+// ── Form submit ───────────────────────────────────────────────
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  // Basic validation
+  const requiredFields = ["nombre","apellidos","genero","ciudadPais","email","fechaTestimonio","testimonio"];
+  for (const id of requiredFields) {
+    if (!document.getElementById(id).value.trim()) {
+      setStatus("⚠️ Por favor complete todos los campos requeridos.", "error");
+      return;
+    }
+  }
+
+  submitBtn.disabled = true;
+  setStatus('<span class="dots">Enviando testimonio</span>', "info");
+
+  // Get uploaded file URLs from Uploadcare
+  const files = await getUploadcareFiles();
+
+  // Build the template parameters
+  // These variable names must match your EmailJS template (see setup guide)
+  const templateParams = {
+    nombre:           document.getElementById("nombre").value.trim(),
+    apellidos:        document.getElementById("apellidos").value.trim(),
+    genero:           document.getElementById("genero").value,
+    ciudad_pais:      document.getElementById("ciudadPais").value.trim(),
+    email_remitente:  document.getElementById("email").value.trim(),
+    fecha_testimonio: document.getElementById("fechaTestimonio").value,
+    testimonio:       document.getElementById("testimonio").value.trim(),
+    archivos:         buildFileLinks(files),
+    num_archivos:     files.length.toString(),
+  };
+
+  try {
+    await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
+
+    setStatus("✅ ¡Testimonio enviado con éxito! Que Dios le bendiga.", "success");
+    form.reset();
+
+    // Clear Uploadcare widget
+    const widget = uploadcare.Widget("[role=uploadcare-uploader]");
+    if (widget) widget.value(null);
+
+    // Redirect after delay
+    setTimeout(() => { window.location.href = "thankyou.html"; }, 3000);
+
+  } catch (err) {
+    console.error("EmailJS error:", err);
+    setStatus("❌ Error al enviar. Por favor intente nuevamente.", "error");
+    submitBtn.disabled = false;
+  }
+});
+</script>
+
+<script src="../script.js" defer></script>
+</body>
+</html>
