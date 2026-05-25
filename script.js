@@ -28,8 +28,8 @@ const translations = {
             chooseLanguage: 'Language',
             openMenu: 'Open menu',
             closeMenu: 'Close menu',
-            brand: "Fountain of Life Fire Ministries Int'l (N.L.C)",
-            copyright: '© 2026 Fountain of Life Fire Ministries Int\'l (N.L.C)'
+            brand: "Fountain of Life Fire Ministries Int'l (N.V.C)",
+            copyright: '© 2026 Fountain of Life Fire Ministries Int\'l (N.V.C)'
         },
         nav: {
             home: 'Home',
