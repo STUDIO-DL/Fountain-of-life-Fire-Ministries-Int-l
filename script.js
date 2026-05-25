@@ -71,7 +71,7 @@ const translations = {
                 card5: { tag: 'Congregation', title: 'Worship Service' }
             },
             serviceCards: {
-                card1: { title: 'Sunday Worship Service', timezone: 'Timezone: GMT+1', detail1Label: '1st Service:', detail1Value: '9:00 am', detail2Label: '2nd Service:', detail2Value: '12:00 pm' },
+                card1: { title: 'Sunday Worship Service', timezone: 'Timezone: GMT+1', detail1Label: '1st Service:', detail1Value: '8:00 am - 10:00 am', detail2Label: '2nd Service:', detail2Value: '10:00 am - 12:00 pm' },
                 card2: { title: 'Bible Study', timezone: 'Timezone: GMT+1', detailLabel: 'Every Monday:', detailValue: '5:00 pm - 6:30 pm' },
                 card3: { title: 'Healing Service', timezone: 'Timezone: GMT+1', detailLabel: 'Every Tuesday:', detailValue: '9:00 am' },
                 card4: { title: 'Deliverance Service', timezone: 'Timezone: GMT+1', detailLabel: 'Every Thursday:', detailValue: '5:00 pm - 6:30 pm' },
@@ -315,7 +315,7 @@ const translations = {
                 card5: { tag: 'Congregación', title: 'Culto de adoración' }
             },
             serviceCards: {
-                card1: { title: 'Servicio de Adoración Dominical', timezone: 'Zona Horaria: GMT+1', detail1Label: '1er Servicio:', detail1Value: '9:00 am', detail2Label: '2do Servicio:', detail2Value: '12:00 pm' },
+                card1: { title: 'Servicio de Adoración Dominical', timezone: 'Zona Horaria: GMT+1', detail1Label: '1er Servicio:', detail1Value: '8:00 am - 10:00 am', detail2Label: '2do Servicio:', detail2Value: '10:00 am - 12:00 pm' },
                 card2: { title: 'Estudio Bíblico', timezone: 'Zona Horaria: GMT+1', detailLabel: 'Cada Lunes:', detailValue: '5:00 pm - 6:30 pm' },
                 card3: { title: 'Servicio de Sanación', timezone: 'Zona Horaria: GMT+1', detailLabel: 'Cada Martes:', detailValue: '9:00 am' },
                 card4: { title: 'Servicio de Liberación', timezone: 'Zona Horaria: GMT+1', detailLabel: 'Cada Jueves:', detailValue: '5:00 pm - 6:30 pm' },
@@ -559,7 +559,7 @@ const translations = {
                 card5: { tag: 'Congrégation', title: 'Culte d’adoration' }
             },
             serviceCards: {
-                card1: { title: 'Service d’adoration du dimanche', timezone: 'Fuseau horaire : GMT+1', detail1Label: '1er service :', detail1Value: '9h00', detail2Label: '2ème service :', detail2Value: '12h00' },
+                card1: { title: 'Service d’adoration du dimanche', timezone: 'Fuseau horaire : GMT+1', detail1Label: '1er service :', detail1Value: '8h00 - 10h00', detail2Label: '2ème service :', detail2Value: '10h00 - 12h00' },
                 card2: { title: 'Étude biblique', timezone: 'Fuseau horaire : GMT+1', detailLabel: 'Chaque lundi :', detailValue: '17h00 - 18h30' },
                 card3: { title: 'Service de guérison', timezone: 'Fuseau horaire : GMT+1', detailLabel: 'Chaque mardi :', detailValue: '9h00' },
                 card4: { title: 'Service de délivrance', timezone: 'Fuseau horaire : GMT+1', detailLabel: 'Chaque jeudi :', detailValue: '17h00 - 18h30' },
