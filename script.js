@@ -16,6 +16,7 @@ const translations = {
                 home: 'Home',
                 about: 'About Us',
                 services: 'Services',
+                events: 'Events',
                 branches: 'Branches',
                 social: 'Social Media',
                 testimony: 'Testimonies',
@@ -34,6 +35,7 @@ const translations = {
             home: 'Home',
             about: 'About Us',
             services: 'Services',
+            events: 'Events',
             branches: 'Branches',
             social: 'Social Media',
             testimony: 'Testimonies',
@@ -62,10 +64,11 @@ const translations = {
                 btn: 'I’m new here'
             },
             gallery: {
-                card1: { tag: 'Live Service', title: 'Transforming Worship' },
-                card2: { tag: 'Gathering', title: 'Bible Study' },
-                card3: { tag: 'Healing', title: 'Healing Service' },
-                card4: { tag: 'Youth', title: 'Youth Connection' }
+                card1: { tag: 'Live Service', title: 'Message of Faith and Power' },
+                card2: { tag: 'Gathering', title: 'Voice of Revival' },
+                card3: { tag: 'Healing', title: 'Healing Prayer' },
+                card4: { tag: 'Youth', title: 'Family Worship' },
+                card5: { tag: 'Congregation', title: 'Worship Service' }
             },
             serviceCards: {
                 card1: { title: 'Sunday Worship Service', timezone: 'Timezone: GMT+1', detail1Label: '1st Service:', detail1Value: '9:00 am', detail2Label: '2nd Service:', detail2Value: '12:00 pm' },
@@ -196,6 +199,30 @@ const translations = {
             tiktokText: 'Short messages',
             activitiesText: 'Official ministry schedules and activity days.'
         },
+        contacto: {
+            metaTitle: "Contact Us | Fountain of Life Fire Ministries Int'l (N.L.C)",
+            title: 'Contact Us',
+            intro: 'We would love to meet you, walk with you, and help you take your first steps into this family of faith.',
+            addressTitle: 'Address',
+            emailTitle: 'Email',
+            phoneTitle: 'Phone',
+            formTitle: 'Send us a message',
+            formIntro: 'Complete the form and we will respond as soon as possible.',
+            labelName: 'Full Name',
+            placeholderName: 'Your name',
+            labelEmail: 'Email Address',
+            placeholderEmail: 'your@email.com',
+            labelPhone: 'Phone',
+            placeholderPhone: 'Your number',
+            labelSubject: 'Subject',
+            optionGeneral: 'General Inquiry',
+            optionPrayer: 'Prayer Request',
+            optionTestimony: 'Share Testimony',
+            optionNew: 'I Am New Here',
+            labelMessage: 'Message',
+            placeholderMessage: 'How can we help you?',
+            submitButton: 'Send Message'
+        },
         testimonio: {
             metaTitle: "Submit Testimony | Fountain of Life Fire Ministries Int'l (N.L.C)",
             pageTitle: 'Submit Testimony',
@@ -233,6 +260,7 @@ const translations = {
                 home: 'Inicio',
                 about: 'Conócenos',
                 services: 'Servicios',
+                events: 'Eventos',
                 branches: 'Sucursales',
                 social: 'Redes Sociales',
                 testimony: 'Testimonios',
@@ -251,6 +279,7 @@ const translations = {
             home: 'Inicio',
             about: 'Conócenos',
             services: 'Servicios',
+            events: 'Eventos',
             branches: 'Sucursales',
             social: 'Redes Sociales',
             testimony: 'Testimonios',
@@ -279,10 +308,11 @@ const translations = {
                 btn: 'Soy nuevo aquí'
             },
             gallery: {
-                card1: { tag: 'Servicio en Vivo', title: 'Adoración transformadora' },
-                card2: { tag: 'Encuentro', title: 'Estudio Bíblico' },
-                card3: { tag: 'Sanación', title: 'Servicio de Sanación' },
-                card4: { tag: 'Juventud', title: 'Conexión y vida' }
+                card1: { tag: 'Servicio en Vivo', title: 'Mensaje de fe y poder' },
+                card2: { tag: 'Encuentro', title: 'Voz de avivamiento' },
+                card3: { tag: 'Sanación', title: 'Oración de sanación' },
+                card4: { tag: 'Juventud', title: 'Adoración en familia' },
+                card5: { tag: 'Congregación', title: 'Culto de adoración' }
             },
             serviceCards: {
                 card1: { title: 'Servicio de Adoración Dominical', timezone: 'Zona Horaria: GMT+1', detail1Label: '1er Servicio:', detail1Value: '9:00 am', detail2Label: '2do Servicio:', detail2Value: '12:00 pm' },
@@ -413,6 +443,30 @@ const translations = {
             tiktokText: 'Mensajes Cortos',
             activitiesText: 'Horarios oficiales y días de actividades del ministerio.'
         },
+        contacto: {
+            metaTitle: "Contáctanos | Fountain of Life Fire Ministries Int'l (N.L.C)",
+            title: 'Contáctanos',
+            intro: 'Nos encantaría conocerte, acompañarte y ayudarte a dar tus primeros pasos en esta familia de fe.',
+            addressTitle: 'Dirección',
+            emailTitle: 'Correo',
+            phoneTitle: 'Teléfono',
+            formTitle: 'Envíanos un mensaje',
+            formIntro: 'Completa el formulario y te responderemos lo antes posible.',
+            labelName: 'Nombre Completo',
+            placeholderName: 'Tu nombre',
+            labelEmail: 'Correo Electrónico',
+            placeholderEmail: 'tu@email.com',
+            labelPhone: 'Teléfono',
+            placeholderPhone: 'Tu número',
+            labelSubject: 'Asunto',
+            optionGeneral: 'Consulta General',
+            optionPrayer: 'Petición de Oración',
+            optionTestimony: 'Compartir Testimonio',
+            optionNew: 'Soy Nuevo Aquí',
+            labelMessage: 'Mensaje',
+            placeholderMessage: '¿Cómo podemos ayudarte?',
+            submitButton: 'Enviar Mensaje'
+        },
         testimonio: {
             metaTitle: "Enviar Testimonio | Fountain of Life Fire Ministries Int'l (N.L.C)",
             pageTitle: 'Enviar Testimonio',
@@ -450,6 +504,7 @@ const translations = {
                 home: 'Accueil',
                 about: 'À propos',
                 services: 'Services',
+                events: 'Événements',
                 branches: 'Succursales',
                 social: 'Réseaux',
                 testimony: 'Témoignages',
@@ -468,6 +523,7 @@ const translations = {
             home: 'Accueil',
             about: 'À propos',
             services: 'Services',
+            events: 'Événements',
             branches: 'Succursales',
             social: 'Réseaux',
             testimony: 'Témoignages',
@@ -496,10 +552,11 @@ const translations = {
                 btn: 'Je suis nouveau ici'
             },
             gallery: {
-                card1: { tag: 'Service en direct', title: 'Adoration transformatrice' },
-                card2: { tag: 'Rassemblement', title: 'Étude biblique' },
-                card3: { tag: 'Guérison', title: 'Service de guérison' },
-                card4: { tag: 'Jeunesse', title: 'Connexion jeunesse' }
+                card1: { tag: 'Service en direct', title: 'Message de foi et de puissance' },
+                card2: { tag: 'Rassemblement', title: 'Voix du réveil' },
+                card3: { tag: 'Guérison', title: 'Prière de guérison' },
+                card4: { tag: 'Jeunesse', title: 'Adoration en famille' },
+                card5: { tag: 'Congrégation', title: 'Culte d’adoration' }
             },
             serviceCards: {
                 card1: { title: 'Service d’adoration du dimanche', timezone: 'Fuseau horaire : GMT+1', detail1Label: '1er service :', detail1Value: '9h00', detail2Label: '2ème service :', detail2Value: '12h00' },
@@ -629,6 +686,30 @@ const translations = {
             tiktokTitle: 'TikTok',
             tiktokText: 'Courts messages',
             activitiesText: 'Horaires officiels et jours d’activités du ministère.'
+        },
+        contacto: {
+            metaTitle: "Contactez-nous | Fountain of Life Fire Ministries Int'l (N.L.C)",
+            title: 'Contactez-nous',
+            intro: 'Nous serions ravis de vous rencontrer, de vous accompagner et de vous aider à faire vos premiers pas dans cette famille de foi.',
+            addressTitle: 'Adresse',
+            emailTitle: 'E-mail',
+            phoneTitle: 'Téléphone',
+            formTitle: 'Envoyez-nous un message',
+            formIntro: 'Remplissez le formulaire et nous vous répondrons dès que possible.',
+            labelName: 'Nom complet',
+            placeholderName: 'Votre nom',
+            labelEmail: 'Adresse e-mail',
+            placeholderEmail: 'votre@email.com',
+            labelPhone: 'Téléphone',
+            placeholderPhone: 'Votre numéro',
+            labelSubject: 'Sujet',
+            optionGeneral: 'Demande générale',
+            optionPrayer: 'Demande de prière',
+            optionTestimony: 'Partager un témoignage',
+            optionNew: 'Je suis nouveau ici',
+            labelMessage: 'Message',
+            placeholderMessage: 'Comment pouvons-nous vous aider ?',
+            submitButton: 'Envoyer le message'
         },
         testimonio: {
             metaTitle: "Soumettre un témoignage | Fountain of Life Fire Ministries Int'l (N.L.C)",

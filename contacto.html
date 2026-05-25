@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contáctanos</title>
+    <title data-i18n-key="contacto.metaTitle">Contáctanos</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -261,6 +261,7 @@ footer p{
       <a href="index.html" data-i18n-key="nav.home">Inicio</a>
       <a href="pages/conocenos.html" data-i18n-key="nav.about">Conocenos</a>
       <a href="index.html#servicios" data-i18n-key="nav.services">Servicios</a>
+      <a href="pages/proximos_programas.html" data-i18n-key="nav.events">Eventos</a>
       <a href="pages/ramas.html" data-i18n-key="nav.branches">Sucursales</a>
       <a href="pages/redes_sociales1.html" data-i18n-key="nav.social">Redes sociales</a>
       <a href="testimonio.html" data-i18n-key="nav.testimony">Testimonios</a>
@@ -279,25 +280,25 @@ footer p{
         
         <div class="contact-info">
 
-            <h2>Contáctanos</h2>
+            <h2 data-i18n-key="contacto.title">Contáctanos</h2>
 
-            <p>
+            <p data-i18n-key="contacto.intro">
                 Nos encantaría conocerte, acompañarte y ayudarte a dar tus primeros pasos
                 en esta familia de fe.
             </p>
 
             <div class="info-box">
-                <h4>Dirección</h4>
+                <h4 data-i18n-key="contacto.addressTitle">Dirección</h4>
                 <span>Malabo, Guinea Ecuatorial</span>
             </div>
 
             <div class="info-box">
-                <h4>Correo</h4>
+                <h4 data-i18n-key="contacto.emailTitle">Correo</h4>
                 <span>fountainlifefireministries@gmail.com</span>
             </div>
 
             <div class="info-box">
-                <h4>Teléfono</h4>
+                <h4 data-i18n-key="contacto.phoneTitle">Teléfono</h4>
                 <span>+240 222 588 652</span>
                 <span>+240 222 245 201</span>
             </div>
@@ -307,46 +308,46 @@ footer p{
         
         <div class="contact-form">
 
-            <h3>Envíanos un mensaje</h3>
+            <h3 data-i18n-key="contacto.formTitle">Envíanos un mensaje</h3>
 
-            <p>Completa el formulario y te responderemos lo antes posible.</p>
+            <p data-i18n-key="contacto.formIntro">Completa el formulario y te responderemos lo antes posible.</p>
 
             <form>
 
                 <div class="form-group">
-                    <label for="name">Nombre Completo</label>
-                    <input type="text" id="name" placeholder="Tu nombre">
+                    <label for="name" data-i18n-key="contacto.labelName">Nombre Completo</label>
+                    <input type="text" id="name" placeholder="Tu nombre" data-i18n-key="contacto.placeholderName" data-i18n-attr="placeholder">
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" id="email" placeholder="tu@email.com">
+                    <label for="email" data-i18n-key="contacto.labelEmail">Correo Electrónico</label>
+                    <input type="email" id="email" placeholder="tu@email.com" data-i18n-key="contacto.placeholderEmail" data-i18n-attr="placeholder">
                 </div>
 
                 <div class="form-group">
-                    <label for="phone">Teléfono</label>
-                    <input type="tel" id="phone" placeholder="Tu número">
+                    <label for="phone" data-i18n-key="contacto.labelPhone">Teléfono</label>
+                    <input type="tel" id="phone" placeholder="Tu número" data-i18n-key="contacto.placeholderPhone" data-i18n-attr="placeholder">
                 </div>
 
                 <div class="form-group">
-                    <label for="subject">Asunto</label>
+                    <label for="subject" data-i18n-key="contacto.labelSubject">Asunto</label>
 
                     <select id="subject">
-                        <option>Consulta General</option>
-                        <option>Petición de Oración</option>
-                        <option>Compartir Testimonio</option>
-                        <option>Soy Nuevo Aquí</option>
+                        <option data-i18n-key="contacto.optionGeneral">Consulta General</option>
+                        <option data-i18n-key="contacto.optionPrayer">Petición de Oración</option>
+                        <option data-i18n-key="contacto.optionTestimony">Compartir Testimonio</option>
+                        <option data-i18n-key="contacto.optionNew">Soy Nuevo Aquí</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="message">Mensaje</label>
+                    <label for="message" data-i18n-key="contacto.labelMessage">Mensaje</label>
 
-                    <textarea id="message" rows="5" placeholder="¿Cómo podemos ayudarte?"></textarea>
+                    <textarea id="message" rows="5" placeholder="¿Cómo podemos ayudarte?" data-i18n-key="contacto.placeholderMessage" data-i18n-attr="placeholder"></textarea>
                 </div>
 
                 <button type="submit" class="submit-btn">
-                    Enviar Mensaje
+                    <span data-i18n-key="contacto.submitButton">Enviar Mensaje</span>
                 </button>
 
             </form>
