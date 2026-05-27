@@ -883,7 +883,10 @@ setupMenuToggle();
 setupLanguageSwitcher();
 
 if (prevBtn && nextBtn && mainImg && miniCards.length) {
-    const images = ['../images/photo1.jpg', '../images/photo2.jpg', '../images/photo3.jpg'];
+    const imageBasePath = window.location.pathname.replace(/\\/g, '/').includes('/pages/')
+        ? '../src/images/'
+        : 'src/images/';
+    const images = ['photo1.jpg', 'photo2.jpg', 'photo3.jpg'].map(image => `${imageBasePath}${image}`);
     let current = 0;
 
     function updateSlider() {
