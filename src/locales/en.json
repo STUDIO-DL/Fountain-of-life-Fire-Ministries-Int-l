@@ -1,0 +1,298 @@
+{
+  "common": {
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "events": "Events",
+      "branches": "Branches",
+      "social": "Social Media",
+      "testimony": "Testimonies",
+      "contact": "Contact"
+    },
+    "langEnglish": "English",
+    "langSpanish": "Español",
+    "langFrench": "Français",
+    "chooseLanguage": "Language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "brand": "Fountain of Life Fire Ministries Int'l (N.V.C)",
+    "copyright": "© 2026 Fountain of Life Fire Ministries Int'l (N.V.C)"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "events": "Events",
+    "branches": "Branches",
+    "social": "Social Media",
+    "testimony": "Testimonies",
+    "contact": "Contact"
+  },
+  "index": {
+    "hero": {
+      "tag": "Spirit · Community · Renewal",
+      "title": "Experience a real encounter with God",
+      "text": "Discover our services, activities, and gatherings designed to inspire, heal, and renew your faith. Each image reflects the strength and unity of a modern spiritual family.",
+      "btnJoin": "Join Now",
+      "btnBranches": "Find a Branch"
+    },
+    "vision": {
+      "text": "At Fountain of Life Fire Ministry Int'l we believe in the transforming power of God’s presence. We are a house of worship, restoration, and spiritual revival. Here lives are renewed, hearts are ignited, and destinies are restored. We raise a generation full of faith, purpose, and passion for Christ. This is a place where the fountain of life never stops flowing.",
+      "btnReadMore": "Read More"
+    },
+    "services": {
+      "sectionSpan": "Join us in worship",
+      "sectionTitle": "Service Schedule"
+    },
+    "welcome": {
+      "tag": "WELCOME",
+      "title": "New Here?",
+      "text": "We would love to meet you, walk with you, and help you take your first steps into this family of faith.",
+      "btn": "I’m new here"
+    },
+    "gallery": {
+      "card1": {
+        "tag": "Live Service",
+        "title": "Message of Faith and Power"
+      },
+      "card2": {
+        "tag": "Gathering",
+        "title": "Voice of Revival"
+      },
+      "card3": {
+        "tag": "Healing",
+        "title": "Healing Prayer"
+      },
+      "card4": {
+        "tag": "Youth",
+        "title": "Family Worship"
+      },
+      "card5": {
+        "tag": "Congregation",
+        "title": "Worship Service"
+      }
+    },
+    "serviceCards": {
+      "card1": {
+        "title": "Sunday Worship Service",
+        "timezone": "Timezone: GMT+1",
+        "detail1Label": "1st Service:",
+        "detail1Value": "8:00 am - 10:00 am",
+        "detail2Label": "2nd Service:",
+        "detail2Value": "10:00 am - 12:00 pm"
+      },
+      "card2": {
+        "title": "Bible Study",
+        "timezone": "Timezone: GMT+1",
+        "detailLabel": "Every Monday:",
+        "detailValue": "5:00 pm - 6:30 pm"
+      },
+      "card3": {
+        "title": "Healing Service",
+        "timezone": "Timezone: GMT+1",
+        "detailLabel": "Every Tuesday:",
+        "detailValue": "9:00 am"
+      },
+      "card4": {
+        "title": "Deliverance Service",
+        "timezone": "Timezone: GMT+1",
+        "detailLabel": "Every Thursday:",
+        "detailValue": "5:00 pm - 6:30 pm"
+      },
+      "card5": {
+        "title": "Youth Meeting",
+        "timezone": "Timezone: GMT+1",
+        "detailLabel": "Every Saturday:",
+        "detailValue": "3:00 pm"
+      }
+    },
+    "testimonyCard": {
+      "tag": "LIVES TRANSFORMED",
+      "title": "Faith Testimonials",
+      "text": "Discover real stories of healing, restoration, and miracles God has done in our congregation.",
+      "link": "View testimonies"
+    },
+    "upcomingCard": {
+      "tag": "UPCOMING EVENTS",
+      "title": "Upcoming Programs",
+      "text": "Discover the next programs and activities of our community to join and grow in faith.",
+      "link": "View events"
+    },
+    "branchCard": {
+      "tag": "NEAR YOU",
+      "title": "Find a Branch",
+      "text": "Locate the nearest branch and join us in person for our services, meetings and spiritual activities.",
+      "link": "Search branch"
+    }
+  },
+  "conocenos": {
+    "heroTitle": "About Us",
+    "heroText": "We are a spiritual family called to preach salvation by demonstrating the power of God. Here you will discover who we are, why we exist, and how we work to restore destinies in the name of Jesus Christ.",
+    "section1Title": "1. Who we are",
+    "section1Text": "We are Fountain of life, Fire ministry, the church of Christ entrusted to preach salvation by demonstrating the power of God. We are not just a meeting place: we are a house where the Word is preached and the power of God is manifested to transform real lives.",
+    "section1Highlight": "Fountain of life, Fire ministry",
+    "section2Title": "2. Why we exist / Our mission",
+    "section2Text": "Our mission is to reveal Jesus and restore people’s destinies. We saw that many know God from afar, but do not experience His power to overcome oppression, heal their families, and walk in purpose. That is why we bring the word of salvation focused on deliverance, prosperity, and the establishment of marriages according to God’s design.",
+    "section2Highlight": "Our mission is to reveal Jesus and restore people’s destinies",
+    "section3Title": "3. What sets us apart",
+    "section3Text": "In line with the divine calling of our spiritual father, we work in:",
+    "section3Item1Highlight": "Deliverance",
+    "section3Item1Text": "We minister to break spiritual chains that hold back your progress.",
+    "section3Item2Highlight": "Biblical prosperity",
+    "section3Item2Text": "We teach you to walk in provision and purpose, not in lack.",
+    "section3Item3Highlight": "Marriage establishment",
+    "section3Item3Text": "We support families and couples to restore their home according to God’s plan.",
+    "section3Closing": "All under the direction of the call of our spiritual father.",
+    "section4Title": "4. Leadership",
+    "section4Text": "We are under the coverage and direction of spiritual father",
+    "section4Highlight": "Rev. Anthony Ifesinachi O.",
+    "section4TextRest": "You can learn more about his ministry and daily word on his official Facebook account: Anthony Ifesinachi. We believe in the importance of spiritual covering and fatherhood in ministry.",
+    "section5Title": "5. Proof of what we believe",
+    "section5Text": "We do not preach theory only. We are a church where the power of God is demonstrated to heal, deliver, and restore. If you are looking for a place where faith is practical and visible, this is your place.",
+    "section6Title": "6. How we work",
+    "section6Text": "Pure Word, God’s presence first, and accompaniment. We do not leave you alone after Sunday. We help you walk the process.",
+    "section6Item1Highlight": "Pure Word",
+    "section6Item1Text": "We preach the complete Bible, not half truths.",
+    "section6Item2Highlight": "God’s presence first",
+    "section6Item2Text": "We seek that every meeting is a real encounter, not a show.",
+    "section6Item3Highlight": "Accompaniment",
+    "section6Item3Text": "We do not leave you alone after Sunday. We help you walk the process.",
+    "section7Title": "7. Call to action",
+    "section7TextPart1": "If you feel that your life, your family, or your destiny needs a change, come meet us.",
+    "section7Strong": "Visit us at our next service",
+    "section7TextPart2": "or connect with the word of our spiritual father Anthony Ifesinachi on Facebook."
+  },
+  "miembro": {
+    "heroTitle": "Membership",
+    "heroText": "Become part of our family of faith",
+    "heroTag": "Join the family",
+    "welcomeTitle": "Welcome to Fountain of Life Fire Ministry Int'l",
+    "welcomeText": "We are excited that you have decided to take this step. Complete this form to officially join our Christian community and grow spiritually with us.",
+    "formTitle": "Membership Form",
+    "labelName": "First Name *",
+    "labelSurname": "Last Name *",
+    "labelEmail": "Email Address *",
+    "labelPhone": "Phone *",
+    "labelCountry": "Country *",
+    "optionSelectCountry": "Select country",
+    "optionCountry1": "Equatorial Guinea",
+    "optionCountry2": "Nigeria",
+    "optionCountry3": "Spain",
+    "optionCountry4": "Mexico",
+    "optionCountry5": "United States",
+    "labelApartment": "Apartment / Suite",
+    "labelCity": "City *",
+    "labelState": "State / Province *",
+    "labelPostal": "Postal Code *",
+    "labelNeighborhood": "Neighborhood *",
+    "labelMemberChurch": "Are you a member of another church?",
+    "labelPrayer": "Expectations / Prayer Requests",
+    "submitButton": "Submit Form",
+    "optionYes": "Yes",
+    "optionNo": "No"
+  },
+  "ramas": {
+    "heroTitle": "Find a Branch",
+    "heroText": "Find a Fuente of life branch near you and join us in worship and spiritual growth.",
+    "branchesTitle": "Fuente de Vida Branches",
+    "branchesText": "Visit us at any of our available branches.",
+    "branch1": {
+      "location": "Malabo, Equatorial Guinea",
+      "phone": "+222 588 652|| 222 245 201",
+      "address": "Avenida Hassan II, near the city center."
+    },
+    "branch2": {
+      "location": "Rebola, Equatorial Guinea",
+      "phone": "222 588 652|| 222 245 201",
+      "address": "Main road in Rebola, next to the market."
+    },
+    "branch3": {
+      "location": "Owerri, Nigeria",
+      "phone": "+234 800 123 7890",
+      "address": "NO. 6 NEKEDE OLD ROAD, OWERRI."
+    },
+    "locationBtn": "View location"
+  },
+  "redes_sociales1": {
+    "heroBreadcrumbs": "Home · Social Media",
+    "heroTitle": "Connect With Us",
+    "sectionTitle": "Our Digital Platforms",
+    "sectionSubtitle": "Follow our activities and receive God’s word around the world.",
+    "liveNotice": "• LIVE: We broadcast our faith services weekly through Facebook Live.",
+    "facebookTitle": "Facebook",
+    "facebookText": "Live services",
+    "youtubeTitle": "YouTube",
+    "youtubeText": "Sermons and worship",
+    "instagramTitle": "Instagram",
+    "instagramText": "Moments and photos",
+    "tiktokTitle": "TikTok",
+    "tiktokText": "Short messages",
+    "activitiesText": "Official ministry schedules and activity days."
+  },
+  "contacto": {
+    "metaTitle": "Contact Us | Fountain of Life Fire Ministries Int'l (N.L.C)",
+    "title": "Contact Us",
+    "intro": "We would love to meet you, walk with you, and help you take your first steps into this family of faith.",
+    "addressTitle": "Address",
+    "emailTitle": "Email",
+    "phoneTitle": "Phone",
+    "formTitle": "Send us a message",
+    "formIntro": "Complete the form and we will respond as soon as possible.",
+    "labelName": "Full Name",
+    "placeholderName": "Your name",
+    "labelEmail": "Email Address",
+    "placeholderEmail": "your@email.com",
+    "labelPhone": "Phone",
+    "placeholderPhone": "Your number",
+    "labelSubject": "Subject",
+    "optionGeneral": "General Inquiry",
+    "optionPrayer": "Prayer Request",
+    "optionTestimony": "Share Testimony",
+    "optionNew": "I Am New Here",
+    "labelMessage": "Message",
+    "placeholderMessage": "How can we help you?",
+    "submitButton": "Send Message",
+    "heroTag": "We are here for you",
+    "errorRequired": "Please complete all fields.",
+    "errorEmail": "Please enter a valid email address.",
+    "sending": "Sending...",
+    "success": "Message sent successfully.",
+    "errorSend": "Could not send the message.",
+    "errorConnection": "Connection error."
+  },
+  "proximos_programas": {
+    "title": "Upcoming Programs",
+    "text": "We will soon share upcoming programs and ministry activities here."
+  },
+  "testimonio": {
+    "metaTitle": "Submit Testimony | Fountain of Life Fire Ministries Int'l (N.L.C)",
+    "pageTitle": "Submit Testimony",
+    "pageSubtitle": "Share your experience and help others know the power of God.",
+    "labelName": "Name *",
+    "placeholderName": "Enter your name",
+    "labelSurname": "Surname *",
+    "placeholderSurname": "Enter your surname",
+    "labelGender": "Gender *",
+    "optionSelectGender": "Select",
+    "optionFemale": "Female",
+    "optionMale": "Male",
+    "labelCityCountry": "City | Country *",
+    "placeholderCityCountry": "Example: Madrid, Spain",
+    "labelEmail": "Email Address *",
+    "placeholderEmail": "email@example.com",
+    "labelDate": "Date for the Testimony *",
+    "labelTestimony": "Your Testimony *",
+    "textareaPlaceholder": "Write your testimony here...",
+    "labelUpload": "Files related to the testimony",
+    "buttonText": "Submit Testimony",
+    "noFilesText": "No file selected",
+    "fileNote": "Up to 5 files • PDF • JPG • PNG • Video • 10MB per file",
+    "noAttachments": "No attached files",
+    "fileLabel": "File",
+    "requiredError": "⚠️ Please complete all required fields.",
+    "sendingStatus": "Sending testimony",
+    "successStatus": "✅ Testimony sent successfully! God bless you.",
+    "errorStatus": "❌ Error sending. Please try again."
+  }
+}

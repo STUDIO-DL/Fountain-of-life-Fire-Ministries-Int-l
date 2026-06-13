@@ -1,0 +1,298 @@
+{
+  "common": {
+    "nav": {
+      "home": "Inicio",
+      "about": "Conócenos",
+      "services": "Servicios",
+      "events": "Eventos",
+      "branches": "Sucursales",
+      "social": "Redes Sociales",
+      "testimony": "Testimonios",
+      "contact": "Contacto"
+    },
+    "langEnglish": "English",
+    "langSpanish": "Español",
+    "langFrench": "Français",
+    "chooseLanguage": "Idioma",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "brand": "Fuente de vida ministerio de fuego int'l (N.V.C)",
+    "copyright": "© 2026 Fountain of Life Fire Ministries Int'l (N.V.C)"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Conócenos",
+    "services": "Servicios",
+    "events": "Eventos",
+    "branches": "Sucursales",
+    "social": "Redes Sociales",
+    "testimony": "Testimonios",
+    "contact": "Contacto"
+  },
+  "index": {
+    "hero": {
+      "tag": "Espíritu · Comunidad · Renovación",
+      "title": "Vive un encuentro real con Dios",
+      "text": "Descubre nuestros servicios, actividades y reuniones diseñadas para inspirar, sanar y renovar tu fe. Cada imagen refleja la fuerza y unidad de una familia espiritual moderna.",
+      "btnJoin": "Únete ahora",
+      "btnBranches": "Encuentra una rama"
+    },
+    "vision": {
+      "text": "En Fuente de Vida Ministerio de Fuego creemos en el poder transformador de la presencia de Dios. Somos una casa de adoración, restauración y avivamiento espiritual. Aquí vidas son renovadas, corazones son encendidos y destinos son restaurados. Levantamos una generación llena de fe, propósito y pasión por Cristo. Este es un lugar donde la fuente de vida nunca deja de fluir.",
+      "btnReadMore": "Leer más"
+    },
+    "services": {
+      "sectionSpan": "Únete a nosotros en la adoración",
+      "sectionTitle": "Horarios De Servicio"
+    },
+    "welcome": {
+      "tag": "BIENVENIDO",
+      "title": "¿Eres Nuevo Aquí?",
+      "text": "Nos encantaría conocerte, acompañarte y ayudarte a dar tus primeros pasos en esta familia de fe.",
+      "btn": "Soy nuevo aquí"
+    },
+    "gallery": {
+      "card1": {
+        "tag": "Servicio en Vivo",
+        "title": "Mensaje de fe y poder"
+      },
+      "card2": {
+        "tag": "Encuentro",
+        "title": "Voz de avivamiento"
+      },
+      "card3": {
+        "tag": "Sanación",
+        "title": "Oración de sanación"
+      },
+      "card4": {
+        "tag": "Juventud",
+        "title": "Adoración en familia"
+      },
+      "card5": {
+        "tag": "Congregación",
+        "title": "Culto de adoración"
+      }
+    },
+    "serviceCards": {
+      "card1": {
+        "title": "Servicio de Adoración Dominical",
+        "timezone": "Zona Horaria: GMT+1",
+        "detail1Label": "1er Servicio:",
+        "detail1Value": "8:00 am - 10:00 am",
+        "detail2Label": "2do Servicio:",
+        "detail2Value": "10:00 am - 12:00 pm"
+      },
+      "card2": {
+        "title": "Estudio Bíblico",
+        "timezone": "Zona Horaria: GMT+1",
+        "detailLabel": "Cada Lunes:",
+        "detailValue": "5:00 pm - 6:30 pm"
+      },
+      "card3": {
+        "title": "Servicio de Sanación",
+        "timezone": "Zona Horaria: GMT+1",
+        "detailLabel": "Cada Martes:",
+        "detailValue": "9:00 am"
+      },
+      "card4": {
+        "title": "Servicio de Liberación",
+        "timezone": "Zona Horaria: GMT+1",
+        "detailLabel": "Cada Jueves:",
+        "detailValue": "5:00 pm - 6:30 pm"
+      },
+      "card5": {
+        "title": "Reunión Juvenil",
+        "timezone": "Zona Horaria: GMT+1",
+        "detailLabel": "Cada Sábado:",
+        "detailValue": "3:00 pm"
+      }
+    },
+    "testimonyCard": {
+      "tag": "VIDAS TRANSFORMADAS",
+      "title": "Testimonios de Fe",
+      "text": "Descubre historias reales de sanación, restauración y milagros que Dios ha hecho en nuestra congregación.",
+      "link": "Ver testimonios"
+    },
+    "upcomingCard": {
+      "tag": "PRÓXIMOS EVENTOS",
+      "title": "Próximos Programas",
+      "text": "Conoce los próximos programas y actividades de nuestra comunidad para unirte y crecer en la fe.",
+      "link": "Ver eventos"
+    },
+    "branchCard": {
+      "tag": "CERCA DE TI",
+      "title": "Encuentra Una Rama",
+      "text": "Localiza la sucursal más cercana y únete presencialmente a nuestros servicios, reuniones y actividades espirituales.",
+      "link": "Buscar sucursal"
+    }
+  },
+  "conocenos": {
+    "heroTitle": "Conócenos",
+    "heroText": "Somos una familia espiritual llamada a predicar salvación demostrando el poder de Dios. Aquí descubrirás quiénes somos, por qué existimos y cómo trabajamos para restaurar destinos en el nombre de Jesucristo.",
+    "section1Title": "1. Quiénes somos",
+    "section1Text": "Somos Fuente de Vida, Ministerio de Fuego, la iglesia de Cristo encomendada a predicar salvación demostrando el poder de Dios. No somos solo un lugar de reunión: somos una casa donde la Palabra se predica y el poder de Dios se manifiesta para transformar vidas reales.",
+    "section1Highlight": "Fuente de Vida, Ministerio de Fuego",
+    "section2Title": "2. Por qué existimos / Nuestra misión",
+    "section2Text": "Nuestra misión es revelar a Jesús y restaurar el destino de la gente. Vimos que muchos conocen de Dios de lejos, pero no experimentan su poder para salir de la opresión, sanar sus familias y caminar en propósito. Por eso traemos la palabra de salvación enfocada en liberación, prosperidad y el establecimiento de matrimonios conforme al diseño de Dios.",
+    "section2Highlight": "Nuestra misión es revelar a Jesús y restaurar el destino de la gente",
+    "section3Title": "3. Qué nos distingue",
+    "section3Text": "En línea con el llamado divino de nuestro padre espiritual, obramos en:",
+    "section3Item1Highlight": "Liberación",
+    "section3Item1Text": "Ministramos para romper ataduras espirituales que frenan tu avance.",
+    "section3Item2Highlight": "Prosperidad bíblica",
+    "section3Item2Text": "Enseñamos a caminar en provisión y propósito, no en escasez.",
+    "section3Item3Highlight": "Establecimiento de matrimonios",
+    "section3Item3Text": "Acompañamos a familias y parejas a restaurar su hogar según el plan de Dios.",
+    "section3Closing": "Todo bajo la dirección del llamado de nuestro padre espiritual.",
+    "section4Title": "4. Liderazgo",
+    "section4Text": "Estamos bajo la cobertura y dirección del padre espiritual",
+    "section4Highlight": "Rev. Anthony Ifesinachi O.",
+    "section4TextRest": "Puedes conocer más de su ministerio y palabra diaria en su cuenta oficial de Facebook: Anthony Ifesinachi. Creemos en la importancia de la cobertura espiritual y la paternidad en el ministerio.",
+    "section5Title": "5. Prueba de lo que creemos",
+    "section5Text": "No predicamos solo teoría. Somos una iglesia donde se demuestra el poder de Dios para sanar, liberar y restaurar. Si buscas un lugar donde la fe sea práctica y visible, este es tu lugar.",
+    "section6Title": "6. Cómo trabajamos",
+    "section6Text": "Palabra sin adulterar, presencia de Dios primero y acompañamiento. No te dejamos solo después del domingo. Te ayudamos a caminar el proceso.",
+    "section6Item1Highlight": "Palabra sin adulterar",
+    "section6Item1Text": "Predicamos la Biblia completa, no medias verdades.",
+    "section6Item2Highlight": "Presencia de Dios primero",
+    "section6Item2Text": "Buscamos que cada reunión sea un encuentro real, no un show.",
+    "section6Item3Highlight": "Acompañamiento",
+    "section6Item3Text": "No te dejamos solo después del domingo. Te ayudamos a caminar el proceso.",
+    "section7Title": "7. Llamado a la acción",
+    "section7TextPart1": "Si sientes que tu vida, tu familia o tu destino necesitan un cambio, ven a conocernos.",
+    "section7Strong": "Visítanos en nuestro próximo servicio",
+    "section7TextPart2": "o conéctate con la palabra de nuestro padre espiritual Anthony Ifesinachi en Facebook."
+  },
+  "miembro": {
+    "heroTitle": "Membresía",
+    "heroText": "Forma parte de nuestra familia de fe",
+    "heroTag": "Únete a la familia",
+    "welcomeTitle": "Bienvenido a Fuente de Vida Ministerio de Fuego Int'l",
+    "welcomeText": "Estamos emocionados de que hayas decidido dar este paso. Completa este formulario para formar parte oficialmente de nuestra comunidad cristiana y crecer espiritualmente junto a nosotros.",
+    "formTitle": "Formulario de Membresía",
+    "labelName": "Nombre *",
+    "labelSurname": "Apellido *",
+    "labelEmail": "Correo Electrónico *",
+    "labelPhone": "Teléfono *",
+    "labelCountry": "País *",
+    "optionSelectCountry": "Seleccione país",
+    "optionCountry1": "Guinea Ecuatorial",
+    "optionCountry2": "Nigeria",
+    "optionCountry3": "España",
+    "optionCountry4": "México",
+    "optionCountry5": "Estados Unidos",
+    "labelApartment": "Apartamento / Suite",
+    "labelCity": "Ciudad *",
+    "labelState": "Estado / Provincia *",
+    "labelPostal": "Código Postal *",
+    "labelNeighborhood": "Barrio *",
+    "labelMemberChurch": "¿Es miembro de otra iglesia?",
+    "labelPrayer": "Expectativas / Peticiones de oración",
+    "submitButton": "Enviar Formulario",
+    "optionYes": "Sí",
+    "optionNo": "No"
+  },
+  "ramas": {
+    "heroTitle": "Localiza una Sucursal",
+    "heroText": "Encuentra una sucursal de Fuente de Vida cerca de ti y acompáñanos en adoración y crecimiento espiritual.",
+    "branchesTitle": "Sucursales de Fuente de Vida",
+    "branchesText": "Visítanos en cualquiera de nuestras sucursales disponibles.",
+    "branch1": {
+      "location": "Malabo, Guinea Ecuatorial",
+      "phone": "222 588 652|| 222 245 201",
+      "address": "Avenida Hassan II, cerca del centro de la ciudad."
+    },
+    "branch2": {
+      "location": "Rebola, Guinea Ecuatorial",
+      "phone": "222 588 652|| 222 245 201",
+      "address": "Carretera principal de Rebola, junto al mercado."
+    },
+    "branch3": {
+      "location": "Owerri, Nigeria",
+      "phone": "222 588 652|| 222 245 201",
+      "address": "NO. 6 NEKEDE OLD ROAD, OWERRI, NIGERIA."
+    },
+    "locationBtn": "Ver ubicación"
+  },
+  "redes_sociales1": {
+    "heroBreadcrumbs": "Home · Redes Sociales",
+    "heroTitle": "Conéctate Con Nosotros",
+    "sectionTitle": "Nuestras Plataformas Digitales",
+    "sectionSubtitle": "Sigue nuestras actividades y recibe la palabra de Dios en todo el mundo.",
+    "liveNotice": "• EN DIRECTO: Transmitimos nuestros servicios de fe cada semana a través de Facebook Live.",
+    "facebookTitle": "Facebook",
+    "facebookText": "Servicios en vivo",
+    "youtubeTitle": "YouTube",
+    "youtubeText": "Prédicas y Alabanzas",
+    "instagramTitle": "Instagram",
+    "instagramText": "Momentos y Fotos",
+    "tiktokTitle": "TikTok",
+    "tiktokText": "Mensajes Cortos",
+    "activitiesText": "Horarios oficiales y días de actividades del ministerio."
+  },
+  "contacto": {
+    "metaTitle": "Contáctanos | Fountain of Life Fire Ministries Int'l (N.L.C)",
+    "title": "Contáctanos",
+    "intro": "Nos encantaría conocerte, acompañarte y ayudarte a dar tus primeros pasos en esta familia de fe.",
+    "addressTitle": "Dirección",
+    "emailTitle": "Correo",
+    "phoneTitle": "Teléfono",
+    "formTitle": "Envíanos un mensaje",
+    "formIntro": "Completa el formulario y te responderemos lo antes posible.",
+    "labelName": "Nombre Completo",
+    "placeholderName": "Tu nombre",
+    "labelEmail": "Correo Electrónico",
+    "placeholderEmail": "tu@email.com",
+    "labelPhone": "Teléfono",
+    "placeholderPhone": "Tu número",
+    "labelSubject": "Asunto",
+    "optionGeneral": "Consulta General",
+    "optionPrayer": "Petición de Oración",
+    "optionTestimony": "Compartir Testimonio",
+    "optionNew": "Soy Nuevo Aquí",
+    "labelMessage": "Mensaje",
+    "placeholderMessage": "¿Cómo podemos ayudarte?",
+    "submitButton": "Enviar Mensaje",
+    "heroTag": "Estamos aquí para ti",
+    "errorRequired": "Por favor completa todos los campos.",
+    "errorEmail": "Introduce un correo electrónico válido.",
+    "sending": "Enviando...",
+    "success": "Mensaje enviado correctamente.",
+    "errorSend": "No se pudo enviar el mensaje.",
+    "errorConnection": "Error de conexión."
+  },
+  "proximos_programas": {
+    "title": "Próximos Programas",
+    "text": "Muy pronto compartiremos aquí los próximos programas y actividades del ministerio."
+  },
+  "testimonio": {
+    "metaTitle": "Enviar Testimonio | Fountain of Life Fire Ministries Int'l (N.L.C)",
+    "pageTitle": "Enviar Testimonio",
+    "pageSubtitle": "Comparte tu experiencia y ayuda a otros a conocer el poder de Dios.",
+    "labelName": "Nombre *",
+    "placeholderName": "Ingrese su nombre",
+    "labelSurname": "Apellidos *",
+    "placeholderSurname": "Ingrese sus apellidos",
+    "labelGender": "Género *",
+    "optionSelectGender": "Seleccione",
+    "optionFemale": "Mujer",
+    "optionMale": "Hombre",
+    "labelCityCountry": "Ciudad | País *",
+    "placeholderCityCountry": "Ejemplo: Madrid, España",
+    "labelEmail": "Correo Electrónico *",
+    "placeholderEmail": "correo@ejemplo.com",
+    "labelDate": "Fecha para el Testimonio *",
+    "labelTestimony": "Su Testimonio *",
+    "textareaPlaceholder": "Escriba aquí su testimonio...",
+    "labelUpload": "Archivos relacionados con el testimonio",
+    "buttonText": "Enviar Testimonio",
+    "noFilesText": "Ningún archivo seleccionado",
+    "fileNote": "Máximo 5 archivos • PDF • JPG • PNG • Video • 10MB por archivo",
+    "noAttachments": "Sin archivos adjuntos",
+    "fileLabel": "Archivo",
+    "requiredError": "⚠️ Por favor complete todos los campos requeridos.",
+    "sendingStatus": "Enviando testimonio",
+    "successStatus": "✅ ¡Testimonio enviado con éxito! Que Dios le bendiga.",
+    "errorStatus": "❌ Error al enviar. Por favor intente nuevamente."
+  }
+}

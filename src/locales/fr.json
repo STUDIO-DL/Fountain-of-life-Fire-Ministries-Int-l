@@ -1,0 +1,297 @@
+{
+  "common": {
+    "nav": {
+      "home": "Accueil",
+      "about": "À propos",
+      "services": "Services",
+      "events": "Événements",
+      "branches": "Succursales",
+      "social": "Réseaux",
+      "testimony": "Témoignages",
+      "contact": "Contact"
+    },
+    "langEnglish": "English",
+    "langSpanish": "Español",
+    "langFrench": "Français",
+    "chooseLanguage": "Langue",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "brand": "Fontaine de Vie Ministère du Feu Int'l (N.V.C)",
+    "copyright": "© 2026 Fountain of Life Fire Ministries Int'l (N.V.C)"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "events": "Événements",
+    "branches": "Succursales",
+    "social": "Réseaux",
+    "testimony": "Témoignages",
+    "contact": "Contact"
+  },
+  "index": {
+    "hero": {
+      "tag": "Esprit · Communauté · Renouveau",
+      "title": "Vivez une rencontre réelle avec Dieu",
+      "text": "Découvrez nos services, activités et réunions conçus pour inspirer, guérir et renouveler votre foi. Chaque image reflète la force et l’unité d’une famille spirituelle moderne.",
+      "btnJoin": "Rejoindre maintenant",
+      "btnBranches": "Trouver une branche"
+    },
+    "vision": {
+      "text": "Chez Source de Vie Ministère du Feu Int'l, nous croyons au pouvoir transformateur de la présence de Dieu. Nous sommes une maison de culte, de restauration et de réveil spirituel. Ici, les vies sont renouvelées, les cœurs sont enflammés et les destinées sont restaurées. Nous élevons une génération pleine de foi, de but et de passion pour le Christ. C’est un lieu où la fontaine de vie ne cesse jamais de couler.",
+      "btnReadMore": "En savoir plus"
+    },
+    "services": {
+      "sectionSpan": "Rejoignez-nous dans l’adoration",
+      "sectionTitle": "Horaires de service"
+    },
+    "welcome": {
+      "tag": "BIENVENUE",
+      "title": "Nouveau ici ?",
+      "text": "Nous serions ravis de vous rencontrer, de vous accompagner et de vous aider à faire vos premiers pas dans cette famille de foi.",
+      "btn": "Je suis nouveau ici"
+    },
+    "gallery": {
+      "card1": {
+        "tag": "Service en direct",
+        "title": "Message de foi et de puissance"
+      },
+      "card2": {
+        "tag": "Rassemblement",
+        "title": "Voix du réveil"
+      },
+      "card3": {
+        "tag": "Guérison",
+        "title": "Prière de guérison"
+      },
+      "card4": {
+        "tag": "Jeunesse",
+        "title": "Adoration en famille"
+      },
+      "card5": {
+        "tag": "Congrégation",
+        "title": "Culte d’adoration"
+      }
+    },
+    "serviceCards": {
+      "card1": {
+        "title": "Service d’adoration du dimanche",
+        "timezone": "Fuseau horaire : GMT+1",
+        "detail1Label": "1er service :",
+        "detail1Value": "8h00 - 10h00",
+        "detail2Label": "2ème service :",
+        "detail2Value": "10h00 - 12h00"
+      },
+      "card2": {
+        "title": "Étude biblique",
+        "timezone": "Fuseau horaire : GMT+1",
+        "detailLabel": "Chaque lundi :",
+        "detailValue": "17h00 - 18h30"
+      },
+      "card3": {
+        "title": "Service de guérison",
+        "timezone": "Fuseau horaire : GMT+1",
+        "detailLabel": "Chaque mardi :",
+        "detailValue": "9h00"
+      },
+      "card4": {
+        "title": "Service de délivrance",
+        "timezone": "Fuseau horaire : GMT+1",
+        "detailLabel": "Chaque jeudi :",
+        "detailValue": "17h00 - 18h30"
+      },
+      "card5": {
+        "title": "Réunion de jeunesse",
+        "timezone": "Fuseau horaire : GMT+1",
+        "detailLabel": "Chaque samedi :",
+        "detailValue": "15h00"
+      }
+    },
+    "testimonyCard": {
+      "tag": "VIES TRANSFORMÉES",
+      "title": "Témoignages de foi",
+      "text": "Découvrez des histoires réelles de guérison, de restauration et de miracles que Dieu a accomplis dans notre congrégation.",
+      "link": "Voir les témoignages"
+    },
+    "upcomingCard": {
+      "tag": "ÉVÉNEMENTS À VENIR",
+      "title": "Programmes à venir",
+      "text": "Découvrez les prochains programmes et activités de notre communauté pour rejoindre et grandir dans la foi.",
+      "link": "Voir les événements"
+    },
+    "branchCard": {
+      "tag": "PRÈS DE VOUS",
+      "title": "Trouvez une succursale",
+      "text": "Trouvez une succursale de Source de Vie près de chez vous et rejoignez-nous en adoration et croissance spirituelle.",
+      "link": "Rechercher une succursale"
+    }
+  },
+  "conocenos": {
+    "heroTitle": "À propos de nous",
+    "heroText": "Nous sommes une famille spirituelle appelée à prêcher le salut en démontrant la puissance de Dieu. Ici, vous découvrirez qui nous sommes, pourquoi nous existons et comment nous travaillons pour restaurer des destinées au nom de Jésus-Christ.",
+    "section1Title": "1. Qui nous sommes",
+    "section1Text": "Nous sommes Fontaine de Vie, Ministère du Feu, l'église du Christ chargée de prêcher le salut en démontrant la puissance de Dieu. Nous ne sommes pas seulement un lieu de réunion : nous sommes une maison où la Parole est prêchée et la puissance de Dieu se manifeste pour transformer des vies réelles.",
+    "section1Highlight": "Fontaine de Vie, Ministère du Feu",
+    "section2Title": "2. Pourquoi nous existons / Notre mission",
+    "section2Text": "Notre mission est de révéler Jésus et de restaurer la destinée des gens. Nous avons vu que beaucoup connaissent Dieu de loin, mais n’expérimentent pas Sa puissance pour sortir de l’oppression, guérir leurs familles et marcher dans le but. C’est pourquoi nous apportons la parole de salut axée sur la délivrance, la prospérité et l’établissement des mariages selon le dessein de Dieu.",
+    "section2Highlight": "Notre mission est de révéler Jésus et de restaurer la destinée des gens",
+    "section3Title": "3. Ce qui nous distingue",
+    "section3Text": "Voici ce qui nous distingue des autres ministères :",
+    "section3Item1Highlight": "Délivrance",
+    "section3Item1Text": "Nous ministrons pour briser les chaînes spirituelles qui empêchent votre progrès.",
+    "section3Item2Highlight": "Prospérité biblique",
+    "section3Item2Text": "Nous vous enseignons à marcher dans la provision et le but, pas dans le manque.",
+    "section3Item3Highlight": "Établissement des mariages",
+    "section3Item3Text": "Nous accompagnons les familles et les couples à restaurer leur foyer selon le plan de Dieu.",
+    "section3Closing": "Le tout sous la direction de l’appel de notre père spirituel.",
+    "section4Title": "4. Leadership",
+    "section4Text": "Nous sommes sous la couverture et la direction du père spirituel",
+    "section4Highlight": "Rev. Anthony Ifesinachi O.",
+    "section4TextRest": "Vous pouvez en savoir plus sur son ministère et sa parole quotidienne sur son compte Facebook officiel : Rev. Anthony Ifesinachi O. Nous croyons en l’importance de la couverture spirituelle et de la paternité dans le ministère.",
+    "section5Title": "5. Preuve de ce en quoi nous croyons",
+    "section5Text": "Nous ne prêchons pas seulement la théorie. Nous sommes une église où la puissance de Dieu se manifeste pour guérir, délivrer et restaurer. Si vous cherchez un lieu où la foi est pratique et visible, c’est votre place.",
+    "section6Title": "6. Comment nous travaillons",
+    "section6Text": "Parole pure, présence de Dieu en premier et accompagnement. Nous ne vous laissons pas seul après le dimanche. Nous vous aidons à marcher le processus.",
+    "section6Item1Highlight": "Parole pure",
+    "section6Item1Text": "Nous prêchons la Bible complète, pas des demi-vérités.",
+    "section6Item2Highlight": "Présence de Dieu d’abord",
+    "section6Item2Text": "Nous cherchons à ce que chaque réunion soit une rencontre réelle, pas un spectacle.",
+    "section6Item3Highlight": "Accompagnement",
+    "section6Item3Text": "Nous ne vous laissons pas seul après le dimanche. Nous vous aidons à marcher le processus.",
+    "section7TextPart1": "Si vous sentez que votre vie, votre famille ou votre destinée ont besoin d’un changement, venez nous rencontrer.",
+    "section7Strong": "Visitez-nous lors de notre prochain service",
+    "section7TextPart2": "ou connectez-vous à la parole de notre père spirituel Rev. Anthony Ifesinachi O. sur Facebook."
+  },
+  "miembro": {
+    "heroTitle": "Adhésion",
+    "heroText": "Faites partie de notre famille de foi",
+    "heroTag": "Rejoignez la famille",
+    "welcomeTitle": "Bienvenue à Fontaine de Vie Ministère du Feu Int'l",
+    "welcomeText": "Nous sommes ravis que vous ayez décidé de faire ce pas. Remplissez ce formulaire pour faire officiellement partie de notre communauté chrétienne et grandir spirituellement avec nous.",
+    "formTitle": "Formulaire d’adhésion",
+    "labelName": "Prénom *",
+    "labelSurname": "Nom *",
+    "labelEmail": "Adresse e-mail *",
+    "labelPhone": "Téléphone *",
+    "labelCountry": "Pays *",
+    "optionSelectCountry": "Sélectionnez le pays",
+    "optionCountry1": "Guinée équatoriale",
+    "optionCountry2": "Nigéria",
+    "optionCountry3": "Espagne",
+    "optionCountry4": "Mexique",
+    "optionCountry5": "États-Unis",
+    "labelApartment": "Appartement / Suite",
+    "labelCity": "Ville *",
+    "labelState": "État / Province *",
+    "labelPostal": "Code postal *",
+    "labelNeighborhood": "Quartier *",
+    "labelMemberChurch": "Êtes-vous membre d’une autre église ?",
+    "labelPrayer": "Attentes / Demandes de prière",
+    "submitButton": "Envoyer le formulaire",
+    "optionYes": "Oui",
+    "optionNo": "Non"
+  },
+  "ramas": {
+    "heroTitle": "Trouvez une succursale",
+    "heroText": "Trouvez une succursale de Fontaine de Vie près de chez vous et rejoignez-nous en adoration et croissance spirituelle.",
+    "branchesTitle": "Succursales Fontaine de Vie",
+    "branchesText": "Visitez-nous dans n’importe laquelle de nos succursales disponibles.",
+    "branch1": {
+      "location": "Malabo, Guinée équatoriale",
+      "phone": "222 588 652|| 222 245 201",
+      "address": "Avenida Hassan II, près du centre-ville."
+    },
+    "branch2": {
+      "location": "Rebola, Guinée équatoriale",
+      "phone": "222 588 652|| 222 245 201",
+      "address": "Route principale de Rebola, à côté du marché."
+    },
+    "branch3": {
+      "location": "Owerri, Nigeria",
+      "phone": "222 588 652|| 222 245 201",
+      "address": "NO. 6 NEKEDE OLD ROAD, OWERRI, NIGERIA."
+    },
+    "locationBtn": "Voir l’emplacement"
+  },
+  "redes_sociales1": {
+    "heroBreadcrumbs": "Accueil · Réseaux sociaux",
+    "heroTitle": "Connectez-vous avec nous",
+    "sectionTitle": "Nos plateformes numériques",
+    "sectionSubtitle": "Suivez nos activités et recevez la parole de Dieu dans le monde entier.",
+    "liveNotice": "• EN DIRECT : Nous diffusons nos services de foi chaque semaine via Facebook Live.",
+    "facebookTitle": "Facebook",
+    "facebookText": "Services en direct",
+    "youtubeTitle": "YouTube",
+    "youtubeText": "Sermons et louanges",
+    "instagramTitle": "Instagram",
+    "instagramText": "Moments et photos",
+    "tiktokTitle": "TikTok",
+    "tiktokText": "Courts messages",
+    "activitiesText": "Horaires officiels et jours d’activités du ministère."
+  },
+  "contacto": {
+    "metaTitle": "Contactez-nous | Fountain of Life Fire Ministries Int'l (N.L.C)",
+    "title": "Contactez-nous",
+    "intro": "Nous serions ravis de vous rencontrer, de vous accompagner et de vous aider à faire vos premiers pas dans cette famille de foi.",
+    "addressTitle": "Adresse",
+    "emailTitle": "E-mail",
+    "phoneTitle": "Téléphone",
+    "formTitle": "Envoyez-nous un message",
+    "formIntro": "Remplissez le formulaire et nous vous répondrons dès que possible.",
+    "labelName": "Nom complet",
+    "placeholderName": "Votre nom",
+    "labelEmail": "Adresse e-mail",
+    "placeholderEmail": "votre@email.com",
+    "labelPhone": "Téléphone",
+    "placeholderPhone": "Votre numéro",
+    "labelSubject": "Sujet",
+    "optionGeneral": "Demande générale",
+    "optionPrayer": "Demande de prière",
+    "optionTestimony": "Partager un témoignage",
+    "optionNew": "Je suis nouveau ici",
+    "labelMessage": "Message",
+    "placeholderMessage": "Comment pouvons-nous vous aider ?",
+    "submitButton": "Envoyer le message",
+    "heroTag": "Nous sommes là pour vous",
+    "errorRequired": "Veuillez remplir tous les champs.",
+    "errorEmail": "Veuillez entrer une adresse e-mail valide.",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès.",
+    "errorSend": "Impossible d'envoyer le message.",
+    "errorConnection": "Erreur de connexion."
+  },
+  "proximos_programas": {
+    "title": "Programmes à venir",
+    "text": "Nous partagerons bientôt ici les prochains programmes et activités du ministère."
+  },
+  "testimonio": {
+    "metaTitle": "Soumettre un témoignage | Fountain of Life Fire Ministries Int'l (N.L.C)",
+    "pageTitle": "Soumettre un témoignage",
+    "pageSubtitle": "Partagez votre expérience et aidez les autres à connaître la puissance de Dieu.",
+    "labelName": "Nom *",
+    "placeholderName": "Entrez votre nom",
+    "labelSurname": "Prénom *",
+    "placeholderSurname": "Entrez votre prénom",
+    "labelGender": "Genre *",
+    "optionSelectGender": "Sélectionnez",
+    "optionFemale": "Femme",
+    "optionMale": "Homme",
+    "labelCityCountry": "Ville | Pays *",
+    "placeholderCityCountry": "Exemple : Madrid, Espagne",
+    "labelEmail": "Adresse e-mail *",
+    "placeholderEmail": "email@exemple.com",
+    "labelDate": "Date du témoignage *",
+    "labelTestimony": "Votre témoignage *",
+    "textareaPlaceholder": "Écrivez votre témoignage ici...",
+    "labelUpload": "Fichiers liés au témoignage",
+    "buttonText": "Envoyer le témoignage",
+    "noFilesText": "Aucun fichier sélectionné",
+    "fileNote": "Jusqu’à 5 fichiers • PDF • JPG • PNG • Vidéo • 10 Mo par fichier",
+    "noAttachments": "Aucun fichier joint",
+    "fileLabel": "Fichier",
+    "requiredError": "⚠️ Veuillez remplir tous les champs obligatoires.",
+    "sendingStatus": "Envoi du témoignage",
+    "successStatus": "✅ Témoignage envoyé avec succès ! Que Dieu vous bénisse.",
+    "errorStatus": "❌ Erreur lors de l’envoi. Veuillez réessayer."
+  }
+}

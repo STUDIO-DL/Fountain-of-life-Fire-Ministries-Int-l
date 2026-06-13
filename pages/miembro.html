@@ -1,202 +1,22 @@
 ﻿<!DOCTYPE html>
 <html lang="es" translate="no">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Membresía | Fountain of Life Fire Ministries Int'l (N.L.C)</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="../src/css/style.css">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-body{
-    background:#f8fafc;
-    color:#222;
-}
-
-/* HERO (clean + smaller + image support) */
-.membership-hero{
-    position:relative;
-    height:320px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:white;
-    overflow:hidden;
-
-        background:
-            linear-gradient(rgba(15,23,42,0.75),rgba(88,28,135,0.65)),
-            url('../src/images/imgSucursal.png') center/cover no-repeat;
-}
-
-.membership-hero::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.25);
-}
-
-.hero-content{
-    position:relative;
-    z-index:2;
-}
-
-.hero-content h1{
-    font-size:3rem;
-    font-weight:800;
-}
-
-.hero-content p{
-    font-size:1.1rem;
-    margin-top:8px;
-}
-
-/* WELCOME */
-.welcome-section{
-    max-width:900px;
-    margin:70px auto;
-    text-align:center;
-    padding:0 20px;
-}
-
-.welcome-section h2{
-    font-size:2.2rem;
-    color:#581c87;
-    margin-bottom:20px;
-}
-
-.welcome-section p{
-    font-size:1.05rem;
-    line-height:1.8;
-    color:#555;
-}
-
-/* FORM (UNCHANGED VISUALLY) */
-.form-section{
-    max-width:900px;
-    margin:0 auto 100px;
-    background:white;
-    padding:50px;
-    border-radius:24px;
-    box-shadow:0 15px 40px rgba(0,0,0,0.08);
-}
-
-.form-section h3{
-    color:#581c87;
-    margin-bottom:30px;
-    font-size:2rem;
-    text-align:center;
-}
-
-.form-group{
-    margin-bottom:22px;
-}
-
-label{
-    display:block;
-    margin-bottom:8px;
-    font-weight:600;
-}
-
-input, select, textarea{
-    width:100%;
-    padding:14px;
-    border:none;
-    border-bottom:2px solid #ddd;
-    font-size:1rem;
-    outline:none;
-}
-
-input:focus, select:focus, textarea:focus{
-    border-color:#7c3aed;
-}
-
-.radio-group{
-    display:flex;
-    gap:20px;
-    margin-top:10px;
-}
-
-.radio-group label{
-    font-weight:400;
-}
-
-button{
-    width:100%;
-    background:#7c3aed;
-    color:white;
-    border:none;
-    padding:18px;
-    font-size:1rem;
-    border-radius:12px;
-    cursor:pointer;
-    font-weight:700;
-    margin-top:20px;
-}
-
-button:hover{
-    background:#6d28d9;
-}
-
-.hidden{
-    display:none;
-}
-
-/* FOOTER */
-footer{
-    background:#0f172a;
-    color:white;
-    text-align:center;
-    padding:35px 20px;
-    margin-top:80px;
-}
-
-.footer-socials{
-    margin-top:18px;
-    display:flex;
-    justify-content:center;
-    gap:18px;
-}
-
-.footer-socials a{
-    font-size:18px;
-    transition:0.3s;
-}
-
-.footer-socials a:nth-child(1){ color:#1877F2; }
-.footer-socials a:nth-child(2){ color:#E4405F; }
-.footer-socials a:nth-child(3){ color:#FF0000; }
-.footer-socials a:nth-child(4){ color:#00F2EA; }
-
-.footer-socials a:hover{
-    transform:translateY(-3px);
-}
-
-/* NAVBAR is now handled by the shared style.css global header rules. */
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membresía | Fountain of Life Fire Ministries Int'l (N.L.C)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../src/css/style.css">
 </head>
-
 <body data-page="miembro">
 
-<!-- MENU (RESTORED) -->
 <header class="page-navbar">
     <div class="page-nav-container">
-
         <a href="../index.html" class="nav-brand">
             <img src="../src/images/logo.png" alt="Fountain of Life Logo">
             <span data-i18n-key="common.brand">Fuente de Vida Ministerio de Fuego</span>
         </a>
+
         <div class="lang-switcher">
             <button id="langToggle" class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
                 <span class="lang-flag">🇪🇸</span>
@@ -210,37 +30,34 @@ footer{
         </div>
 
         <nav class="page-nav-links" id="navLinks">
-            <button class="menu-close" id="menuClose" aria-label="Cerrar menú">
+            <button class="menu-close" id="menuClose" aria-label="Cerrar menú" data-i18n-key="common.closeMenu" data-i18n-attr="aria-label">
                 <i class="fa-solid fa-xmark"></i>
             </button>
-
             <a href="../index.html" data-i18n-key="nav.home">Inicio</a>
-            <a href="conocenos.html" data-i18n-key="nav.about">Conocenos</a>
+            <a href="conocenos.html" data-i18n-key="nav.about">Conócenos</a>
             <a href="../index.html#servicios" data-i18n-key="nav.services">Servicios</a>
             <a href="proximos_programas.html" data-i18n-key="nav.events">Eventos</a>
             <a href="ramas.html" data-i18n-key="nav.branches">Sucursales</a>
-            <a href="redes_sociales1.html" data-i18n-key="nav.social">Redes sociales</a>
+            <a href="redes_sociales1.html" data-i18n-key="nav.social">Redes Sociales</a>
             <a href="testimonio.html" data-i18n-key="nav.testimony">Testimonios</a>
             <a href="contacto.html" data-i18n-key="nav.contact">Contacto</a>
         </nav>
 
-        <button class="menu-toggle" id="mobileMenu" aria-label="Abrir menú">
+        <button class="menu-toggle" id="mobileMenu" aria-label="Abrir menú" data-i18n-key="common.openMenu" data-i18n-attr="aria-label">
             <i class="fa-solid fa-bars"></i>
         </button>
-
     </div>
 </header>
 
-<!-- HERO -->
-<section class="membership-hero">
-    <div class="hero-content">
+<section class="premium-hero">
+    <div class="premium-hero-content">
+        <span class="premium-hero-tag" data-i18n-key="miembro.heroTag">Únete a la familia</span>
         <h1 data-i18n-key="miembro.heroTitle">Membresía</h1>
         <p data-i18n-key="miembro.heroText">Forma parte de nuestra familia de fe</p>
     </div>
 </section>
 
-<!-- WELCOME -->
-<section class="welcome-section">
+<section class="premium-intro">
     <h2 data-i18n-key="miembro.welcomeTitle">Bienvenido a Fountain of Life Fire Ministries Int'l</h2>
     <p data-i18n-key="miembro.welcomeText">
         Estamos emocionados de que hayas decidido dar este paso.
@@ -249,269 +66,116 @@ footer{
     </p>
 </section>
 
-<!-- FORM (UNCHANGED) -->
-<section class="form-section">
-    <h3 data-i18n-key="miembro.formTitle">Formulario de Membresía</h3>
-<form action="https://formspree.io/f/xjgzeyjd" method="POST">
+<main class="membership-premium-wrap">
+    <div class="membership-form-card premium-form">
+        <h3 data-i18n-key="miembro.formTitle">Formulario de Membresía</h3>
 
-    <div class="form-group">
-        <label data-i18n-key="miembro.labelName">Nombre *</label>
-        <input 
-            type="text" 
-            name="nombre"
-            required 
-            placeholder="" 
-            data-i18n-key="miembro.labelName" 
-            data-i18n-attr="placeholder"
-        >
+        <form action="https://formspree.io/f/xjgzeyjd" method="POST">
+            <div class="premium-form-grid">
+                <div class="form-group">
+                    <label data-i18n-key="miembro.labelName">Nombre *</label>
+                    <input type="text" name="nombre" required data-i18n-key="miembro.labelName" data-i18n-attr="placeholder">
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n-key="miembro.labelSurname">Apellido *</label>
+                    <input type="text" name="apellido" required data-i18n-key="miembro.labelSurname" data-i18n-attr="placeholder">
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n-key="miembro.labelEmail">Correo Electrónico *</label>
+                    <input type="email" name="email" required data-i18n-key="miembro.labelEmail" data-i18n-attr="placeholder">
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n-key="miembro.labelPhone">Teléfono *</label>
+                    <input type="tel" name="telefono" required data-i18n-key="miembro.labelPhone" data-i18n-attr="placeholder">
+                </div>
+
+                <div class="form-group full-width">
+                    <label data-i18n-key="miembro.labelCountry">País *</label>
+                    <select id="country" name="pais" required>
+                        <option value="" data-i18n-key="miembro.optionSelectCountry">Seleccione país</option>
+                        <option value="Guinea Ecuatorial" data-i18n-key="miembro.optionCountry1">Guinea Ecuatorial</option>
+                        <option value="Nigeria" data-i18n-key="miembro.optionCountry2">Nigeria</option>
+                        <option value="España" data-i18n-key="miembro.optionCountry3">España</option>
+                        <option value="México" data-i18n-key="miembro.optionCountry4">México</option>
+                        <option value="Estados Unidos" data-i18n-key="miembro.optionCountry5">Estados Unidos</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="normalAddress" class="premium-form-grid form-section-spaced">
+                <div class="form-group">
+                    <label data-i18n-key="miembro.labelApartment">Apartamento / Suite</label>
+                    <input type="text" name="apartamento" data-i18n-key="miembro.labelApartment" data-i18n-attr="placeholder">
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n-key="miembro.labelCity">Ciudad *</label>
+                    <input type="text" name="ciudad" data-i18n-key="miembro.labelCity" data-i18n-attr="placeholder">
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n-key="miembro.labelState">Estado / Provincia *</label>
+                    <input type="text" name="estado" data-i18n-key="miembro.labelState" data-i18n-attr="placeholder">
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n-key="miembro.labelPostal">Código Postal *</label>
+                    <input type="text" name="codigo_postal" data-i18n-key="miembro.labelPostal" data-i18n-attr="placeholder">
+                </div>
+            </div>
+
+            <div id="equatorialAddress" class="premium-form-grid hidden form-section-spaced">
+                <div class="form-group">
+                    <label data-i18n-key="miembro.labelCity">Ciudad *</label>
+                    <input type="text" name="ciudad_guinea" data-i18n-key="miembro.labelCity" data-i18n-attr="placeholder">
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n-key="miembro.labelNeighborhood">Barrio *</label>
+                    <input type="text" name="barrio" data-i18n-key="miembro.labelNeighborhood" data-i18n-attr="placeholder">
+                </div>
+            </div>
+
+            <div class="form-group full-width form-section-spaced">
+                <label data-i18n-key="miembro.labelMemberChurch">¿Es miembro de otra iglesia?</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="otra_iglesia" value="Sí">
+                        <span data-i18n-key="miembro.optionYes">Sí</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="otra_iglesia" value="No">
+                        <span data-i18n-key="miembro.optionNo">No</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label data-i18n-key="miembro.labelPrayer">Expectativas / Peticiones de oración</label>
+                <textarea rows="5" name="peticiones_oracion" data-i18n-key="miembro.labelPrayer" data-i18n-attr="placeholder"></textarea>
+            </div>
+
+            <input type="hidden" name="_subject" value="Nuevo formulario de membresía - Fountain of Life">
+            <input type="hidden" name="_captcha" value="false">
+
+            <button type="submit" class="premium-submit-btn" data-i18n-key="miembro.submitButton">Enviar Formulario</button>
+        </form>
     </div>
+</main>
 
-    <div class="form-group">
-        <label data-i18n-key="miembro.labelSurname">Apellido *</label>
-        <input 
-            type="text" 
-            name="apellido"
-            required 
-            placeholder="" 
-            data-i18n-key="miembro.labelSurname" 
-            data-i18n-attr="placeholder"
-        >
-    </div>
-
-    <div class="form-group">
-        <label data-i18n-key="miembro.labelEmail">Correo Electrónico *</label>
-        <input 
-            type="email" 
-            name="email"
-            required 
-            placeholder="" 
-            data-i18n-key="miembro.labelEmail" 
-            data-i18n-attr="placeholder"
-        >
-    </div>
-
-    <div class="form-group">
-        <label data-i18n-key="miembro.labelPhone">Teléfono *</label>
-        <input 
-            type="tel" 
-            name="telefono"
-            required 
-            placeholder="" 
-            data-i18n-key="miembro.labelPhone" 
-            data-i18n-attr="placeholder"
-        >
-    </div>
-
-    <div class="form-group">
-        <label data-i18n-key="miembro.labelCountry">País *</label>
-        <select id="country" name="pais" required>
-            <option value="" data-i18n-key="miembro.optionSelectCountry">
-                Seleccione país
-            </option>
-
-            <option value="Guinea Ecuatorial" data-i18n-key="miembro.optionCountry1">
-                Guinea Ecuatorial
-            </option>
-
-            <option value="Nigeria" data-i18n-key="miembro.optionCountry2">
-                Nigeria
-            </option>
-
-            <option value="España" data-i18n-key="miembro.optionCountry3">
-                España
-            </option>
-
-            <option value="México" data-i18n-key="miembro.optionCountry4">
-                México
-            </option>
-
-            <option value="Estados Unidos" data-i18n-key="miembro.optionCountry5">
-                Estados Unidos
-            </option>
-        </select>
-    </div>
-
-    <!-- Dirección normal -->
-    <div id="normalAddress">
-
-        <div class="form-group">
-            <label data-i18n-key="miembro.labelApartment">
-                Apartamento / Suite
-            </label>
-
-            <input 
-                type="text" 
-                name="apartamento"
-                placeholder="" 
-                data-i18n-key="miembro.labelApartment" 
-                data-i18n-attr="placeholder"
-            >
-        </div>
-
-        <div class="form-group">
-            <label data-i18n-key="miembro.labelCity">
-                Ciudad *
-            </label>
-
-            <input 
-                type="text" 
-                name="ciudad"
-                placeholder="" 
-                data-i18n-key="miembro.labelCity" 
-                data-i18n-attr="placeholder"
-            >
-        </div>
-
-        <div class="form-group">
-            <label data-i18n-key="miembro.labelState">
-                Estado / Provincia *
-            </label>
-
-            <input 
-                type="text" 
-                name="estado"
-                placeholder="" 
-                data-i18n-key="miembro.labelState" 
-                data-i18n-attr="placeholder"
-            >
-        </div>
-
-        <div class="form-group">
-            <label data-i18n-key="miembro.labelPostal">
-                Código Postal *
-            </label>
-
-            <input 
-                type="text" 
-                name="codigo_postal"
-                placeholder="" 
-                data-i18n-key="miembro.labelPostal" 
-                data-i18n-attr="placeholder"
-            >
-        </div>
-
-    </div>
-
-    <!-- Dirección Guinea Ecuatorial -->
-    <div id="equatorialAddress" class="hidden">
-<div class="form-group">
-            <label data-i18n-key="miembro.labelCity">
-                Ciudad *
-            </label>
-
-            <input 
-                type="text" 
-                name="ciudad_guinea"
-                placeholder="" 
-                data-i18n-key="miembro.labelCity" 
-                data-i18n-attr="placeholder"
-            >
-        </div>
-
-        <div class="form-group">
-            <label data-i18n-key="miembro.labelNeighborhood">
-                Barrio *
-            </label>
-
-            <input 
-                type="text" 
-                name="barrio"
-                placeholder="" 
-                data-i18n-key="miembro.labelNeighborhood" 
-                data-i18n-attr="placeholder"
-            >
-        </div>
-
-    </div>
-
-    <div class="form-group">
-        <label data-i18n-key="miembro.labelMemberChurch">
-            ¿Es miembro de otra iglesia?
-        </label>
-
-        <div class="radio-group">
-
-            <label>
-                <input type="radio" name="otra_iglesia" value="Sí">
-                <span data-i18n-key="miembro.optionYes">Sí</span>
-            </label>
-
-            <label>
-                <input type="radio" name="otra_iglesia" value="No">
-                <span data-i18n-key="miembro.optionNo">No</span>
-            </label>
-
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label data-i18n-key="miembro.labelPrayer">
-            Expectativas / Peticiones de oración
-        </label>
-
-        <textarea 
-            rows="5"
-            name="peticiones_oracion"
-            placeholder="" 
-            data-i18n-key="miembro.labelPrayer" 
-            data-i18n-attr="placeholder"
-        ></textarea>
-    </div>
-
-    <!-- Subject del correo -->
-    <input 
-        type="hidden" 
-        name="_subject" 
-        value="Nuevo formulario de membresía - Fountain of Life"
-    >
-
-    <!-- Desactivar captcha -->
-    <input type="hidden" name="_captcha" value="false">
-
-    <button type="submit" data-i18n-key="miembro.submitButton">
-        Enviar Formulario
-    </button>
-
-</form>
-</section>
-
-<!-- FOOTER -->
 <footer>
-<p data-i18n-key="common.copyright">&copy; 2026 Fountain of Life Fire Ministries Int'l (N.L.C)</p>
-
+    <p data-i18n-key="common.copyright">&copy; 2026 Fountain of Life Fire Ministries Int'l (N.L.C)</p>
     <div class="footer-socials">
-        <a href="https://www.facebook.com/share/1H2aLqqfDd/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/fountain_life_fire_ministry?igsh=OTNyYWFqbzQ0ZXpk"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://youtube.com/@fountainoflifefireministry?si=3IeNEo1HseiU3pUQ"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://www.tiktok.com/@fuente.de.vida54?_r=1&_t=ZN-96PYNLeWlNe"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/share/1H2aLqqfDd/?mibextid=wwXIfr" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/fountain_life_fire_ministry?igsh=OTNyYWFqbzQ0ZXpk" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com/@fountainoflifefireministry?si=3IeNEo1HseiU3pUQ" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@fuente.de.vida54?_r=1&_t=ZN-96PYNLeWlNe" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
     </div>
 </footer>
 
-<script>
-const countrySelect = document.getElementById("country");
-const normalAddress = document.getElementById("normalAddress");
-const equatorialAddress = document.getElementById("equatorialAddress");
-
-countrySelect.addEventListener("change", function () {
-    if(this.value === "Guinea Ecuatorial"){
-        normalAddress.classList.add("hidden");
-        equatorialAddress.classList.remove("hidden");
-    } else {
-        normalAddress.classList.remove("hidden");
-        equatorialAddress.classList.add("hidden");
-    }
-});
-</script>
-
-  <script src="../script.js" defer></script>
+<script src="../script.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
