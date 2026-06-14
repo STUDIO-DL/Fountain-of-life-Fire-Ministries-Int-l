@@ -193,21 +193,27 @@
     "optionNo": "No"
   },
   "ramas": {
+    "metaTitle": "Localizar una Sucursal | Fountain of Life Fire Ministries Int'l (N.L.C)",
     "heroTitle": "Localiza una Sucursal",
     "heroText": "Encuentra una sucursal de Fuente de Vida cerca de ti y acompáñanos en adoración y crecimiento espiritual.",
     "branchesTitle": "Sucursales de Fuente de Vida",
-    "branchesText": "Visítanos en cualquiera de nuestras sucursales disponibles.",
+    "branchesText": "Visítanos en nuestra sede central o en cualquiera de nuestras sucursales.",
+    "centralBadge": "Sede Central",
+    "branchBadge": "Sucursal",
     "branch1": {
+      "name": "Malabo",
       "location": "Malabo, Guinea Ecuatorial",
-      "phone": "+240 222 000 111",
+      "phone": "+240 222 588 652",
       "address": "Avenida Hassan II, cerca del centro de la ciudad."
     },
     "branch2": {
+      "name": "Rebola",
       "location": "Rebola, Guinea Ecuatorial",
       "phone": "+240 555 123 456",
       "address": "Carretera principal de Rebola, junto al mercado."
     },
     "branch3": {
+      "name": "Owerri",
       "location": "Owerri, Nigeria",
       "phone": "+234 800 123 7890",
       "address": "World Bank Road, Owerri Municipal."
