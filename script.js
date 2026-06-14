@@ -4,6 +4,7 @@ const mainImg = document.querySelector('.main-slide img');
 const miniCards = document.querySelectorAll('.mini-card');
 
 const SUPPORTED_LANGS = ['en', 'es', 'fr'];
+const DEFAULT_LANG = 'es';
 const languageDetails = {
     en: { label: 'EN', flag: '🇬🇧' },
     es: { label: 'ES', flag: '🇪🇸' },
@@ -11,6 +12,7 @@ const languageDetails = {
 };
 
 const translationsCache = {};
+const defaultStrings = {};
 
 function getLocaleBase() {
     return window.location.pathname.replace(/\\/g, '/').includes('/pages/')
@@ -30,14 +32,62 @@ async function loadLocale(lang) {
     return translationsCache[lang];
 }
 
+function readElementDefault(el) {
+    if (el.dataset.i18nAttr) {
+        return (el.getAttribute(el.dataset.i18nAttr) || '').trim();
+    }
+    return el.textContent.replace(/\s+/g, ' ').trim();
+}
+
+function captureDefaultsFromDOM() {
+    document.querySelectorAll('[data-i18n-key]').forEach(el => {
+        const key = el.dataset.i18nKey;
+        if (!key) {
+            return;
+        }
+
+        if (!el.dataset.i18nDefault) {
+            const value = readElementDefault(el);
+            if (value) {
+                el.dataset.i18nDefault = value;
+            }
+        }
+
+        if (el.dataset.i18nDefault) {
+            defaultStrings[key] = el.dataset.i18nDefault;
+        }
+    });
+
+    const titleEl = document.querySelector('title[data-i18n-key]');
+    if (titleEl) {
+        const key = titleEl.dataset.i18nKey;
+        if (!titleEl.dataset.i18nDefault) {
+            const value = titleEl.textContent.trim();
+            if (value) {
+                titleEl.dataset.i18nDefault = value;
+            }
+        }
+        if (titleEl.dataset.i18nDefault) {
+            defaultStrings[key] = titleEl.dataset.i18nDefault;
+        }
+    }
+}
+
 function getTranslation(lang, page, key) {
-    const languagePack = translationsCache[lang] || translationsCache.es || {};
+    if (lang === DEFAULT_LANG && defaultStrings[key]) {
+        return defaultStrings[key];
+    }
+
+    const languagePack = translationsCache[lang] || translationsCache[DEFAULT_LANG] || {};
     const pageMap = languagePack[page] || {};
     const common = languagePack.common || {};
 
     if (key.startsWith('common.')) {
         const commonKey = key.slice('common.'.length);
-        return commonKey.split('.').reduce((obj, part) => (obj ? obj[part] : null), common) || null;
+        const commonValue = commonKey.split('.').reduce((obj, part) => (obj ? obj[part] : null), common);
+        if (commonValue) {
+            return commonValue;
+        }
     }
 
     const pageKey = key.startsWith(`${page}.`) ? key.slice(page.length + 1) : key;
@@ -47,7 +97,36 @@ function getTranslation(lang, page, key) {
     }
 
     const commonValue = key.split('.').reduce((obj, part) => (obj ? obj[part] : null), common);
-    return commonValue || null;
+    if (commonValue) {
+        return commonValue;
+    }
+
+    if (lang !== DEFAULT_LANG) {
+        const spanishPack = translationsCache[DEFAULT_LANG] || {};
+        const spanishPageMap = spanishPack[page] || {};
+        const spanishCommon = spanishPack.common || {};
+
+        if (key.startsWith('common.')) {
+            const commonKey = key.slice('common.'.length);
+            const fallback = commonKey.split('.').reduce((obj, part) => (obj ? obj[part] : null), spanishCommon);
+            if (fallback) {
+                return fallback;
+            }
+        }
+
+        const spanishPageKey = key.startsWith(`${page}.`) ? key.slice(page.length + 1) : key;
+        const spanishPageValue = spanishPageKey.split('.').reduce((obj, part) => (obj ? obj[part] : null), spanishPageMap);
+        if (spanishPageValue) {
+            return spanishPageValue;
+        }
+
+        const spanishCommonValue = key.split('.').reduce((obj, part) => (obj ? obj[part] : null), spanishCommon);
+        if (spanishCommonValue) {
+            return spanishCommonValue;
+        }
+    }
+
+    return defaultStrings[key] || null;
 }
 
 function getCurrentPage() {
@@ -322,13 +401,15 @@ function setupHeroSlider() {
 }
 
 async function initApp() {
-    const savedLang = localStorage.getItem('siteLanguage') || 'es';
+    captureDefaultsFromDOM();
+
+    const savedLang = localStorage.getItem('siteLanguage') || DEFAULT_LANG;
     try {
         await Promise.all(SUPPORTED_LANGS.map(loadLocale));
     } catch (error) {
         console.error('Locale loading failed:', error);
-        if (savedLang !== 'es') {
-            await loadLocale('es');
+        if (!translationsCache[DEFAULT_LANG]) {
+            await loadLocale(DEFAULT_LANG);
         }
     }
 

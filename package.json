@@ -1,0 +1,7 @@
+{
+  "name": "fuente-de-vida",
+  "private": true,
+  "scripts": {
+    "i18n:sync": "node scripts/sync-locales.js"
+  }
+}
