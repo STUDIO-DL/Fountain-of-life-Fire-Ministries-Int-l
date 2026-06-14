@@ -3,290 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Localizar una Sucursal | Fountain of Life Fire Ministries Int'l (N.L.C)</title>
-
-  <!-- GOOGLE FONT -->
+  <title data-i18n-key="ramas.metaTitle">Localizar una Sucursal | Fountain of Life Fire Ministries Int'l (N.L.C)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
-
-  <!-- FONT AWESOME (ADDED so icons work) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../src/css/style.css">
-
-  <style>
-
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
-
-    body{
-      font-family:'Inter',sans-serif;
-      background:#f5f9ff;
-      color:#0f172a;
-    }
-
-    /* HERO */
-
-    .about-hero {
-            background: linear-gradient(135deg, rgba(3,37,76,0.92), rgba(0,102,204,0.82));
-            color: #ffffff;
-            padding: 24px 18px 28px;
-            max-width: 920px;
-            margin: 0 auto;
-            border-radius: 24px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .about-hero h1 {
-            font-size: clamp(1.8rem, 4.4vw, 2.8rem);
-            margin-bottom: 12px;
-            line-height: 1.08;
-        }
-        .about-hero p {
-            max-width: 760px;
-            margin: 0 auto 0;
-            font-size: clamp(0.98rem, 1.8vw, 1.05rem);
-            color: rgba(255,255,255,0.92);
-            line-height: 1.6;
-        }
-
-    /* CONTAINER */
-
-    .container{
-      width:100%;
-      max-width:1200px;
-      margin:auto;
-      padding: calc(var(--nav-height) + 40px) 20px 40px; /* account for fixed header */
-    }
-
-    .section-title{
-      text-align:center;
-      margin-bottom:70px;
-    }
-
-    .section-title h2{
-      font-size:42px;
-      font-weight:800;
-      margin-bottom:15px;
-      color:#0f172a;
-    }
-
-    .section-title p{
-      font-size:18px;
-      color:#64748b;
-    }
-
-    .branches{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-      gap:20px;
-    }
-
-    .branch-card{
-      background:white;
-      border-radius:12px;
-      padding:12px;
-      border:1px solid rgba(219,234,254,0.6);
-      box-shadow:0 8px 20px rgba(37,99,235,0.06);
-      transition:transform 0.22s ease, box-shadow 0.22s ease;
-      display:flex;
-      align-items:center;
-      gap:14px;
-    }
-
-    .branch-flag{
-      flex:0 0 64px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      width:64px;
-      height:64px;
-      border-radius:24px;
-      background: linear-gradient(180deg,#e6f0fa,#ffffff);
-      box-shadow: inset 0 -4px 12px rgba(0,0,0,0.03);
-    }
-
-    .branch-flag img {
-      width: 40px;
-      height: 40px;
-      object-fit: contain;
-      display: block;
-    }
-
-    .branch-content{
-      flex:1 1 auto;
-      min-width:0;
-    }
-
-    .branch-actions{
-      display:flex;
-      align-items:center;
-      gap:8px;
-      flex:0 0 auto;
-    }
-
-    .branch-card:hover{
-      transform:translateY(-6px);
-      box-shadow:0 18px 40px rgba(37,99,235,0.12);
-    }
-
-    .flag{
-      display:none; /* legacy element hidden when using new structure */
-    }
-
-    .branch-card h3{
-      font-size: clamp(1rem, 2.2vw, 1.2rem);
-      margin:0 0 6px 0;
-      color:#0f172a;
-      font-weight:700;
-    }
-
-    .info{
-      margin-bottom:12px;
-      display:flex;
-      align-items:flex-start;
-      gap:10px;
-    }
-
-    .info-icon{
-      font-size:16px;
-      color:#2563eb;
-      margin-top:2px;
-    }
-
-    .info-text{
-      color:#475569;
-      line-height:1.5;
-      font-size: clamp(0.88rem, 1.9vw, 1rem);
-    }
-
-    .location-btn{
-      display:inline-block;
-      margin-top:8px;
-      background:#2563eb;
-      color:white;
-      text-decoration:none;
-      padding:10px 16px;
-      border-radius:10px;
-      font-weight:600;
-      font-size:0.95rem;
-      transition:transform 0.18s ease;
-    }
-
-    .location-btn:hover{
-      background:#1d4ed8;
-    }
-
-    /* FOOTER */
-    footer{
-      background:#0f172a;
-      color:white;
-      text-align:center;
-      padding:35px 20px;
-      margin-top:80px;
-    }
-
-    footer p{
-      opacity:0.8;
-      font-size:15px;
-    }
-
-    .footer-socials{
-      margin-top:18px;
-      display:flex;
-      justify-content:center;
-      gap:18px;
-    }
-
-    .footer-socials a{
-      font-size:18px;
-      transition:all 0.3s ease;
-      opacity:0.95;
-      filter:brightness(1.15);
-    }
-
-    /* Facebook */
-    .footer-socials a:nth-child(1){
-      color:#1877F2;
-      text-shadow:0 0 8px rgba(24,119,242,0.45);
-    }
-
-    /* YouTube */
-    .footer-socials a:nth-child(2){
-      color:#FF0000;
-      text-shadow:0 0 8px rgba(255,0,0,0.45);
-    }
-
-    /* Instagram */
-    .footer-socials a:nth-child(3){
-      color:#E4405F;
-      text-shadow:0 0 8px rgba(228,64,95,0.45);
-    }
-
-    /* TikTok */
-    .footer-socials a:nth-child(4){
-      color:#00F2EA;
-      text-shadow:0 0 8px rgba(0,242,234,0.45);
-    }
-
-    .footer-socials a:hover{
-      transform:translateY(-3px);
-      filter:brightness(1.35);
-    }
-
-    /* NAV + MOBILE styling is now handled by the shared style.css global header rules. */
-
-    @media (max-width: 768px) {
-      .about-hero {
-        padding: calc(var(--nav-height) + 22px) 12px 28px;
-      }
-
-      .about-hero h1{
-        font-size: clamp(1.8rem, 4.4vw, 2.8rem);
-      }
-
-      .about-hero p{
-        font-size: clamp(0.98rem, 1.8vw, 1.05rem);
-      }
-
-      .branches{
-        grid-template-columns: 1fr;
-        gap:14px;
-      }
-
-      .branch-card{
-        padding:12px;
-        border-radius:10px;
-        flex-direction:column;
-        align-items:stretch;
-      }
-
-      .branch-flag{
-        width:56px;
-        height:56px;
-        margin:0 0 8px 0;
-        align-self:flex-start;
-      }
-
-      .branch-actions{
-        margin-top:8px;
-        justify-content:flex-start;
-      }
-    }
-
-  </style>
-
 </head>
 
 <body data-page="ramas">
@@ -312,90 +34,151 @@
         </div>
 
         <nav class="page-nav-links" id="navLinks">
-            <button class="menu-close" id="menuClose" aria-label="Cerrar menú">
+            <button class="menu-close" id="menuClose" aria-label="Cerrar menú" data-i18n-key="common.closeMenu" data-i18n-attr="aria-label">
                 <i class="fa-solid fa-xmark"></i>
             </button>
 
             <a href="../index.html" data-i18n-key="nav.home">Inicio</a>
-            <a href="conocenos.html" data-i18n-key="nav.about">Conocenos</a>
+            <a href="conocenos.html" data-i18n-key="nav.about">Conócenos</a>
             <a href="../index.html#servicios" data-i18n-key="nav.services">Servicios</a>
             <a href="proximos_programas.html" data-i18n-key="nav.events">Eventos</a>
             <a href="ramas.html" class="active" data-i18n-key="nav.branches">Sucursales</a>
-            <a href="redes_sociales1.html" data-i18n-key="nav.social">Redes sociales</a>
+            <a href="redes_sociales1.html" data-i18n-key="nav.social">Redes Sociales</a>
             <a href="testimonio.html" data-i18n-key="nav.testimony">Testimonios</a>
             <a href="contacto.html" data-i18n-key="nav.contact">Contacto</a>
         </nav>
 
-        <button class="menu-toggle" id="mobileMenu" aria-label="Abrir menú">
+        <button class="menu-toggle" id="mobileMenu" aria-label="Abrir menú" data-i18n-key="common.openMenu" data-i18n-attr="aria-label">
             <i class="fa-solid fa-bars"></i>
         </button>
 
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="about-hero">
-
     <h1 data-i18n-key="ramas.heroTitle">Localiza una Sucursal</h1>
-
     <p data-i18n-key="ramas.heroText">
       Encuentra una sucursal de Fuente de Vida cerca de ti
       y acompáñanos en adoración y crecimiento espiritual.
     </p>
-
   </section>
 
-  <!-- CONTENT -->
-  <section class="container">
+  <section class="ramas-container">
 
-    <div class="section-title">
+    <div class="ramas-section-title">
       <h2 data-i18n-key="ramas.branchesTitle">Sucursales de Fuente de Vida</h2>
-      <p data-i18n-key="ramas.branchesText">Visítanos en cualquiera de nuestras sucursales disponibles.</p>
+      <p data-i18n-key="ramas.branchesText">Visítanos en nuestra sede central o en cualquiera de nuestras sucursales.</p>
     </div>
 
-    <div class="branches">
+    <div class="ramas-grid">
 
-      <div class="branch-card">
-        <div class="branch-flag"><img src="../src/images/logo.png" alt="Fountain of Life Logo"></div>
-        <div class="branch-content">
-          <h3>Malabo</h3>
+      <article class="ramas-card ramas-card--central">
+        <div class="ramas-card-accent"></div>
+        <div class="ramas-card-body">
+          <div class="ramas-card-header">
+            <div class="ramas-card-logo">
+              <img src="../src/images/logo.png" alt="Fountain of Life Logo">
+            </div>
+            <div class="ramas-card-titles">
+              <span class="ramas-badge ramas-badge--central" data-i18n-key="ramas.centralBadge">Sede Central</span>
+              <h3 data-i18n-key="ramas.branch1.name">Malabo</h3>
+            </div>
+          </div>
 
-          <div class="info"><div class="info-icon">📍</div><div class="info-text" data-i18n-key="ramas.branch1.location">Malabo, Guinea Ecuatorial</div></div>
-          <div class="info"><div class="info-icon">📞</div><div class="info-text" data-i18n-key="ramas.branch1.phone">+240 222 000 111</div></div>
-          <div class="info"><div class="info-icon">🏛️</div><div class="info-text" data-i18n-key="ramas.branch1.address">Avenida Hassan II, cerca del centro de la ciudad.</div></div>
+          <div class="ramas-info-list">
+            <div class="ramas-info-item">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span class="ramas-info-text" data-i18n-key="ramas.branch1.location">Malabo, Guinea Ecuatorial</span>
+            </div>
+            <div class="ramas-info-item">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <span class="ramas-info-text" data-i18n-key="ramas.branch1.phone">+240 222 588 652</span>
+            </div>
+            <div class="ramas-info-item">
+              <i class="fa-solid fa-building" aria-hidden="true"></i>
+              <span class="ramas-info-text" data-i18n-key="ramas.branch1.address">Avenida Hassan II, cerca del centro de la ciudad.</span>
+            </div>
+          </div>
         </div>
-        <div class="branch-actions">
-          <a href="#" class="location-btn" data-i18n-key="ramas.locationBtn">Ver ubicación</a>
+        <div class="ramas-card-footer">
+          <a href="#" class="ramas-location-btn">
+            <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+            <span data-i18n-key="ramas.locationBtn">Ver ubicación</span>
+          </a>
         </div>
-      </div>
+      </article>
 
-      <div class="branch-card">
-        <div class="branch-flag"><img src="../src/images/logo.png" alt="Fountain of Life Logo"></div>
-        <div class="branch-content">
-          <h3>Rebola</h3>
+      <article class="ramas-card">
+        <div class="ramas-card-accent"></div>
+        <div class="ramas-card-body">
+          <div class="ramas-card-header">
+            <div class="ramas-card-logo">
+              <img src="../src/images/logo.png" alt="Fountain of Life Logo">
+            </div>
+            <div class="ramas-card-titles">
+              <span class="ramas-badge" data-i18n-key="ramas.branchBadge">Sucursal</span>
+              <h3 data-i18n-key="ramas.branch2.name">Rebola</h3>
+            </div>
+          </div>
 
-          <div class="info"><div class="info-icon">📍</div><div class="info-text" data-i18n-key="ramas.branch2.location">Rebola, Guinea Ecuatorial</div></div>
-          <div class="info"><div class="info-icon">📞</div><div class="info-text" data-i18n-key="ramas.branch2.phone">+240 555 123 456</div></div>
-          <div class="info"><div class="info-icon">🏛️</div><div class="info-text" data-i18n-key="ramas.branch2.address">Carretera principal de Rebola, junto al mercado.</div></div>
+          <div class="ramas-info-list">
+            <div class="ramas-info-item">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span class="ramas-info-text" data-i18n-key="ramas.branch2.location">Rebola, Guinea Ecuatorial</span>
+            </div>
+            <div class="ramas-info-item">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <span class="ramas-info-text" data-i18n-key="ramas.branch2.phone">+240 555 123 456</span>
+            </div>
+            <div class="ramas-info-item">
+              <i class="fa-solid fa-building" aria-hidden="true"></i>
+              <span class="ramas-info-text" data-i18n-key="ramas.branch2.address">Carretera principal de Rebola, junto al mercado.</span>
+            </div>
+          </div>
         </div>
-        <div class="branch-actions">
-          <a href="#" class="location-btn" data-i18n-key="ramas.locationBtn">Ver ubicación</a>
+        <div class="ramas-card-footer">
+          <a href="#" class="ramas-location-btn">
+            <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+            <span data-i18n-key="ramas.locationBtn">Ver ubicación</span>
+          </a>
         </div>
-      </div>
+      </article>
 
-      <div class="branch-card">
-        <div class="branch-flag"><img src="../src/images/logo.png" alt="Fountain of Life Logo"></div>
-        <div class="branch-content">
-          <h3>Owerri</h3>
+      <article class="ramas-card">
+        <div class="ramas-card-accent"></div>
+        <div class="ramas-card-body">
+          <div class="ramas-card-header">
+            <div class="ramas-card-logo">
+              <img src="../src/images/logo.png" alt="Fountain of Life Logo">
+            </div>
+            <div class="ramas-card-titles">
+              <span class="ramas-badge" data-i18n-key="ramas.branchBadge">Sucursal</span>
+              <h3 data-i18n-key="ramas.branch3.name">Owerri</h3>
+            </div>
+          </div>
 
-          <div class="info"><div class="info-icon">📍</div><div class="info-text" data-i18n-key="ramas.branch3.location">Owerri, Nigeria</div></div>
-          <div class="info"><div class="info-icon">📞</div><div class="info-text" data-i18n-key="ramas.branch3.phone">+234 800 123 7890</div></div>
-          <div class="info"><div class="info-icon">🏛️</div><div class="info-text" data-i18n-key="ramas.branch3.address">World Bank Road, Owerri Municipal.</div></div>
+          <div class="ramas-info-list">
+            <div class="ramas-info-item">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span class="ramas-info-text" data-i18n-key="ramas.branch3.location">Owerri, Nigeria</span>
+            </div>
+            <div class="ramas-info-item">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <span class="ramas-info-text" data-i18n-key="ramas.branch3.phone">+234 800 123 7890</span>
+            </div>
+            <div class="ramas-info-item">
+              <i class="fa-solid fa-building" aria-hidden="true"></i>
+              <span class="ramas-info-text" data-i18n-key="ramas.branch3.address">World Bank Road, Owerri Municipal.</span>
+            </div>
+          </div>
         </div>
-        <div class="branch-actions">
-          <a href="#" class="location-btn" data-i18n-key="ramas.locationBtn">Ver ubicación</a>
+        <div class="ramas-card-footer">
+          <a href="#" class="ramas-location-btn">
+            <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+            <span data-i18n-key="ramas.locationBtn">Ver ubicación</span>
+          </a>
         </div>
-      </div>
+      </article>
 
     </div>
   </section>
@@ -403,22 +186,13 @@
   <footer>
     <p data-i18n-key="common.copyright">&copy; 2026 Fountain of Life Fire Ministries Int'l (N.L.C)</p>
     <div class="footer-socials">
-        <a href="https://www.facebook.com/share/1H2aLqqfDd/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/fountain_life_fire_ministry?igsh=OTNyYWFqbzQ0ZXpk"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://youtube.com/@fountainoflifefireministrycog?si=Ch_29fEVFvGtTIYI"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://www.tiktok.com/@fuente.de.vida54?_r=1&_t=ZN-96PYNLeWlNe"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/share/1H2aLqqfDd/?mibextid=wwXIfr" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/fountain_life_fire_ministry?igsh=OTNyYWFqbzQ0ZXpk" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com/@fountainoflifefireministrycog?si=Ch_29fEVFvGtTIYI" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@fuente.de.vida54?_r=1&_t=ZN-96PYNLeWlNe" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
     </div>
   </footer>
 
   <script src="../script.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
