@@ -1,4 +1,4 @@
-{
+﻿{
   "common": {
     "nav": {
       "home": "Accueil",
@@ -16,20 +16,22 @@
     "chooseLanguage": "Langue",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu",
-    "brand": "Fuente de Vida Ministerio de Fuego",
-    "copyright": "&copy; 2026 Fountain of Life Fire Ministries Int'l (N.L.C)"
+    "brand": "Fontaine de Vie Ministère du Feu Int'l",
+    "brandAlt": "Logo Fontaine de Vie Ministère du Feu Int'l",
+    "copyright": "© 2026 Fontaine de Vie Ministère du Feu Int'l (N.V.C)"
   },
   "nav": {
     "home": "Accueil",
-    "about": "Conocenos",
+    "about": "À propos",
     "services": "Services",
     "events": "Événements",
     "branches": "Succursales",
-    "social": "Redes sociales",
+    "social": "Réseaux sociaux",
     "testimony": "Témoignages",
     "contact": "Contact"
   },
   "index": {
+    "metaTitle": "Accueil | Fontaine de Vie Ministère du Feu Int'l",
     "hero": {
       "tag": "Esprit · Communauté · Renouveau",
       "title": "Vivez une rencontre réelle avec Dieu",
@@ -38,8 +40,9 @@
       "btnBranches": "Trouver une branche"
     },
     "vision": {
-      "text": "En Fountain of Life Fire Ministries Int'l creemos en el poder transformador de la presencia de Dios. Somos una casa de adoración, restauración y avivamiento espiritual. Aquí vidas son renovadas, corazones son encendidos y destinos son restaurados. Levantamos una generación llena de fe, propósito y pasión por Cristo. Este es un lugar donde la fuente de vida nunca deja de fluir.",
-      "btnReadMore": "En savoir plus"
+      "text": "À Fontaine de Vie Ministère du Feu Int'l, nous croyons au pouvoir transformateur de la présence de Dieu.<br><br>Nous sommes une maison d'adoration, de restauration et de réveil spirituel.<br><br>Ici, des vies sont renouvelées, des cœurs sont enflammés et des destinées sont restaurées.<br><br>Nous élevons une génération pleine de foi, de but et de passion pour le Christ.<br><br>C'est un lieu où la fontaine de vie ne cesse jamais de couler.",
+      "btnReadMore": "En savoir plus",
+      "imageAlt": "Pasteur et épouse"
     },
     "services": {
       "sectionSpan": "Rejoignez-nous dans l’adoration",
@@ -54,23 +57,28 @@
     "gallery": {
       "card1": {
         "tag": "Service en direct",
-        "title": "Message de foi et de puissance"
+        "title": "Message de foi et de puissance",
+        "alt": "Prédication pendant le service"
       },
       "card2": {
         "tag": "Rassemblement",
-        "title": "Voix du réveil"
+        "title": "Voix du réveil",
+        "alt": "Femme servant avec un microphone"
       },
       "card3": {
         "tag": "Guérison",
-        "title": "Prière de guérison"
+        "title": "Prière de guérison",
+        "alt": "Congrégation en prière de guérison"
       },
       "card4": {
         "tag": "Jeunesse",
-        "title": "Adoration en famille"
+        "title": "Adoration en famille",
+        "alt": "Congrégation réunie en adoration"
       },
       "card5": {
         "tag": "Congrégation",
-        "title": "Culte d’adoration"
+        "title": "Culte d’adoration",
+        "alt": "Congrégation adorant pendant le service"
       }
     },
     "serviceCards": {
@@ -122,21 +130,22 @@
     "branchCard": {
       "tag": "PRÈS DE VOUS",
       "title": "Trouvez une succursale",
-      "text": "Trouvez une succursale de Source de Vie près de chez vous et rejoignez-nous en adoration et croissance spirituelle.",
+      "text": "Trouvez une succursale de Fontaine de Vie près de chez vous et rejoignez-nous en adoration et croissance spirituelle.",
       "link": "Rechercher une succursale"
     }
   },
   "conocenos": {
+    "metaTitle": "À propos | Fontaine de Vie Ministère du Feu Int'l",
     "heroTitle": "À propos de nous",
     "heroText": "Nous sommes une famille spirituelle appelée à prêcher le salut en démontrant la puissance de Dieu. Ici, vous découvrirez qui nous sommes, pourquoi nous existons et comment nous travaillons pour restaurer des destinées au nom de Jésus-Christ.",
     "section1Title": "1. Qui nous sommes",
-    "section1Text": "la iglesia de Cristo encomendada a predicar salvación demostrando el poder de Dios. No somos solo un lugar de reunión: somos una casa donde la Palabra se predica y el poder de Dios se manifiesta para transformar vidas reales.",
+    "section1Text": "l'église du Christ chargée de prêcher le salut en démontrant la puissance de Dieu. Nous ne sommes pas seulement un lieu de réunion : nous sommes une maison où la Parole est prêchée et la puissance de Dieu se manifeste pour transformer des vies réelles.",
     "section1Highlight": "Fontaine de Vie, Ministère du Feu",
     "section2Title": "2. Pourquoi nous existons / Notre mission",
-    "section2Text": "Vimos que muchos conocen de Dios de lejos, pero no experimentan su poder para salir de la opresión, sanar sus familias y caminar en propósito. Por eso traemos la palabra de salvación enfocada en liberación, prosperidad y el establecimiento de matrimonios conforme al diseño de Dios.",
+    "section2Text": "Nous avons vu que beaucoup connaissent Dieu de loin, mais n'expérimentent pas Sa puissance pour sortir de l'oppression, guérir leurs familles et marcher dans le but. C'est pourquoi nous apportons la parole de salut axée sur la délivrance, la prospérité et l'établissement des mariages selon le dessein de Dieu.",
     "section2Highlight": "Notre mission est de révéler Jésus et de restaurer la destinée des gens",
     "section3Title": "3. Ce qui nous distingue",
-    "section3Text": "En linea con el llamado divino de nuestro padre espritual, obramos en:",
+    "section3Text": "Conformément à l'appel divin de notre père spirituel, nous œuvrons dans :",
     "section3Item1Highlight": "Délivrance",
     "section3Item1Text": "Nous ministrons pour briser les chaînes spirituelles qui empêchent votre progrès.",
     "section3Item2Highlight": "Prospérité biblique",
@@ -147,7 +156,7 @@
     "section4Title": "4. Leadership",
     "section4Text": "Nous sommes sous la couverture et la direction du père spirituel",
     "section4Highlight": "Rev. Anthony Ifesinachi O.",
-    "section4TextRest": "Puedes conocer más de su ministerio y palabra diaria en su cuenta oficial de Facebook: Anthony Ifesinachi . Creemos en la importancia de la cobertura espiritual y la paternidad en el ministerio.",
+    "section4TextRest": "Vous pouvez en savoir plus sur son ministère et sa parole quotidienne sur son compte officiel Facebook : Anthony Ifesinachi. Nous croyons en l'importance de la couverture spirituelle et de la paternité spirituelle dans le ministère.",
     "section5Title": "5. Preuve de ce en quoi nous croyons",
     "section5Text": "Nous ne prêchons pas seulement la théorie. Nous sommes une église où la puissance de Dieu se manifeste pour guérir, délivrer et restaurer. Si vous cherchez un lieu où la foi est pratique et visible, c’est votre place.",
     "section6Title": "6. Comment nous travaillons",
@@ -158,15 +167,17 @@
     "section6Item2Text": "Nous cherchons à ce que chaque réunion soit une rencontre réelle, pas un spectacle.",
     "section6Item3Highlight": "Accompagnement",
     "section6Item3Text": "Nous ne vous laissons pas seul après le dimanche. Nous vous aidons à marcher le processus.",
-    "section7TextPart1": "Sí sientes que tu vida, tu familia o tu destino necesitan un cambio, ven a conocernos.",
+    "section7Title": "7. Appel à l'action",
+    "section7TextPart1": "Si vous sentez que votre vie, votre famille ou votre destinée ont besoin d'un changement, venez nous rencontrer.",
     "section7Strong": "Visitez-nous lors de notre prochain service",
     "section7TextPart2": "ou connectez-vous à la parole de notre père spirituel Rev. Anthony Ifesinachi O. sur Facebook."
   },
   "miembro": {
+    "metaTitle": "Adhésion | Fontaine de Vie Ministère du Feu Int'l",
     "heroTitle": "Adhésion",
     "heroText": "Faites partie de notre famille de foi",
     "heroTag": "Rejoignez la famille",
-    "welcomeTitle": "Bienvenido a Fountain of Life Fire Ministries Int'l",
+    "welcomeTitle": "Bienvenue à Fontaine de Vie Ministère du Feu Int'l",
     "welcomeText": "Nous sommes ravis que vous ayez décidé de faire ce pas. Remplissez ce formulaire pour faire officiellement partie de notre communauté chrétienne et grandir spirituellement avec nous.",
     "formTitle": "Formulaire d’adhésion",
     "labelName": "Prénom *",
@@ -188,11 +199,12 @@
     "labelMemberChurch": "Êtes-vous membre d’une autre église ?",
     "labelPrayer": "Attentes / Demandes de prière",
     "submitButton": "Envoyer le formulaire",
+    "formSubject": "Nouveau formulaire d'adhésion - Fontaine de Vie Ministère du Feu Int'l",
     "optionYes": "Oui",
     "optionNo": "Non"
   },
   "ramas": {
-    "metaTitle": "Trouver une succursale | Fountain of Life Fire Ministries Int'l (N.L.C)",
+    "metaTitle": "Trouver une succursale | Fontaine de Vie Ministère du Feu Int'l",
     "heroTitle": "Trouvez une succursale",
     "heroText": "Trouvez une succursale de Fontaine de Vie près de chez vous et rejoignez-nous en adoration et croissance spirituelle.",
     "branchesTitle": "Succursales Fontaine de Vie",
@@ -220,11 +232,12 @@
     "locationBtn": "Voir l'emplacement"
   },
   "redes_sociales1": {
+    "metaTitle": "Réseaux sociaux | Fontaine de Vie Ministère du Feu Int'l",
     "heroBreadcrumbs": "Accueil · Réseaux sociaux",
     "heroTitle": "Connectez-vous avec nous",
     "sectionTitle": "Nos plateformes numériques",
     "sectionSubtitle": "Suivez nos activités et recevez la parole de Dieu dans le monde entier.",
-    "liveNotice": "• EN DIRECTO: Transmitimos nuestros servicios de fe cada semana a través de Facebook Live .",
+    "liveNotice": "<p><strong>• EN DIRECT :</strong> Nous diffusons nos services de foi chaque semaine via <strong>Facebook Live</strong>.</p>",
     "facebookTitle": "Facebook",
     "facebookText": "Services en direct",
     "youtubeTitle": "YouTube",
@@ -236,7 +249,8 @@
     "activitiesText": "Horaires officiels et jours d’activités du ministère."
   },
   "contacto": {
-    "metaTitle": "Contactez-nous | Fountain of Life Fire Ministries Int'l (N.L.C)",
+    "metaTitle": "Contactez-nous | Fontaine de Vie Ministère du Feu Int'l",
+    "addressValue": "Malabo, Guinée équatoriale",
     "title": "Contactez-nous",
     "intro": "Nous serions ravis de vous rencontrer, de vous accompagner et de vous aider à faire vos premiers pas dans cette famille de foi.",
     "addressTitle": "Adresse",
@@ -267,32 +281,33 @@
     "errorConnection": "Erreur de connexion."
   },
   "proximos_programas": {
+    "metaTitle": "Programmes à venir | Fontaine de Vie Ministère du Feu Int'l",
     "title": "Programmes à venir",
     "text": "Nous partagerons bientôt ici les prochains programmes et activités du ministère."
   },
   "testimonio": {
-    "metaTitle": "Soumettre un témoignage | Fountain of Life Fire Ministries Int'l (N.L.C)",
-    "pageTitle": "Envíe Su Testimonio",
-    "pageSubtitle": "COMPLETE EL SIGUIENTE FORMULARIO",
-    "labelName": "Nombre",
-    "placeholderName": "Entrez votre nom",
-    "labelSurname": "Apellidos",
-    "placeholderSurname": "Entrez votre prénom",
-    "labelGender": "Género",
+    "metaTitle": "Soumettre un témoignage | Fontaine de Vie Ministère du Feu Int'l",
+    "pageTitle": "Soumettez votre témoignage",
+    "pageSubtitle": "COMPLÉTEZ LE FORMULAIRE CI-DESSOUS",
+    "labelName": "Prénom",
+    "placeholderName": "Entrez votre prénom",
+    "labelSurname": "Nom",
+    "placeholderSurname": "Entrez votre nom",
+    "labelGender": "Genre",
     "optionSelectGender": "Sélectionnez",
     "optionFemale": "Femme",
     "optionMale": "Homme",
-    "labelCityCountry": "Ciudad | País",
+    "labelCityCountry": "Ville | Pays",
     "placeholderCityCountry": "Exemple : Madrid, Espagne",
-    "labelEmail": "Correo Electrónico",
+    "labelEmail": "Adresse e-mail",
     "placeholderEmail": "email@exemple.com",
-    "labelDate": "Fecha para el Testimonio",
-    "labelTestimony": "Su Testimonio",
+    "labelDate": "Date du témoignage",
+    "labelTestimony": "Votre témoignage",
     "textareaPlaceholder": "Écrivez votre témoignage ici...",
-    "labelUpload": "Archivos vinculados al testimonio",
+    "labelUpload": "Fichiers liés au témoignage",
     "buttonText": "Envoyer le témoignage",
     "noFilesText": "Aucun fichier sélectionné",
-    "fileNote": "Máximo 5 archivos &bull; PDF &bull; JPG &bull; PNG &bull; Video &bull; 10 MB por archivo",
+    "fileNote": "Maximum 5 fichiers &bull; PDF &bull; JPG &bull; PNG &bull; Vidéo &bull; 10 Mo par fichier",
     "noAttachments": "Aucun fichier joint",
     "fileLabel": "Fichier",
     "requiredError": "⚠️ Veuillez remplir tous les champs obligatoires.",

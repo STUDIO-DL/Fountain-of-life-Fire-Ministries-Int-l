@@ -1,4 +1,4 @@
-{
+﻿{
   "common": {
     "nav": {
       "home": "Home",
@@ -16,20 +16,22 @@
     "chooseLanguage": "Language",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "brand": "Fuente de Vida Ministerio de Fuego",
-    "copyright": "&copy; 2026 Fountain of Life Fire Ministries Int'l (N.L.C)"
+    "brand": "Fountain of Life Fire Ministries Int'l",
+    "brandAlt": "Fountain of Life Fire Ministries Int'l logo",
+    "copyright": "© 2026 Fountain of Life Fire Ministries Int'l (N.V.C)"
   },
   "nav": {
     "home": "Home",
-    "about": "Conocenos",
+    "about": "About Us",
     "services": "Services",
     "events": "Events",
     "branches": "Branches",
-    "social": "Redes sociales",
+    "social": "Social Media",
     "testimony": "Testimonies",
     "contact": "Contact"
   },
   "index": {
+    "metaTitle": "Home | Fountain of Life Fire Ministries Int'l",
     "hero": {
       "tag": "Spirit · Community · Renewal",
       "title": "Experience a real encounter with God",
@@ -38,8 +40,9 @@
       "btnBranches": "Find a Branch"
     },
     "vision": {
-      "text": "En Fountain of Life Fire Ministries Int'l creemos en el poder transformador de la presencia de Dios. Somos una casa de adoración, restauración y avivamiento espiritual. Aquí vidas son renovadas, corazones son encendidos y destinos son restaurados. Levantamos una generación llena de fe, propósito y pasión por Cristo. Este es un lugar donde la fuente de vida nunca deja de fluir.",
-      "btnReadMore": "Read More"
+      "text": "At Fountain of Life Fire Ministries Int'l we believe in the transforming power of God's presence.<br><br>We are a house of worship, restoration, and spiritual revival.<br><br>Here lives are renewed, hearts are ignited, and destinies are restored.<br><br>We are raising a generation full of faith, purpose, and passion for Christ.<br><br>This is a place where the fountain of life never stops flowing.",
+      "btnReadMore": "Read More",
+      "imageAlt": "Pastor and wife"
     },
     "services": {
       "sectionSpan": "Join us in worship",
@@ -54,23 +57,28 @@
     "gallery": {
       "card1": {
         "tag": "Live Service",
-        "title": "Message of Faith and Power"
+        "title": "Message of Faith and Power",
+        "alt": "Preaching during the service"
       },
       "card2": {
         "tag": "Gathering",
-        "title": "Voice of Revival"
+        "title": "Voice of Revival",
+        "alt": "Woman ministering with a microphone"
       },
       "card3": {
         "tag": "Healing",
-        "title": "Healing Prayer"
+        "title": "Healing Prayer",
+        "alt": "Congregation in healing prayer"
       },
       "card4": {
         "tag": "Youth",
-        "title": "Family Worship"
+        "title": "Family Worship",
+        "alt": "Congregation gathered in worship"
       },
       "card5": {
         "tag": "Congregation",
-        "title": "Worship Service"
+        "title": "Worship Service",
+        "alt": "Congregation worshiping during the service"
       }
     },
     "serviceCards": {
@@ -127,16 +135,17 @@
     }
   },
   "conocenos": {
+    "metaTitle": "About Us | Fountain of Life Fire Ministries Int'l",
     "heroTitle": "About Us",
     "heroText": "We are a spiritual family called to preach salvation by demonstrating the power of God. Here you will discover who we are, why we exist, and how we work to restore destinies in the name of Jesus Christ.",
     "section1Title": "1. Who we are",
-    "section1Text": "la iglesia de Cristo encomendada a predicar salvación demostrando el poder de Dios. No somos solo un lugar de reunión: somos una casa donde la Palabra se predica y el poder de Dios se manifiesta para transformar vidas reales.",
-    "section1Highlight": "Fountain of life, Fire ministry",
+    "section1Text": "the church of Christ entrusted to preach salvation by demonstrating the power of God. We are not just a meeting place: we are a home where the Word is preached and the power of God is manifested to transform real lives.",
+    "section1Highlight": "Fountain of Life, Fire Ministry",
     "section2Title": "2. Why we exist / Our mission",
-    "section2Text": "Vimos que muchos conocen de Dios de lejos, pero no experimentan su poder para salir de la opresión, sanar sus familias y caminar en propósito. Por eso traemos la palabra de salvación enfocada en liberación, prosperidad y el establecimiento de matrimonios conforme al diseño de Dios.",
+    "section2Text": "We saw that many know God from afar, but do not experience His power to break free from oppression, heal their families, and walk in purpose. That is why we bring the word of salvation focused on deliverance, prosperity, and the establishment of marriages according to God's design.",
     "section2Highlight": "Our mission is to reveal Jesus and restore people’s destinies",
     "section3Title": "3. What sets us apart",
-    "section3Text": "En linea con el llamado divino de nuestro padre espritual, obramos en:",
+    "section3Text": "In line with the divine calling of our spiritual father, we operate in:",
     "section3Item1Highlight": "Deliverance",
     "section3Item1Text": "We minister to break spiritual chains that hold back your progress.",
     "section3Item2Highlight": "Biblical prosperity",
@@ -147,7 +156,7 @@
     "section4Title": "4. Leadership",
     "section4Text": "We are under the coverage and direction of spiritual father",
     "section4Highlight": "Rev. Anthony Ifesinachi O.",
-    "section4TextRest": "Puedes conocer más de su ministerio y palabra diaria en su cuenta oficial de Facebook: Anthony Ifesinachi . Creemos en la importancia de la cobertura espiritual y la paternidad en el ministerio.",
+    "section4TextRest": "You can learn more about his ministry and daily word on his official Facebook account: Anthony Ifesinachi. We believe in the importance of spiritual covering and spiritual fatherhood in ministry.",
     "section5Title": "5. Proof of what we believe",
     "section5Text": "We do not preach theory only. We are a church where the power of God is demonstrated to heal, deliver, and restore. If you are looking for a place where faith is practical and visible, this is your place.",
     "section6Title": "6. How we work",
@@ -159,15 +168,16 @@
     "section6Item3Highlight": "Accompaniment",
     "section6Item3Text": "We do not leave you alone after Sunday. We help you walk the process.",
     "section7Title": "7. Call to action",
-    "section7TextPart1": "Sí sientes que tu vida, tu familia o tu destino necesitan un cambio, ven a conocernos.",
+    "section7TextPart1": "If you feel that your life, your family, or your destiny needs a change, come and meet us.",
     "section7Strong": "Visit us at our next service",
     "section7TextPart2": "or connect with the word of our spiritual father Anthony Ifesinachi on Facebook."
   },
   "miembro": {
+    "metaTitle": "Membership | Fountain of Life Fire Ministries Int'l",
     "heroTitle": "Membership",
     "heroText": "Become part of our family of faith",
     "heroTag": "Join the family",
-    "welcomeTitle": "Bienvenido a Fountain of Life Fire Ministries Int'l",
+    "welcomeTitle": "Welcome to Fountain of Life Fire Ministries Int'l",
     "welcomeText": "We are excited that you have decided to take this step. Complete this form to officially join our Christian community and grow spiritually with us.",
     "formTitle": "Membership Form",
     "labelName": "First Name *",
@@ -189,14 +199,15 @@
     "labelMemberChurch": "Are you a member of another church?",
     "labelPrayer": "Expectations / Prayer Requests",
     "submitButton": "Submit Form",
+    "formSubject": "New membership form - Fountain of Life Fire Ministries Int'l",
     "optionYes": "Yes",
     "optionNo": "No"
   },
   "ramas": {
-    "metaTitle": "Find a Branch | Fountain of Life Fire Ministries Int'l (N.L.C)",
+    "metaTitle": "Find a Branch | Fountain of Life Fire Ministries Int'l",
     "heroTitle": "Find a Branch",
-    "heroText": "Find a Fuente of life branch near you and join us in worship and spiritual growth.",
-    "branchesTitle": "Fuente de Vida Branches",
+    "heroText": "Find a Fountain of Life branch near you and join us in worship and spiritual growth.",
+    "branchesTitle": "Fountain of Life Branches",
     "branchesText": "Visit us at our headquarters or at any of our branch locations.",
     "centralBadge": "Headquarters",
     "branchBadge": "Branch",
@@ -221,11 +232,12 @@
     "locationBtn": "View location"
   },
   "redes_sociales1": {
+    "metaTitle": "Social Media | Fountain of Life Fire Ministries Int'l",
     "heroBreadcrumbs": "Home · Social Media",
     "heroTitle": "Connect With Us",
     "sectionTitle": "Our Digital Platforms",
     "sectionSubtitle": "Follow our activities and receive God’s word around the world.",
-    "liveNotice": "• EN DIRECTO: Transmitimos nuestros servicios de fe cada semana a través de Facebook Live .",
+    "liveNotice": "<p><strong>• LIVE:</strong> We stream our faith services every week through <strong>Facebook Live</strong>.</p>",
     "facebookTitle": "Facebook",
     "facebookText": "Live services",
     "youtubeTitle": "YouTube",
@@ -237,7 +249,8 @@
     "activitiesText": "Official ministry schedules and activity days."
   },
   "contacto": {
-    "metaTitle": "Contact Us | Fountain of Life Fire Ministries Int'l (N.L.C)",
+    "metaTitle": "Contact Us | Fountain of Life Fire Ministries Int'l",
+    "addressValue": "Malabo, Equatorial Guinea",
     "title": "Contact Us",
     "intro": "We would love to meet you, walk with you, and help you take your first steps into this family of faith.",
     "addressTitle": "Address",
@@ -268,32 +281,33 @@
     "errorConnection": "Connection error."
   },
   "proximos_programas": {
+    "metaTitle": "Upcoming Programs | Fountain of Life Fire Ministries Int'l",
     "title": "Upcoming Programs",
     "text": "We will soon share upcoming programs and ministry activities here."
   },
   "testimonio": {
-    "metaTitle": "Submit Testimony | Fountain of Life Fire Ministries Int'l (N.L.C)",
-    "pageTitle": "Envíe Su Testimonio",
-    "pageSubtitle": "COMPLETE EL SIGUIENTE FORMULARIO",
-    "labelName": "Nombre",
-    "placeholderName": "Enter your name",
-    "labelSurname": "Apellidos",
-    "placeholderSurname": "Enter your surname",
-    "labelGender": "Género",
+    "metaTitle": "Submit Testimony | Fountain of Life Fire Ministries Int'l",
+    "pageTitle": "Submit Your Testimony",
+    "pageSubtitle": "COMPLETE THE FORM BELOW",
+    "labelName": "First Name",
+    "placeholderName": "Enter your first name",
+    "labelSurname": "Last Name",
+    "placeholderSurname": "Enter your last name",
+    "labelGender": "Gender",
     "optionSelectGender": "Select",
     "optionFemale": "Female",
     "optionMale": "Male",
-    "labelCityCountry": "Ciudad | País",
+    "labelCityCountry": "City | Country",
     "placeholderCityCountry": "Example: Madrid, Spain",
-    "labelEmail": "Correo Electrónico",
+    "labelEmail": "Email Address",
     "placeholderEmail": "email@example.com",
-    "labelDate": "Fecha para el Testimonio",
-    "labelTestimony": "Su Testimonio",
+    "labelDate": "Testimony Date",
+    "labelTestimony": "Your Testimony",
     "textareaPlaceholder": "Write your testimony here...",
-    "labelUpload": "Archivos vinculados al testimonio",
+    "labelUpload": "Files linked to the testimony",
     "buttonText": "Submit Testimony",
     "noFilesText": "No file selected",
-    "fileNote": "Máximo 5 archivos &bull; PDF &bull; JPG &bull; PNG &bull; Video &bull; 10 MB por archivo",
+    "fileNote": "Maximum 5 files &bull; PDF &bull; JPG &bull; PNG &bull; Video &bull; 10 MB per file",
     "noAttachments": "No attached files",
     "fileLabel": "File",
     "requiredError": "⚠️ Please complete all required fields.",

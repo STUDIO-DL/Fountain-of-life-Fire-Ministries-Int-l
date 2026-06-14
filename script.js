@@ -36,6 +36,9 @@ function readElementDefault(el) {
     if (el.dataset.i18nAttr) {
         return (el.getAttribute(el.dataset.i18nAttr) || '').trim();
     }
+    if (el.dataset.i18nHtml === 'true') {
+        return el.innerHTML.replace(/\s+/g, ' ').trim();
+    }
     return el.textContent.replace(/\s+/g, ' ').trim();
 }
 
@@ -147,6 +150,8 @@ function translatePage(lang) {
         }
         if (el.dataset.i18nAttr) {
             el.setAttribute(el.dataset.i18nAttr, translation);
+        } else if (el.dataset.i18nHtml === 'true') {
+            el.innerHTML = translation;
         } else {
             el.textContent = translation;
         }
