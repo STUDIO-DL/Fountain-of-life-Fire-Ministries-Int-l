@@ -2,6 +2,12 @@
   "name": "fuente-de-vida",
   "private": true,
   "scripts": {
-    "i18n:sync": "node scripts/sync-locales.js"
+    "i18n:sync": "node scripts/sync-locales.js",
+    "optimize:logo": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/optimize-logo.ps1",
+    "optimize:images": "node scripts/optimize-images.js",
+    "optimize:heads": "node scripts/update-page-heads.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.1"
   }
 }

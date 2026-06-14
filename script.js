@@ -32,6 +32,21 @@ async function loadLocale(lang) {
     return translationsCache[lang];
 }
 
+async function ensureLocale(lang) {
+    if (translationsCache[lang]) {
+        return translationsCache[lang];
+    }
+    return loadLocale(lang);
+}
+
+async function ensureLocalesForLanguage(lang) {
+    const langsToLoad = lang === DEFAULT_LANG
+        ? [DEFAULT_LANG]
+        : [lang, DEFAULT_LANG];
+
+    await Promise.all(langsToLoad.map(ensureLocale));
+}
+
 function readElementDefault(el) {
     if (el.dataset.i18nAttr) {
         return (el.getAttribute(el.dataset.i18nAttr) || '').trim();
@@ -189,7 +204,9 @@ function setupLanguageSwitcher() {
         langToggle.querySelector('.lang-flag').textContent = details.flag;
         langToggle.querySelector('.lang-label').textContent = details.label;
         localStorage.setItem('siteLanguage', lang);
-        translatePage(lang);
+        ensureLocalesForLanguage(lang)
+            .then(() => translatePage(lang))
+            .catch(error => console.error('Locale loading failed:', error));
         langOptions.forEach(option => {
             option.classList.toggle('active', option.dataset.lang === lang);
         });
@@ -379,7 +396,10 @@ function setupHeroSlider() {
     const imageBasePath = window.location.pathname.replace(/\\/g, '/').includes('/pages/')
         ? '../src/images/'
         : 'src/images/';
-    const images = ['photo1.jpg', 'photo2.jpg', 'photo3.jpg'].map(image => `${imageBasePath}${image}`);
+    const photoNames = ['photo1', 'photo2', 'photo3'];
+    const supportsWebp = document.createElement('canvas').toDataURL('image/webp').startsWith('data:image/webp');
+    const extension = supportsWebp ? 'webp' : 'jpg';
+    const images = photoNames.map(name => `${imageBasePath}${name}.${extension}`);
     let current = 0;
 
     function updateSlider() {
@@ -407,10 +427,11 @@ function setupHeroSlider() {
 
 async function initApp() {
     captureDefaultsFromDOM();
+    setupMenuToggle();
 
     const savedLang = localStorage.getItem('siteLanguage') || DEFAULT_LANG;
     try {
-        await Promise.all(SUPPORTED_LANGS.map(loadLocale));
+        await ensureLocalesForLanguage(savedLang);
     } catch (error) {
         console.error('Locale loading failed:', error);
         if (!translationsCache[DEFAULT_LANG]) {
@@ -418,7 +439,6 @@ async function initApp() {
         }
     }
 
-    setupMenuToggle();
     setupLanguageSwitcher();
     setupContactForm();
     setupMembershipForm();

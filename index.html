@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n-key="index.metaTitle">Inicio | Fuente de Vida Ministerio de Fuego Int'l</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="src/css/style.css" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body data-page="index">
@@ -14,7 +19,7 @@
     <div class="page-nav-container">
 
         <a href="index.html" class="nav-brand">
-            <img src="src/images/logo.png" alt="Logo de Fuente de Vida Ministerio de Fuego Int'l" data-i18n-key="common.brandAlt" data-i18n-attr="alt">
+            <img src="src/images/logo.png" width="40" height="40" decoding="async" fetchpriority="high" alt="Logo de Fuente de Vida Ministerio de Fuego Int'l" data-i18n-key="common.brandAlt" data-i18n-attr="alt">
             <span data-i18n-key="common.brand">Fuente de Vida Ministerio de Fuego Int'l</span>
         </a>
 
@@ -65,7 +70,10 @@
         <div class="hero-gallery">
             <div class="gallery-scroll">
                 <article class="gallery-card gallery-card-wide">
-                    <img src="src/images/photo1.jpg" alt="Predicación durante el servicio" class="gallery-image-focus-right" data-i18n-key="index.gallery.card1.alt" data-i18n-attr="alt">
+                    <picture>
+                        <source srcset="src/images/photo1.webp" type="image/webp">
+                        <img src="src/images/photo1.jpg" alt="Predicación durante el servicio" class="gallery-image-focus-right" decoding="async" fetchpriority="high" data-i18n-key="index.gallery.card1.alt" data-i18n-attr="alt">
+                    </picture>
                     <div class="card-overlay"></div>
                     <div class="card-copy">
                         <span data-i18n-key="index.gallery.card1.tag">Servicio en Vivo</span>
@@ -73,7 +81,10 @@
                     </div>
                 </article>
                 <article class="gallery-card">
-                    <img src="src/images/photo5.jpg" alt="Mujer ministrando con micrófono" data-i18n-key="index.gallery.card2.alt" data-i18n-attr="alt">
+                    <picture>
+                        <source srcset="src/images/photo5.webp" type="image/webp">
+                        <img src="src/images/photo5.jpg" alt="Mujer ministrando con micrófono" loading="lazy" decoding="async" data-i18n-key="index.gallery.card2.alt" data-i18n-attr="alt">
+                    </picture>
                     <div class="card-overlay"></div>
                     <div class="card-copy">
                         <span data-i18n-key="index.gallery.card2.tag">Encuentro</span>
@@ -81,7 +92,10 @@
                     </div>
                 </article>
                 <article class="gallery-card">
-                    <img src="src/images/photo3.jpg" alt="Congregación en oración de sanación" data-i18n-key="index.gallery.card3.alt" data-i18n-attr="alt">
+                    <picture>
+                        <source srcset="src/images/photo3.webp" type="image/webp">
+                        <img src="src/images/photo3.jpg" alt="Congregación en oración de sanación" loading="lazy" decoding="async" data-i18n-key="index.gallery.card3.alt" data-i18n-attr="alt">
+                    </picture>
                     <div class="card-overlay"></div>
                     <div class="card-copy">
                         <span data-i18n-key="index.gallery.card3.tag">Sanación</span>
@@ -89,7 +103,10 @@
                     </div>
                 </article>
                 <article class="gallery-card">
-                    <img src="src/images/photo4.jpg" alt="Congregación reunida en adoración" data-i18n-key="index.gallery.card4.alt" data-i18n-attr="alt">
+                    <picture>
+                        <source srcset="src/images/photo4.webp" type="image/webp">
+                        <img src="src/images/photo4.jpg" alt="Congregación reunida en adoración" loading="lazy" decoding="async" data-i18n-key="index.gallery.card4.alt" data-i18n-attr="alt">
+                    </picture>
                     <div class="card-overlay"></div>
                     <div class="card-copy">
                         <span data-i18n-key="index.gallery.card4.tag">Juventud</span>
@@ -97,7 +114,10 @@
                     </div>
                 </article>
                 <article class="gallery-card">
-                    <img src="src/images/photo2.jpg" alt="Congregación adorando durante el servicio" data-i18n-key="index.gallery.card5.alt" data-i18n-attr="alt">
+                    <picture>
+                        <source srcset="src/images/photo2.webp" type="image/webp">
+                        <img src="src/images/photo2.jpg" alt="Congregación adorando durante el servicio" loading="lazy" decoding="async" data-i18n-key="index.gallery.card5.alt" data-i18n-attr="alt">
+                    </picture>
                     <div class="card-overlay"></div>
                     <div class="card-copy">
                         <span data-i18n-key="index.gallery.card5.tag">Congregación</span>
@@ -116,7 +136,10 @@
                 <a href="pages/conocenos.html" class="btn-read-more" data-i18n-key="index.vision.btnReadMore">Leer más</a>
             </div>
             <div class="vision-image">
-                <img src="src/images/IMG-20240807-WA0040.jpg" alt="Pastor y esposa" class="vision-circular-image" data-i18n-key="index.vision.imageAlt" data-i18n-attr="alt">
+                <picture>
+                    <source srcset="src/images/IMG-20240807-WA0040.webp" type="image/webp">
+                    <img src="src/images/IMG-20240807-WA0040.jpg" alt="Pastor y esposa" class="vision-circular-image" width="720" height="720" loading="lazy" decoding="async" data-i18n-key="index.vision.imageAlt" data-i18n-attr="alt">
+                </picture>
             </div>
         </div>
     </section>
