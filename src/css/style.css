@@ -188,18 +188,25 @@ footer p {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .lang-toggle {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 6px;
+    box-sizing: border-box;
+    height: 38px;
+    min-width: 68px;
+    padding: 0 12px;
     border: 1px solid rgba(15, 23, 42, 0.12);
     background: #ffffff;
     color: #111827;
     border-radius: 999px;
-    padding: 10px 14px;
+    font-size: 0.8rem;
     font-weight: 700;
+    line-height: 1;
     cursor: pointer;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
@@ -208,24 +215,38 @@ footer p {
     box-shadow: 0 6px 18px rgba(15, 23, 42, 0.12);
 }
 
+.lang-toggle .lang-flag {
+    width: 16px;
+    height: 12px;
+    display: block;
+}
+
+.lang-toggle .lang-label {
+    display: inline-block;
+    min-width: 1.25em;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
 .lang-flag {
-    width: 20px;
-    height: 15px;
+    width: 18px;
+    height: 13px;
     object-fit: cover;
     border-radius: 2px;
     flex-shrink: 0;
+    display: block;
     box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.08);
 }
 
 .lang-menu {
     position: absolute;
     right: 0;
-    top: calc(100% + 10px);
-    bottom: auto;
-    min-width: 180px;
+    top: calc(100% + 6px);
+    min-width: 100%;
+    width: max-content;
     background: #ffffff;
     border: 1px solid rgba(15, 23, 42, 0.12);
-    border-radius: 18px;
+    border-radius: 14px;
     box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
     display: none;
     flex-direction: column;
@@ -242,14 +263,23 @@ footer p {
     background: transparent;
     color: #111827;
     text-align: left;
-    padding: 12px 14px;
+    padding: 10px 12px;
     width: 100%;
-    display: inline-flex;
+    box-sizing: border-box;
+    display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     cursor: pointer;
+    font-size: 0.82rem;
     font-weight: 600;
+    line-height: 1.2;
+    white-space: nowrap;
     transition: background 0.2s ease;
+}
+
+.lang-option .lang-flag {
+    width: 16px;
+    height: 12px;
 }
 
 .lang-option:hover,
@@ -329,6 +359,18 @@ body.menu-open {
 @media (max-width: 768px) {
     .page-nav-container {
         padding: 16px 18px;
+    }
+
+    .lang-toggle {
+        height: 34px;
+        min-width: 62px;
+        padding: 0 10px;
+        gap: 5px;
+    }
+
+    .lang-toggle .lang-flag {
+        width: 14px;
+        height: 10px;
     }
 
     .menu-toggle {
