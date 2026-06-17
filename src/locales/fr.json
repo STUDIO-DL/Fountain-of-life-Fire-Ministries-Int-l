@@ -223,10 +223,7 @@
     },
     "branch2": {
       "name": "Rebola",
-      "location": "Rebola, Guinée équatoriale",
-      "phone": "+240 555 123 456",
-      "address": "Route principale de Rebola, à côté du marché.",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Route+principale+de+Rebola%2C+Rebola%2C+Guin%C3%A9e+%C3%A9quatoriale"
+      "status": "En développement"
     },
     "branch3": {
       "name": "Nekede",

@@ -223,10 +223,7 @@
     },
     "branch2": {
       "name": "Rebola",
-      "location": "Rebola, Guinea Ecuatorial",
-      "phone": "+240 555 123 456",
-      "address": "Carretera principal de Rebola, junto al mercado.",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Carretera+principal+de+Rebola%2C+Rebola%2C+Guinea+Ecuatorial"
+      "status": "En desarrollo"
     },
     "branch3": {
       "name": "Nekede",

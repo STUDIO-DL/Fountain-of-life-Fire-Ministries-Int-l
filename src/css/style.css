@@ -2221,6 +2221,14 @@ body[data-page="ramas"] .about-hero p {
     word-break: break-word;
 }
 
+.ramas-status {
+    margin: 8px 0 0;
+    color: #64748b;
+    font-size: clamp(0.95rem, 2vw, 1.05rem);
+    font-style: italic;
+    line-height: 1.5;
+}
+
 .ramas-card-footer {
     padding: 0 24px 24px;
 }
