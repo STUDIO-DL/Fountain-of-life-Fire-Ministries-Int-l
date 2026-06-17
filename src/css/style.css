@@ -2085,8 +2085,6 @@ body[data-page="ramas"] .about-hero p {
 
 .ramas-card--central {
     grid-column: 1 / -1;
-    max-width: 640px;
-    margin: 0 auto;
     width: 100%;
     border-color: rgba(234,179,8,0.35);
     box-shadow: 0 12px 40px rgba(234,179,8,0.12);
@@ -2280,6 +2278,10 @@ body[data-page="ramas"] .about-hero p {
     cursor: pointer;
 }
 
+.ramas-flyer-banner--central {
+    aspect-ratio: 1024 / 603;
+}
+
 .ramas-flyer-banner picture,
 .ramas-flyer-banner img {
     display: block;
@@ -2414,12 +2416,12 @@ body[data-page="ramas"] .about-hero p {
         gap: 18px;
     }
 
-    .ramas-card--central,
     .ramas-card--featured {
         max-width: none;
     }
 
-    .ramas-flyer-banner {
+    .ramas-flyer-banner,
+    .ramas-flyer-banner--central {
         aspect-ratio: 4 / 3;
     }
 

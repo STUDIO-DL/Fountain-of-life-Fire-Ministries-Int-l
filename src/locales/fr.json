@@ -215,8 +215,11 @@
       "name": "Malabo",
       "location": "Malabo, Guinée équatoriale",
       "phone": "+240 222 588 652",
-      "address": "Avenida Hassan II, près du centre-ville.",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Avenida+Hassan+II%2C+Malabo%2C+Guin%C3%A9e+%C3%A9quatoriale"
+      "address": "San Juan, derrière la Hacienda Natividad.",
+      "pastors": "Rev. Anthony & Pst. Mrs. Goodness Ifesinachi",
+      "flyerAlt": "Affiche de bienvenue — Fontaine de Vie et City of Gosen, Malabo",
+      "viewFlyer": "Voir l'affiche complète",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=San+Juan%2C+derri%C3%A8re+la+Hacienda+Natividad%2C+Malabo%2C+Guin%C3%A9e+%C3%A9quatoriale"
     },
     "branch2": {
       "name": "Rebola",

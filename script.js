@@ -431,29 +431,61 @@ function setupFlyerDialog() {
         return;
     }
 
-    const banner = document.querySelector('.ramas-flyer-banner');
+    const dialogPicture = dialog.querySelector('picture source');
+    const dialogImg = dialog.querySelector('picture img');
+    const banners = document.querySelectorAll('.ramas-flyer-banner');
     const openButtons = document.querySelectorAll('[data-flyer-open]');
     const closeButtons = document.querySelectorAll('[data-flyer-close]');
 
-    function openDialog() {
+    function loadFlyer(banner) {
+        if (!banner) {
+            return;
+        }
+
+        const bannerImg = banner.querySelector('img');
+        const webp = banner.dataset.flyerWebp;
+        const jpg = banner.dataset.flyerJpg;
+        const width = banner.dataset.flyerWidth;
+        const height = banner.dataset.flyerHeight;
+        const alt = bannerImg ? bannerImg.getAttribute('alt') : '';
+
+        if (dialogPicture && webp) {
+            dialogPicture.srcset = webp;
+        }
+        if (dialogImg && jpg) {
+            dialogImg.src = jpg;
+        }
+        if (dialogImg && alt) {
+            dialogImg.alt = alt;
+        }
+        if (dialogImg && width) {
+            dialogImg.width = Number(width);
+        }
+        if (dialogImg && height) {
+            dialogImg.height = Number(height);
+        }
+    }
+
+    function openDialog(banner) {
+        loadFlyer(banner);
         dialog.showModal();
     }
 
-    openButtons.forEach((button) => {
-        button.addEventListener('click', (event) => {
-            event.stopPropagation();
-            openDialog();
-        });
-    });
-
-    if (banner) {
+    banners.forEach((banner) => {
         banner.addEventListener('click', (event) => {
             if (event.target.closest('[data-flyer-open]')) {
                 return;
             }
-            openDialog();
+            openDialog(banner);
         });
-    }
+    });
+
+    openButtons.forEach((button) => {
+        button.addEventListener('click', (event) => {
+            event.stopPropagation();
+            openDialog(button.closest('.ramas-flyer-banner'));
+        });
+    });
 
     closeButtons.forEach((button) => {
         button.addEventListener('click', () => dialog.close());

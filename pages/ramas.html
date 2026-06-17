@@ -79,6 +79,31 @@
 
       <article class="ramas-card ramas-card--central">
         <div class="ramas-card-accent"></div>
+
+        <figure
+          class="ramas-flyer-banner ramas-flyer-banner--central"
+          data-flyer-webp="../src/images/central-sucursal.webp"
+          data-flyer-jpg="../src/images/central-sucursal.jpg"
+          data-flyer-width="1024"
+          data-flyer-height="603">
+          <picture>
+            <source srcset="../src/images/central-sucursal.webp" type="image/webp">
+            <img
+              src="../src/images/central-sucursal.jpg"
+              width="1024"
+              height="603"
+              loading="lazy"
+              decoding="async"
+              alt="Cartel de bienvenida — Fuente de Vida y City of Gosen, Malabo"
+              data-i18n-key="ramas.branch1.flyerAlt"
+              data-i18n-attr="alt">
+          </picture>
+          <button type="button" class="ramas-flyer-expand" data-flyer-open aria-label="Ver cartel completo" data-i18n-key="ramas.branch1.viewFlyer" data-i18n-attr="aria-label">
+            <i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i>
+            <span data-i18n-key="ramas.branch1.viewFlyer">Ver cartel completo</span>
+          </button>
+        </figure>
+
         <div class="ramas-card-body">
           <div class="ramas-card-header">
             <div class="ramas-card-logo">
@@ -92,6 +117,10 @@
 
           <div class="ramas-info-list">
             <div class="ramas-info-item">
+              <i class="fa-solid fa-user-group" aria-hidden="true"></i>
+              <span class="ramas-info-text" data-i18n-key="ramas.branch1.pastors">Rev. Anthony &amp; Pst. Mrs. Goodness Ifesinachi</span>
+            </div>
+            <div class="ramas-info-item">
               <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
               <span class="ramas-info-text" data-i18n-key="ramas.branch1.location">Malabo, Guinea Ecuatorial</span>
             </div>
@@ -101,13 +130,13 @@
             </div>
             <div class="ramas-info-item">
               <i class="fa-solid fa-building" aria-hidden="true"></i>
-              <span class="ramas-info-text" data-i18n-key="ramas.branch1.address">Avenida Hassan II, cerca del centro de la ciudad.</span>
+              <span class="ramas-info-text" data-i18n-key="ramas.branch1.address">San Juan, detrás de la Hacienda Natividad.</span>
             </div>
           </div>
         </div>
         <div class="ramas-card-footer">
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Avenida+Hassan+II%2C+Malabo%2C+Guinea+Ecuatorial"
+            href="https://www.google.com/maps/search/?api=1&query=San+Juan%2C+detr%C3%A1s+de+la+Hacienda+Natividad%2C+Malabo%2C+Guinea+Ecuatorial"
             class="ramas-location-btn"
             target="_blank"
             rel="noopener noreferrer"
@@ -122,7 +151,12 @@
       <article class="ramas-card ramas-card--featured">
         <div class="ramas-card-accent ramas-card-accent--warm"></div>
 
-        <figure class="ramas-flyer-banner">
+        <figure
+          class="ramas-flyer-banner ramas-flyer-banner--warm"
+          data-flyer-webp="../src/images/nigeria-sucursal.webp"
+          data-flyer-jpg="../src/images/nigeria-sucursal.jpg"
+          data-flyer-width="1024"
+          data-flyer-height="554">
           <picture>
             <source srcset="../src/images/nigeria-sucursal.webp" type="image/webp">
             <img
@@ -240,7 +274,7 @@
     </div>
   </footer>
 
-  <dialog class="ramas-flyer-dialog" id="flyerDialog" aria-label="Cartel de la sucursal de Nigeria">
+  <dialog class="ramas-flyer-dialog" id="flyerDialog" aria-label="Cartel de sucursal">
     <button type="button" class="ramas-flyer-close" data-flyer-close aria-label="Cerrar" data-i18n-key="common.closeMenu" data-i18n-attr="aria-label">
       <i class="fa-solid fa-xmark" aria-hidden="true"></i>
     </button>
