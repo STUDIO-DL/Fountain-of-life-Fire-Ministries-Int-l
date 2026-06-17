@@ -23,14 +23,23 @@
         </a>
 
         <div class="lang-switcher">
-            <button id="langToggle" class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
-                <span class="lang-flag">🇪🇸</span>
+            <button id="langToggle" class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Idioma" data-i18n-key="common.chooseLanguage" data-i18n-attr="aria-label">
+                <img class="lang-flag" src="../src/images/flags/es.svg" width="20" height="15" alt="" aria-hidden="true">
                 <span class="lang-label">ES</span>
             </button>
             <div id="langMenu" class="lang-menu" role="menu">
-                <button class="lang-option" type="button" data-lang="en">🇬🇧 English</button>
-                <button class="lang-option" type="button" data-lang="es">🇪🇸 Español</button>
-                <button class="lang-option" type="button" data-lang="fr">🇫🇷 Français</button>
+                <button class="lang-option" type="button" data-lang="en">
+                    <img class="lang-flag" src="../src/images/flags/gb.svg" width="20" height="15" alt="" aria-hidden="true">
+                    <span data-i18n-key="common.langEnglish">English</span>
+                </button>
+                <button class="lang-option" type="button" data-lang="es">
+                    <img class="lang-flag" src="../src/images/flags/es.svg" width="20" height="15" alt="" aria-hidden="true">
+                    <span data-i18n-key="common.langSpanish">Español</span>
+                </button>
+                <button class="lang-option" type="button" data-lang="fr">
+                    <img class="lang-flag" src="../src/images/flags/fr.svg" width="20" height="15" alt="" aria-hidden="true">
+                    <span data-i18n-key="common.langFrench">Français</span>
+                </button>
             </div>
         </div>
 

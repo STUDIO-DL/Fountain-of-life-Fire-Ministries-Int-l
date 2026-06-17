@@ -27,14 +27,23 @@
         </a>
 
         <div class="lang-switcher">
-            <button id="langToggle" class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
-                <span class="lang-flag">🇪🇸</span>
+            <button id="langToggle" class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Idioma" data-i18n-key="common.chooseLanguage" data-i18n-attr="aria-label">
+                <img class="lang-flag" src="../src/images/flags/es.svg" width="20" height="15" alt="" aria-hidden="true">
                 <span class="lang-label">ES</span>
             </button>
             <div id="langMenu" class="lang-menu" role="menu">
-                <button class="lang-option" type="button" data-lang="en">🇬🇧 English</button>
-                <button class="lang-option" type="button" data-lang="es">🇪🇸 Español</button>
-                <button class="lang-option" type="button" data-lang="fr">🇫🇷 Français</button>
+                <button class="lang-option" type="button" data-lang="en">
+                    <img class="lang-flag" src="../src/images/flags/gb.svg" width="20" height="15" alt="" aria-hidden="true">
+                    <span data-i18n-key="common.langEnglish">English</span>
+                </button>
+                <button class="lang-option" type="button" data-lang="es">
+                    <img class="lang-flag" src="../src/images/flags/es.svg" width="20" height="15" alt="" aria-hidden="true">
+                    <span data-i18n-key="common.langSpanish">Español</span>
+                </button>
+                <button class="lang-option" type="button" data-lang="fr">
+                    <img class="lang-flag" src="../src/images/flags/fr.svg" width="20" height="15" alt="" aria-hidden="true">
+                    <span data-i18n-key="common.langFrench">Français</span>
+                </button>
             </div>
         </div>
 
@@ -112,7 +121,7 @@
             </div>
             <div class="ramas-card-titles">
               <span class="ramas-badge ramas-badge--central" data-i18n-key="ramas.centralBadge">Sede Central</span>
-              <h3 data-i18n-key="ramas.branch1.name">Malabo</h3>
+              <h3 data-i18n-key="ramas.branch1.name">Malabo, Guinea Ecuatorial</h3>
             </div>
           </div>
 
@@ -183,7 +192,7 @@
             </div>
             <div class="ramas-card-titles">
               <span class="ramas-badge ramas-badge--warm" data-i18n-key="ramas.branchBadge">Sucursal</span>
-              <h3 data-i18n-key="ramas.branch3.name">Nekede</h3>
+              <h3 data-i18n-key="ramas.branch3.name">Nekede, Nigeria</h3>
             </div>
           </div>
 
@@ -194,7 +203,7 @@
             </div>
             <div class="ramas-info-item">
               <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-              <span class="ramas-info-text" data-i18n-key="ramas.branch3.location">Owerri, Nigeria</span>
+              <span class="ramas-info-text" data-i18n-key="ramas.branch3.location">Nekede, Nigeria</span>
             </div>
             <div class="ramas-info-item">
               <i class="fa-solid fa-phone" aria-hidden="true"></i>
@@ -229,7 +238,7 @@
             </div>
             <div class="ramas-card-titles">
               <span class="ramas-badge" data-i18n-key="ramas.branchBadge">Sucursal</span>
-              <h3 data-i18n-key="ramas.branch2.name">Rebola</h3>
+              <h3 data-i18n-key="ramas.branch2.name">Rebola, Guinea Ecuatorial</h3>
             </div>
           </div>
 

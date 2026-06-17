@@ -6,9 +6,9 @@ const miniCards = document.querySelectorAll('.mini-card');
 const SUPPORTED_LANGS = ['en', 'es', 'fr'];
 const DEFAULT_LANG = 'es';
 const languageDetails = {
-    en: { label: 'EN', flag: '🇬🇧' },
-    es: { label: 'ES', flag: '🇪🇸' },
-    fr: { label: 'FR', flag: '🇫🇷' }
+    en: { label: 'EN', flagFile: 'gb.svg' },
+    es: { label: 'ES', flagFile: 'es.svg' },
+    fr: { label: 'FR', flagFile: 'fr.svg' }
 };
 
 const translationsCache = {};
@@ -18,6 +18,26 @@ function getLocaleBase() {
     return window.location.pathname.replace(/\\/g, '/').includes('/pages/')
         ? '../src/locales/'
         : 'src/locales/';
+}
+
+function getFlagBase() {
+    return window.location.pathname.replace(/\\/g, '/').includes('/pages/')
+        ? '../src/images/flags/'
+        : 'src/images/flags/';
+}
+
+function setFlagImage(element, flagFile) {
+    if (!element || !flagFile) {
+        return;
+    }
+
+    if (element.tagName === 'IMG') {
+        element.src = `${getFlagBase()}${flagFile}`;
+        element.alt = '';
+        return;
+    }
+
+    element.textContent = flagFile;
 }
 
 async function loadLocale(lang) {
@@ -201,7 +221,7 @@ function setupLanguageSwitcher() {
 
     function updateLanguage(lang) {
         const details = languageDetails[lang] || languageDetails.es;
-        langToggle.querySelector('.lang-flag').textContent = details.flag;
+        setFlagImage(langToggle.querySelector('.lang-flag'), details.flagFile);
         langToggle.querySelector('.lang-label').textContent = details.label;
         localStorage.setItem('siteLanguage', lang);
         ensureLocalesForLanguage(lang)
@@ -209,6 +229,11 @@ function setupLanguageSwitcher() {
             .catch(error => console.error('Locale loading failed:', error));
         langOptions.forEach(option => {
             option.classList.toggle('active', option.dataset.lang === lang);
+            const optionFlag = option.querySelector('.lang-flag');
+            const optionDetails = languageDetails[option.dataset.lang];
+            if (optionFlag && optionDetails) {
+                setFlagImage(optionFlag, optionDetails.flagFile);
+            }
         });
     }
 

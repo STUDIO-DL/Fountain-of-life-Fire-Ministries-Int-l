@@ -214,7 +214,7 @@
     "centralBadge": "Sede Central",
     "branchBadge": "Sucursal",
     "branch1": {
-      "name": "Malabo",
+      "name": "Malabo, Guinea Ecuatorial",
       "location": "Malabo, Guinea Ecuatorial",
       "phone": "+240 222 588 652",
       "address": "San Juan, detrás de la Hacienda Natividad.",
@@ -224,12 +224,12 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=San+Juan%2C+detr%C3%A1s+de+la+Hacienda+Natividad%2C+Malabo%2C+Guinea+Ecuatorial"
     },
     "branch2": {
-      "name": "Rebola",
+      "name": "Rebola, Guinea Ecuatorial",
       "status": "En desarrollo"
     },
     "branch3": {
-      "name": "Nekede",
-      "location": "Owerri, Nigeria",
+      "name": "Nekede, Nigeria",
+      "location": "Nekede, Nigeria",
       "phone": "+234 706 313 2361",
       "address": "Old Road Nekede, No. 6 Bus Stop: Behind Lord's Chosen.",
       "pastors": "Rev. Anthony & Pst. Mrs. Goodness Ifesinachi",
