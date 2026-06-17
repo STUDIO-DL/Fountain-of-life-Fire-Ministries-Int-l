@@ -5,17 +5,17 @@ const pagesDir = path.join(__dirname, '..', 'pages');
 const headBlock = `    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link rel="preload" href="../src/css/style.css" as="style">
+    <link rel="preload" href="../assets/css/main.css" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
-    <link rel="stylesheet" href="../src/css/style.css">`;
+    <link rel="stylesheet" href="../assets/css/main.css">`;
 
 const compactHeadBlock = headBlock.replace(/^    /gm, '');
 
 const patterns = [
-    /\s*<link href="https:\/\/fonts\.googleapis\.com\/css2\?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">\s*<link rel="stylesheet" href="https:\/\/cdnjs\.cloudflare\.com\/ajax\/libs\/font-awesome\/6\.5\.0\/css\/all\.min\.css">\s*<link rel="stylesheet" href="\.\.\/src\/css\/style\.css">/,
-    /\s*<link rel="preconnect" href="https:\/\/fonts\.googleapis\.com">\s*<link rel="preconnect" href="https:\/\/fonts\.gstatic\.com" crossorigin>\s*<link href="https:\/\/fonts\.googleapis\.com\/css2\?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">\s*<link rel="stylesheet" href="https:\/\/cdnjs\.cloudflare\.com\/ajax\/libs\/font-awesome\/6\.5\.0\/css\/all\.min\.css">\s*<link rel="stylesheet" href="\.\.\/src\/css\/style\.css">/
+    /\s*<link href="https:\/\/fonts\.googleapis\.com\/css2\?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">\s*<link rel="stylesheet" href="https:\/\/cdnjs\.cloudflare\.com\/ajax\/libs\/font-awesome\/6\.5\.0\/css\/all\.min\.css">\s*<link rel="stylesheet" href="\.\.\/assets\/css\/main\.css">/,
+    /\s*<link rel="preconnect" href="https:\/\/fonts\.googleapis\.com">\s*<link rel="preconnect" href="https:\/\/fonts\.gstatic\.com" crossorigin>\s*<link href="https:\/\/fonts\.googleapis\.com\/css2\?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">\s*<link rel="stylesheet" href="https:\/\/cdnjs\.cloudflare\.com\/ajax\/libs\/font-awesome\/6\.5\.0\/css\/all\.min\.css">\s*<link rel="stylesheet" href="\.\.\/assets\/css\/main\.css">/
 ];
 
 for (const file of fs.readdirSync(pagesDir).filter(name => name.endsWith('.html'))) {

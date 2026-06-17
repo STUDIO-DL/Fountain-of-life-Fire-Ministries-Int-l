@@ -11,7 +11,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const LOCALES_DIR = path.join(ROOT, 'src', 'locales');
+const LOCALES_DIR = path.join(ROOT, 'assets', 'locales');
 const HTML_FILES = [
     path.join(ROOT, 'index.html'),
     ...fs.readdirSync(path.join(ROOT, 'pages'))

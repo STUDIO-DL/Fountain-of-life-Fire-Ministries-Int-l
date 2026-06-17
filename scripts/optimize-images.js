@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
 
-const imagesDir = path.join(__dirname, '..', 'src', 'images');
+const imagesDir = path.join(__dirname, '..', 'assets', 'images');
 
 const galleryPhotos = ['photo1.jpg', 'photo2.jpg', 'photo3.jpg', 'photo4.jpg', 'photo5.jpg'];
 

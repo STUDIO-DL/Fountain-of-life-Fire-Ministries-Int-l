@@ -1,6 +1,6 @@
 Add-Type -AssemblyName System.Drawing
 
-$path = Join-Path $PSScriptRoot '..\src\images\logo.png'
+$path = Join-Path $PSScriptRoot '..\assets\images\logo.png'
 $img = [System.Drawing.Image]::FromFile($path)
 $width = 160
 $height = [int][Math]::Round($img.Height * ($width / $img.Width))

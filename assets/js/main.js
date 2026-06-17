@@ -14,16 +14,21 @@ const languageDetails = {
 const translationsCache = {};
 const defaultStrings = {};
 
+function isSubPage() {
+    return window.location.pathname.replace(/\\/g, '/').includes('/pages/');
+}
+
+function getAssetBase(relativePath = '') {
+    const prefix = isSubPage() ? '../assets/' : 'assets/';
+    return relativePath ? `${prefix}${relativePath}` : prefix;
+}
+
 function getLocaleBase() {
-    return window.location.pathname.replace(/\\/g, '/').includes('/pages/')
-        ? '../src/locales/'
-        : 'src/locales/';
+    return getAssetBase('locales/');
 }
 
 function getFlagBase() {
-    return window.location.pathname.replace(/\\/g, '/').includes('/pages/')
-        ? '../src/images/flags/'
-        : 'src/images/flags/';
+    return getAssetBase('images/flags/');
 }
 
 function setFlagImage(element, flagFile) {
@@ -418,9 +423,7 @@ function setupHeroSlider() {
         return;
     }
 
-    const imageBasePath = window.location.pathname.replace(/\\/g, '/').includes('/pages/')
-        ? '../src/images/'
-        : 'src/images/';
+    const imageBasePath = getAssetBase('images/');
     const photoNames = ['photo1', 'photo2', 'photo3'];
     const supportsWebp = document.createElement('canvas').toDataURL('image/webp').startsWith('data:image/webp');
     const extension = supportsWebp ? 'webp' : 'jpg';
