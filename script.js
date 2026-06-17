@@ -425,6 +425,47 @@ function setupHeroSlider() {
     }, 4000);
 }
 
+function setupFlyerDialog() {
+    const dialog = document.getElementById('flyerDialog');
+    if (!dialog) {
+        return;
+    }
+
+    const banner = document.querySelector('.ramas-flyer-banner');
+    const openButtons = document.querySelectorAll('[data-flyer-open]');
+    const closeButtons = document.querySelectorAll('[data-flyer-close]');
+
+    function openDialog() {
+        dialog.showModal();
+    }
+
+    openButtons.forEach((button) => {
+        button.addEventListener('click', (event) => {
+            event.stopPropagation();
+            openDialog();
+        });
+    });
+
+    if (banner) {
+        banner.addEventListener('click', (event) => {
+            if (event.target.closest('[data-flyer-open]')) {
+                return;
+            }
+            openDialog();
+        });
+    }
+
+    closeButtons.forEach((button) => {
+        button.addEventListener('click', () => dialog.close());
+    });
+
+    dialog.addEventListener('click', (event) => {
+        if (event.target === dialog) {
+            dialog.close();
+        }
+    });
+}
+
 async function initApp() {
     captureDefaultsFromDOM();
     setupMenuToggle();
@@ -443,6 +484,7 @@ async function initApp() {
     setupContactForm();
     setupMembershipForm();
     setupHeroSlider();
+    setupFlyerDialog();
 }
 
 if (document.readyState === 'loading') {

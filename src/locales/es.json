@@ -215,19 +215,25 @@
       "name": "Malabo",
       "location": "Malabo, Guinea Ecuatorial",
       "phone": "+240 222 588 652",
-      "address": "Avenida Hassan II, cerca del centro de la ciudad."
+      "address": "Avenida Hassan II, cerca del centro de la ciudad.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Avenida+Hassan+II%2C+Malabo%2C+Guinea+Ecuatorial"
     },
     "branch2": {
       "name": "Rebola",
       "location": "Rebola, Guinea Ecuatorial",
       "phone": "+240 555 123 456",
-      "address": "Carretera principal de Rebola, junto al mercado."
+      "address": "Carretera principal de Rebola, junto al mercado.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Carretera+principal+de+Rebola%2C+Rebola%2C+Guinea+Ecuatorial"
     },
     "branch3": {
-      "name": "Owerri",
+      "name": "Nekede",
       "location": "Owerri, Nigeria",
-      "phone": "+234 800 123 7890",
-      "address": "World Bank Road, Owerri Municipal."
+      "phone": "+234 706 313 2361",
+      "address": "Old Road Nekede, No. 6 Bus Stop: Behind Lord's Chosen.",
+      "pastors": "Rev. Anthony & Pst. Mrs. Goodness Ifesinachi",
+      "flyerAlt": "Cartel de bienvenida — Fuente de Vida y House of Grace, Nekede, Nigeria",
+      "viewFlyer": "Ver cartel completo",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Old+Road+Nekede%2C+No.+6+Bus+Stop%2C+Behind+Lord%27s+Chosen%2C+Owerri%2C+Nigeria"
     },
     "locationBtn": "Ver ubicación"
   },
