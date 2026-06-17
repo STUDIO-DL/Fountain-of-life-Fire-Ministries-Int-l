@@ -3,6 +3,7 @@
     "nav": {
       "home": "Home",
       "about": "About Us",
+      "join": "Join Us",
       "services": "Services",
       "events": "Events",
       "branches": "Branches",
@@ -16,13 +17,14 @@
     "chooseLanguage": "Language",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "brand": "Fountain of Life Fire Ministries Int'l",
+    "brand": "Fountain of Life Fire Ministries Int'l (N.V.C)",
     "brandAlt": "Fountain of Life Fire Ministries Int'l logo",
     "copyright": "© 2026 Fountain of Life Fire Ministries Int'l (N.V.C)"
   },
   "nav": {
     "home": "Home",
     "about": "About Us",
+    "join": "Join Us",
     "services": "Services",
     "events": "Events",
     "branches": "Branches",

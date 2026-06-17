@@ -3,6 +3,7 @@
     "nav": {
       "home": "Inicio",
       "about": "Conócenos",
+      "join": "Únete",
       "services": "Servicios",
       "events": "Eventos",
       "branches": "Sucursales",
@@ -16,13 +17,14 @@
     "chooseLanguage": "Idioma",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú",
-    "brand": "Fuente de Vida Ministerio de Fuego Int'l",
+    "brand": "Fuente de Vida Ministerio de Fuego Int'l (N.V.C)",
     "brandAlt": "Logo de Fuente de Vida Ministerio de Fuego Int'l",
     "copyright": "© 2026 Fuente de Vida Ministerio de Fuego Int'l (N.V.C)"
   },
     "nav": {
       "home": "Inicio",
       "about": "Conócenos",
+    "join": "Únete",
     "services": "Servicios",
     "events": "Eventos",
     "branches": "Sucursales",

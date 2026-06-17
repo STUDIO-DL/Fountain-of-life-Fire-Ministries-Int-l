@@ -3,6 +3,7 @@
     "nav": {
       "home": "Accueil",
       "about": "À propos",
+      "join": "Rejoignez-nous",
       "services": "Services",
       "events": "Événements",
       "branches": "Succursales",
@@ -16,13 +17,14 @@
     "chooseLanguage": "Langue",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu",
-    "brand": "Fontaine de Vie Ministère du Feu Int'l",
+    "brand": "Fontaine de Vie Ministère du Feu Int'l (N.V.C)",
     "brandAlt": "Logo Fontaine de Vie Ministère du Feu Int'l",
     "copyright": "© 2026 Fontaine de Vie Ministère du Feu Int'l (N.V.C)"
   },
   "nav": {
     "home": "Accueil",
     "about": "À propos",
+    "join": "Rejoignez-nous",
     "services": "Services",
     "events": "Événements",
     "branches": "Succursales",
