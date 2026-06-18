@@ -17,9 +17,10 @@
     "chooseLanguage": "Language",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "brand": "Fountain of Life Fire Ministries Int'l (N.V.C)",
+    "cityOfGoshen": "City of Goshen",
+    "brand": "Fountain of Life Fire Ministries Int'l ({cityOfGoshen})",
     "brandAlt": "Fountain of Life Fire Ministries Int'l logo",
-    "copyright": "© 2026 Fountain of Life Fire Ministries Int'l (N.V.C)"
+    "copyright": "© 2026 Fountain of Life Fire Ministries Int'l ({cityOfGoshen})"
   },
   "nav": {
     "home": "Home",
@@ -36,6 +37,7 @@
     "metaTitle": "Home | Fountain of Life Fire Ministries Int'l",
     "metaDescription": "Christian church of worship and revival in Malabo and Nigeria. Fountain of Life Fire Ministries Int'l · Fuente de Vida Ministerio de Fuego Int'l.",
     "metaDescription": "Christian church of worship, healing, and revival. Services in Malabo and branches in Equatorial Guinea and Nigeria. Join Fountain of Life Fire Ministries Int'l.",
+    "footerAlternateBrand": "Fountain of Life Fire Ministries Int'l (City of Goshen)",
     "hero": {
       "tag": "Spirit · Community · Renewal",
       "title": "Experience a real encounter with God",

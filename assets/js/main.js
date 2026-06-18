@@ -172,6 +172,24 @@ function getTranslation(lang, page, key) {
     return defaultStrings[key] || null;
 }
 
+function getCityOfGoshen(lang) {
+    const languagePack = translationsCache[lang] || translationsCache[DEFAULT_LANG] || {};
+    return languagePack.common?.cityOfGoshen || 'City of Goshen';
+}
+
+function applyI18nPlaceholders(text, lang) {
+    if (!text || typeof text !== 'string' || !text.includes('{cityOfGoshen}')) {
+        return text;
+    }
+
+    return text.replace(/\{cityOfGoshen\}/g, getCityOfGoshen(lang));
+}
+
+function getLocalizedTranslation(lang, page, key) {
+    const translation = getTranslation(lang, page, key);
+    return translation ? applyI18nPlaceholders(translation, lang) : null;
+}
+
 function getCurrentPage() {
     return document.body.dataset.page
         || window.location.pathname.split('/').pop().replace('.html', '')
@@ -184,7 +202,7 @@ function translatePage(lang) {
 
     document.querySelectorAll('[data-i18n-key]').forEach(el => {
         const key = el.dataset.i18nKey;
-        const translation = getTranslation(lang, page, key);
+        const translation = getLocalizedTranslation(lang, page, key);
         if (!translation) {
             return;
         }
@@ -199,7 +217,7 @@ function translatePage(lang) {
 
     const titleEl = document.querySelector('title[data-i18n-key]');
     if (titleEl) {
-        const titleTranslation = getTranslation(lang, page, titleEl.dataset.i18nKey);
+        const titleTranslation = getLocalizedTranslation(lang, page, titleEl.dataset.i18nKey);
         if (titleTranslation) {
             document.title = titleTranslation;
         }

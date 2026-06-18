@@ -1,4 +1,4 @@
-# Fuente de Vida Ministerio de Fuego Int'l (N.V.C)
+# Fuente de Vida Ministerio de Fuego Int'l (City of Goshen)
 
 Static multilingual website (Spanish, English, French) deployed on GitHub Pages.
 
