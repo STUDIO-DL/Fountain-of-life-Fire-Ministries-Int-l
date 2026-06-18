@@ -5,3 +5,7 @@ Thumbs.db
 .env
 .env.*
 *.tmp
+data/
+*.db
+*.db-wal
+*.db-shm
