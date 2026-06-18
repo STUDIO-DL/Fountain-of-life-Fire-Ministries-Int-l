@@ -34,7 +34,7 @@
   },
   "index": {
     "metaTitle": "Inicio | Fuente de Vida Ministerio de Fuego Int'l",
-    "metaDescription": "Iglesia cristiana de adoración, sanación y avivamiento. Servicios en Malabo y sucursales en Guinea Ecuatorial y Nigeria. Únete a Fuente de Vida Ministerio de Fuego Int'l.",
+    "metaDescription": "Iglesia cristiana de adoración y avivamiento en Malabo y Nigeria. Fuente de Vida Ministerio de Fuego Int'l · Fountain of Life Fire Ministries Int'l.",
     "hero": {
       "tag": "Espíritu · Comunidad · Renovación",
       "title": "Vive un encuentro real con Dios",
@@ -210,7 +210,7 @@
   },
   "ramas": {
     "metaTitle": "Localizar una Sucursal | Fuente de Vida Ministerio de Fuego Int'l",
-    "metaDescription": "Localiza sucursales de Fuente de Vida en Malabo, Nekede (Nigeria) y más. Direcciones, teléfonos y mapas de nuestras iglesias.",
+    "metaDescription": "Localiza sucursales de Fuente de Vida en Malabo, Owerri (Nigeria) y más. Direcciones, teléfonos y mapas de nuestras iglesias.",
     "heroTitle": "Localiza una Sucursal",
     "heroText": "Encuentra una sucursal de Fuente de Vida cerca de ti y acompáñanos en adoración y crecimiento espiritual.",
     "branchesTitle": "Sucursales de Fuente de Vida",
@@ -232,8 +232,8 @@
       "status": "En desarrollo"
     },
     "branch3": {
-      "name": "Nekede, Nigeria",
-      "location": "Nekede, Nigeria",
+      "name": "Owerri, Nigeria",
+      "location": "Owerri, Nigeria",
       "phone": "+234 706 313 2361",
       "address": "Old Road Nekede, No. 6 Bus Stop: Behind Lord's Chosen.",
       "pastors": "Rev. Anthony & Pst. Mrs. Goodness Ifesinachi",

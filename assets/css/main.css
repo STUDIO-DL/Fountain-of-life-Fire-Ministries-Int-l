@@ -77,6 +77,12 @@ footer p {
     font-size: 0.95rem;
 }
 
+.footer-alternate-name {
+    margin-top: 8px;
+    font-size: 0.82rem;
+    opacity: 0.62;
+}
+
 .footer-socials {
     display: flex;
     justify-content: center;

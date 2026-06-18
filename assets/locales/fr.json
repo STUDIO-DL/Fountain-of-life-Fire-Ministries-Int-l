@@ -34,7 +34,7 @@
   },
   "index": {
     "metaTitle": "Accueil | Fontaine de Vie Ministère du Feu Int'l",
-    "metaDescription": "Église chrétienne d'adoration, de guérison et de réveil. Services à Malabo et succursales en Guinée équatoriale et au Nigeria. Rejoignez Fontaine de Vie.",
+    "metaDescription": "Église chrétienne d'adoration et de réveil à Malabo et au Nigeria. Fontaine de Vie Ministère du Feu Int'l · Fountain of Life Fire Ministries Int'l.",
     "hero": {
       "tag": "Esprit · Communauté · Renouveau",
       "title": "Vivez une rencontre réelle avec Dieu",
@@ -210,7 +210,7 @@
   },
   "ramas": {
     "metaTitle": "Trouver une succursale | Fontaine de Vie Ministère du Feu Int'l",
-    "metaDescription": "Trouvez les succursales Fontaine de Vie à Malabo, Nekede (Nigeria) et ailleurs. Adresses, téléphones et cartes de nos églises.",
+    "metaDescription": "Trouvez les succursales Fontaine de Vie à Malabo, Owerri (Nigeria) et ailleurs. Adresses, téléphones et cartes de nos églises.",
     "heroTitle": "Trouvez une succursale",
     "heroText": "Trouvez une succursale de Fontaine de Vie près de chez vous et rejoignez-nous en adoration et croissance spirituelle.",
     "branchesTitle": "Succursales Fontaine de Vie",
@@ -232,8 +232,8 @@
       "status": "En développement"
     },
     "branch3": {
-      "name": "Nekede, Nigeria",
-      "location": "Nekede, Nigeria",
+      "name": "Owerri, Nigeria",
+      "location": "Owerri, Nigeria",
       "phone": "+234 706 313 2361",
       "address": "Old Road Nekede, No. 6 Bus Stop: Behind Lord's Chosen.",
       "pastors": "Rev. Anthony & Pst. Mrs. Goodness Ifesinachi",
