@@ -34,6 +34,8 @@
   },
   "index": {
     "metaTitle": "Home | Fountain of Life Fire Ministries Int'l",
+    "metaDescription": "Christian church of worship, healing, and revival. Services in Malabo and branches in Equatorial Guinea and Nigeria. Join Fountain of Life Fire Ministries Int'l.",
+    "metaDescription": "Christian church of worship, healing, and revival. Services in Malabo and branches in Equatorial Guinea and Nigeria. Join Fountain of Life Fire Ministries Int'l.",
     "hero": {
       "tag": "Spirit · Community · Renewal",
       "title": "Experience a real encounter with God",
@@ -138,6 +140,7 @@
   },
   "conocenos": {
     "metaTitle": "About Us | Fountain of Life Fire Ministries Int'l",
+    "metaDescription": "Learn about our vision, leadership, and ministry of deliverance, biblical prosperity, and family restoration at Fountain of Life Fire Ministries Int'l.",
     "heroTitle": "About Us",
     "heroText": "We are a spiritual family called to preach salvation by demonstrating the power of God. Here you will discover who we are, why we exist, and how we work to restore destinies in the name of Jesus Christ.",
     "section1Title": "1. Who we are",
@@ -176,6 +179,7 @@
   },
   "miembro": {
     "metaTitle": "Membership | Fountain of Life Fire Ministries Int'l",
+    "metaDescription": "Join Fountain of Life Fire Ministries Int'l. Complete the membership form and become part of our family of faith.",
     "heroTitle": "Membership",
     "heroText": "Become part of our family of faith",
     "heroTag": "Join the family",
@@ -207,6 +211,7 @@
   },
   "ramas": {
     "metaTitle": "Find a Branch | Fountain of Life Fire Ministries Int'l",
+    "metaDescription": "Find Fountain of Life branches in Malabo, Nekede (Nigeria), and more. Addresses, phone numbers, and maps for our churches.",
     "heroTitle": "Find a Branch",
     "heroText": "Find a Fountain of Life branch near you and join us in worship and spiritual growth.",
     "branchesTitle": "Fountain of Life Branches",
@@ -241,6 +246,7 @@
   },
   "redes_sociales1": {
     "metaTitle": "Social Media | Fountain of Life Fire Ministries Int'l",
+    "metaDescription": "Follow us on Facebook, YouTube, Instagram, and TikTok. Live services, sermons, and activities from Fountain of Life Fire Ministries Int'l.",
     "heroBreadcrumbs": "Home · Social Media",
     "heroTitle": "Connect With Us",
     "sectionTitle": "Our Digital Platforms",
@@ -258,6 +264,7 @@
   },
   "contacto": {
     "metaTitle": "Contact Us | Fountain of Life Fire Ministries Int'l",
+    "metaDescription": "Contact Fountain of Life Fire Ministries Int'l. Send a message, prayer request, or inquiry. We are located in Malabo, Equatorial Guinea.",
     "addressValue": "Malabo, Equatorial Guinea",
     "title": "Contact Us",
     "intro": "We would love to meet you, walk with you, and help you take your first steps into this family of faith.",
@@ -290,11 +297,13 @@
   },
   "proximos_programas": {
     "metaTitle": "Upcoming Programs | Fountain of Life Fire Ministries Int'l",
+    "metaDescription": "Upcoming programs and activities from Fountain of Life Fire Ministries Int'l. Events, gatherings, and revival meetings.",
     "title": "Upcoming Programs",
     "text": "We will soon share upcoming programs and ministry activities here."
   },
   "testimonio": {
     "metaTitle": "Submit Testimony | Fountain of Life Fire Ministries Int'l",
+    "metaDescription": "Share your faith testimony with Fountain of Life Fire Ministries Int'l. Tell us how God has transformed your life.",
     "pageTitle": "Submit Your Testimony",
     "pageSubtitle": "COMPLETE THE FORM BELOW",
     "labelName": "First Name",

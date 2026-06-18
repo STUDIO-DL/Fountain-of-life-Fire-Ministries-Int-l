@@ -34,6 +34,7 @@
   },
   "index": {
     "metaTitle": "Accueil | Fontaine de Vie Ministère du Feu Int'l",
+    "metaDescription": "Église chrétienne d'adoration, de guérison et de réveil. Services à Malabo et succursales en Guinée équatoriale et au Nigeria. Rejoignez Fontaine de Vie.",
     "hero": {
       "tag": "Esprit · Communauté · Renouveau",
       "title": "Vivez une rencontre réelle avec Dieu",
@@ -138,6 +139,7 @@
   },
   "conocenos": {
     "metaTitle": "À propos | Fontaine de Vie Ministère du Feu Int'l",
+    "metaDescription": "Découvrez notre vision, notre leadership et notre ministère de délivrance, prospérité biblique et restauration des foyers à Fontaine de Vie.",
     "heroTitle": "À propos de nous",
     "heroText": "Nous sommes une famille spirituelle appelée à prêcher le salut en démontrant la puissance de Dieu. Ici, vous découvrirez qui nous sommes, pourquoi nous existons et comment nous travaillons pour restaurer des destinées au nom de Jésus-Christ.",
     "section1Title": "1. Qui nous sommes",
@@ -176,6 +178,7 @@
   },
   "miembro": {
     "metaTitle": "Adhésion | Fontaine de Vie Ministère du Feu Int'l",
+    "metaDescription": "Rejoignez Fontaine de Vie Ministère du Feu Int'l. Remplissez le formulaire d'adhésion et faites partie de notre famille de foi.",
     "heroTitle": "Adhésion",
     "heroText": "Faites partie de notre famille de foi",
     "heroTag": "Rejoignez la famille",
@@ -207,6 +210,7 @@
   },
   "ramas": {
     "metaTitle": "Trouver une succursale | Fontaine de Vie Ministère du Feu Int'l",
+    "metaDescription": "Trouvez les succursales Fontaine de Vie à Malabo, Nekede (Nigeria) et ailleurs. Adresses, téléphones et cartes de nos églises.",
     "heroTitle": "Trouvez une succursale",
     "heroText": "Trouvez une succursale de Fontaine de Vie près de chez vous et rejoignez-nous en adoration et croissance spirituelle.",
     "branchesTitle": "Succursales Fontaine de Vie",
@@ -241,6 +245,7 @@
   },
   "redes_sociales1": {
     "metaTitle": "Réseaux sociaux | Fontaine de Vie Ministère du Feu Int'l",
+    "metaDescription": "Suivez-nous sur Facebook, YouTube, Instagram et TikTok. Cultes en direct, prédications et activités de Fontaine de Vie Ministère du Feu Int'l.",
     "heroBreadcrumbs": "Accueil · Réseaux sociaux",
     "heroTitle": "Connectez-vous avec nous",
     "sectionTitle": "Nos plateformes numériques",
@@ -258,6 +263,7 @@
   },
   "contacto": {
     "metaTitle": "Contactez-nous | Fontaine de Vie Ministère du Feu Int'l",
+    "metaDescription": "Contactez Fontaine de Vie Ministère du Feu Int'l. Envoyez un message, une demande de prière ou une question. Nous sommes à Malabo, Guinée équatoriale.",
     "addressValue": "Malabo, Guinée équatoriale",
     "title": "Contactez-nous",
     "intro": "Nous serions ravis de vous rencontrer, de vous accompagner et de vous aider à faire vos premiers pas dans cette famille de foi.",
@@ -290,11 +296,13 @@
   },
   "proximos_programas": {
     "metaTitle": "Programmes à venir | Fontaine de Vie Ministère du Feu Int'l",
+    "metaDescription": "Programmes et activités à venir de Fontaine de Vie Ministère du Feu Int'l. Événements, réunions et campagnes de réveil.",
     "title": "Programmes à venir",
     "text": "Nous partagerons bientôt ici les prochains programmes et activités du ministère."
   },
   "testimonio": {
     "metaTitle": "Soumettre un témoignage | Fontaine de Vie Ministère du Feu Int'l",
+    "metaDescription": "Partagez votre témoignage de foi avec Fontaine de Vie Ministère du Feu Int'l. Racontez comment Dieu a transformé votre vie.",
     "pageTitle": "Soumettez votre témoignage",
     "pageSubtitle": "COMPLÉTEZ LE FORMULAIRE CI-DESSOUS",
     "labelName": "Prénom",

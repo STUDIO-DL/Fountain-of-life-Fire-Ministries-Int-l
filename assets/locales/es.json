@@ -34,6 +34,7 @@
   },
   "index": {
     "metaTitle": "Inicio | Fuente de Vida Ministerio de Fuego Int'l",
+    "metaDescription": "Iglesia cristiana de adoración, sanación y avivamiento. Servicios en Malabo y sucursales en Guinea Ecuatorial y Nigeria. Únete a Fuente de Vida Ministerio de Fuego Int'l.",
     "hero": {
       "tag": "Espíritu · Comunidad · Renovación",
       "title": "Vive un encuentro real con Dios",
@@ -138,6 +139,7 @@
   },
   "conocenos": {
     "metaTitle": "Conócenos | Fuente de Vida Ministerio de Fuego Int'l",
+    "metaDescription": "Conoce nuestra visión, liderazgo y ministerio de liberación, prosperidad bíblica y restauración de hogares en Fuente de Vida Ministerio de Fuego Int'l.",
     "heroTitle": "Conócenos",
     "heroText": "Somos una familia espiritual llamada a predicar salvación demostrando el poder de Dios. Aquí descubrirás quiénes somos, por qué existimos y cómo trabajamos para restaurar destinos en el nombre de Jesucristo.",
     "section1Title": "1. Quiénes somos",
@@ -176,6 +178,7 @@
   },
   "miembro": {
     "metaTitle": "Membresía | Fuente de Vida Ministerio de Fuego Int'l",
+    "metaDescription": "Únete a Fuente de Vida Ministerio de Fuego Int'l. Completa el formulario de membresía y forma parte de nuestra familia de fe.",
     "heroTitle": "Membresía",
     "heroText": "Forma parte de nuestra familia de fe",
     "heroTag": "Únete a la familia",
@@ -207,6 +210,7 @@
   },
   "ramas": {
     "metaTitle": "Localizar una Sucursal | Fuente de Vida Ministerio de Fuego Int'l",
+    "metaDescription": "Localiza sucursales de Fuente de Vida en Malabo, Nekede (Nigeria) y más. Direcciones, teléfonos y mapas de nuestras iglesias.",
     "heroTitle": "Localiza una Sucursal",
     "heroText": "Encuentra una sucursal de Fuente de Vida cerca de ti y acompáñanos en adoración y crecimiento espiritual.",
     "branchesTitle": "Sucursales de Fuente de Vida",
@@ -241,6 +245,7 @@
   },
   "redes_sociales1": {
     "metaTitle": "Redes Sociales | Fuente de Vida Ministerio de Fuego Int'l",
+    "metaDescription": "Síguenos en Facebook, YouTube, Instagram y TikTok. Servicios en vivo, prédicas y actividades de Fuente de Vida Ministerio de Fuego Int'l.",
     "heroBreadcrumbs": "Inicio · Redes Sociales",
     "heroTitle": "Conéctate Con Nosotros",
     "sectionTitle": "Nuestras Plataformas Digitales",
@@ -258,6 +263,7 @@
   },
   "contacto": {
     "metaTitle": "Contáctanos | Fuente de Vida Ministerio de Fuego Int'l",
+    "metaDescription": "Contáctanos en Fuente de Vida Ministerio de Fuego Int'l. Envía tu mensaje, petición de oración o consulta. Estamos en Malabo, Guinea Ecuatorial.",
     "addressValue": "Malabo, Guinea Ecuatorial",
     "title": "Contáctanos",
     "intro": "Nos encantaría conocerte, acompañarte y ayudarte a dar tus primeros pasos en esta familia de fe.",
@@ -290,11 +296,13 @@
   },
   "proximos_programas": {
     "metaTitle": "Próximos Programas | Fuente de Vida Ministerio de Fuego Int'l",
+    "metaDescription": "Próximos programas y actividades de Fuente de Vida Ministerio de Fuego Int'l. Eventos, reuniones y avivamientos del ministerio.",
     "title": "Próximos Programas",
     "text": "Muy pronto compartiremos aquí los próximos programas y actividades del ministerio."
   },
   "testimonio": {
     "metaTitle": "Enviar Testimonio | Fuente de Vida Ministerio de Fuego Int'l",
+    "metaDescription": "Comparte tu testimonio de fe con Fuente de Vida Ministerio de Fuego Int'l. Cuéntanos cómo Dios ha transformado tu vida.",
     "pageTitle": "Envíe Su Testimonio",
     "pageSubtitle": "COMPLETE EL SIGUIENTE FORMULARIO",
     "labelName": "Nombre",
